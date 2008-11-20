@@ -30,6 +30,7 @@ Merb::Router.prepare do
   resources :email_leads
   resources :pages
   
+  slice(:feather, :path_prefix => 'blog')
   # Adds the required routes for merb-auth using the password slice
   slice(:merb_auth_slice_password, :name_prefix => nil, :path_prefix => "")
 

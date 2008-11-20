@@ -1,5 +1,5 @@
 /*
-Company:	
+Company:	Entryway
 File:		main.css - This contains all the main styles for the website.
 
 All the styles are separted into the following groups:
@@ -138,7 +138,7 @@ div#logo a {
 /* Nav Box */
 div#nav-box {
 	height: 88px;
-	width: 600px;
+	width: 650px;
 	float: right;
 	display: inline;
 }
@@ -153,6 +153,7 @@ div#feature-text h1 {
 	color: #fff;
 	font-size: 182%;
 	margin-bottom: 5px;
+	font-weight: normal;
 }
 div#feature-text p {
 	font-size: 123.1%;
@@ -220,6 +221,14 @@ div.iphone-green p {
 	color: #323c41;
 	margin: 0;
 }
+div.iphone-green h4 a:link, div.iphone-green h4 a:visited {
+	color: #fff!important;
+	text-decoration: none;
+}
+div.iphone-green p a:link, div.iphone-green p a:visited {
+	color: #323c41;
+	text-decoration: none;
+}
 
 /* Gray iPhone Box */
 div.iphone-gray {
@@ -240,6 +249,10 @@ div.iphone-gray h4 {
 div.iphone-gray p {
 	color: #fff;
 	margin: 0;
+}
+div.iphone-gray a:link, div.iphone-gray a:visited {
+	color: #fff!important;
+	text-decoration: none;
 }
 
 /* Tab Box */
@@ -306,6 +319,9 @@ div.main p.solutions-head {
 	margin: 0;
 	padding: 0!important;
 }
+div.main p.solutions-head a:link, div.main p.solutions-head a:visited {
+	color: #94a1ab!important;
+}
 div.main img.solutions-graphic {
 	margin-bottom: 15px;
 }
@@ -315,7 +331,7 @@ div.main div.left-main {
 	display: inline;
 }
 div.main div.right-main {
-	width: 255px;
+	width: 250px;
 	float: right;
 	display: inline;
 }
@@ -430,17 +446,38 @@ div.lettuce-box p a:link, div.lettuce-box p a:visited {
 div.lettuce-box p a:hover {
 	text-decoration: underline;
 }
+
+/* Footer Logos */
+a#green-hosting-logo {
+	display: block;
+	position: absolute;
+	margin: 35px 0 0 30px;
+	width: 100px;
+	height: 60px;
+	text-indent: -9000px;
+}
+a#entryway-logo {
+	display: block;
+	position: absolute;
+	margin: 55px 0 0 750px;
+	width: 110px;
+	height: 40px;
+	text-indent: -9000px;
+}
 /* @end */
 
 /* @group Nav */
 /* Main Nav */
 div#nav {
 	background: url(../images/nav-bkg.jpg) repeat-x 0 0;
+	margin-left: 30px;
 }
 div#nav ul {
 	margin: 0;
-	padding: 0 0 0 50px;
-	float: right;
+	padding: 0;
+	white-space: nowrap;
+	/*font-size: 150%;*/
+	float: left;
 	display: inline;
 }
 div#nav ul li {
@@ -454,9 +491,10 @@ div#nav ul li a {
 	background: url(../images/nav-tab-right.gif) no-repeat 100% 0;
 	text-transform: uppercase;
 	font-size: 116%;
+	letter-spacing: 1px;
 }
 div#nav ul li a span {
-	padding: 0 13px 0 13px;
+	padding: 0 17px 0 17px;
 	display: block;
 	background: url(../images/nav-tab-left.gif) no-repeat 0 0;
 	line-height: 35px;
@@ -466,13 +504,13 @@ div#nav a:link, div#nav a:visited {
 	text-decoration: none;
 }
 div#nav li:hover a, div#nav li.sfhover a, div#nav li a.active {
-	background-position: 100% 100%;
+	background-position: 100% -165px;
 }
 div#nav li:hover a:link, div#nav li:hover a:visited, div#nav li.sfhover a:link, div#nav li.sfhover a:visited {
 	color: #454545;
 }
 div#nav li:hover a span, div#nav li.sfhover a span, div#nav li a.active span {
-	background-position: 0 100%;
+	background-position: 0 -165px;
 }
 
 /* Nav Drop Down */
@@ -483,6 +521,7 @@ div#nav ul ul {
 	line-height: 1;
 	background: url(../images/nav-drop-bkg.png) no-repeat 0 100%;
 	width: 213px;
+	white-space: normal;
 }
 div#nav ul li ul { /* second-level lists */
 	position: absolute;
@@ -515,7 +554,8 @@ div#nav ul li ul li a {
 	display: block;
 	font-weight: normal;
 	text-transform: none;
-	background: url(../images/nav-drop-div.gif) no-repeat 0 100%;
+	background: url(../images/nav-drop-div.gif) no-repeat 0 100%!important;
+	letter-spacing: 0;
 }
 div#nav ul li ul li a:link, div#nav ul li ul li a:visited {
 	color: #2e2e2e!important;
@@ -524,13 +564,14 @@ div#nav ul li:hover ul, div#nav ul li.sfhover ul {
 	left: auto;
 }
 div#nav ul li ul li a:hover {
-	background: url(../images/nav-drop-rollover.jpg) no-repeat 0 100%;
+	background: url(../images/nav-drop-rollover.jpg) no-repeat 0 100%!important;
 	color: #156fa0!important;
 }
 
 /* Util Nav */
 div#util-nav {
 	height: 52px;
+	overflow: hidden;
 }
 div#util-nav ul {
 	margin: 0;
@@ -596,21 +637,21 @@ ul#sidenav li h3 {
 /* @end */
 
 /* @group Default Headings */
-div.main h1 {
+div.main h1, div.main-1col h1 {
 	font-size: 182%;
 	color: #454545;
-	margin: 0 0 0px 0;
+	margin: 0 0 20px;
 }
-div.main h2 {
+div.main h2, div.main-1col h2 {
 	font-size: 138.5%;
 	color: #005b92;
-	margin: 0 0 10px 0;
+	margin: 0 0 5px 0;
 }
 
 /* @end */
 
 /* @group Common Text Styles */
-div.main p {
+div.main p, div.main-1col p {
 	line-height: 150%;
 	font-size: 108%;
 	color: #3d3d3d;
@@ -633,6 +674,21 @@ form.newsletter-form input.txt {
 }
 form.newsletter-form input.btn {
 	vertical-align: middle;
+}
+
+form.contact-form input.txt {
+	border: none;
+	padding: 2px 4px;
+	margin: 0 5px 0 0;
+	width: 140px;
+	vertical-align: middle;
+	color: #a79584;
+}
+form.contact-form input.btn {
+	vertical-align: middle;
+}
+form.contact-form label {
+	font-weight: bold;
 }
 /* @end */
 
@@ -664,3 +720,277 @@ a:hover {
 .clearfix {display: block;}
 /* End hide from IE-mac */
 /* @end */
+
+/* styles for new portfolio/profile pages */
+/* Main Content */
+div.main-1col {
+	width: 876px;
+	float: left;
+	display: inline;
+}
+div.portfolio {
+	width: 868px;
+	float: left;
+	display: inline;
+}
+div.portfolio-tab {
+	background: #cae1ec url(../images/portfolio-top-tab.gif) no-repeat top center;
+}
+div.portfolio-tab h2 {
+	font-size: 138.5%;
+	color: #005b92;
+	margin: 10px 0 0 0;
+	padding: 13px 0 11px;
+	text-align: center;
+}
+div.portfolio-well {
+	border-left: 2px solid #E6EEF1;
+	border-right: 2px solid #E6EEF1;
+	margin: 0px;
+	padding: 0px;
+	width: 864px;
+}
+div.portfolio-main {
+	background: url(../images/portfolio-main-background.gif) repeat-x left top;
+	width: 568px;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+/* Portfolio Main Image */
+div.portfolio-mainImg {
+	width: 570px;
+	float: left;
+	display: inline;
+	padding: 15px 0 0 5px;
+}
+/* Portfolio Left Column */
+div.portfolio-mainLeft {
+	width: 284px;
+	float: left;
+	display: inline;
+	margin: 0px;
+}
+div.portfolio-mainLeft h3 {
+	font-size: 120%;
+	color: #005b92;
+	width: 100px;
+	float: left;
+	margin: 12px 35px 0px;
+	padding: 0px;
+}
+/* Portfolio Right Column */
+div.portfolio-mainRight {
+	width: 284px;
+	float: right;
+	display: inline;
+	margin: 0px;
+}
+div.portfolio-mainRight h3 {
+	font-size: 120%;
+	color: #005b92;
+	width: 100px;
+	float: left;
+	margin: 12px 25px 0px;
+	padding: 0px;
+}
+/* Portfolio Screenshots */
+div.portfolio-screenshots {
+	background: url(../images/portfolio-main-background.gif) repeat-x left top;
+	width: 268px;
+	float: left;
+	display: inline;
+	padding: 0 0 0 28px;
+}
+div.portfolio-screenshots h3 {
+	font-size: 120%;
+	color: #005b92;
+	width: 100px;
+	float: left;
+	margin: 60px 0px 0px;
+	padding: 0px;
+}
+
+.screenshot-arrows {
+	float: left;
+	width: 60px;
+	margin: 10px 0 0;
+	color: #c7d6e5;
+	font-weight: bold;
+	font-size: 18px;
+}
+.screenshot-arrows img a {
+	vertical-align: text-bottom;
+	border: 0;
+}
+.screenshots {
+	width: 230px;
+	margin: 0px;
+	padding: 0px;
+}
+.screenshots img {
+	margin: 0px;
+	padding: 0px;
+}
+.screenshots-left {
+	float: left;
+}
+.screenshots-right {
+	float: right;
+}
+.icons {
+	margin: 10px 10px 0 0;
+	padding: 0px;
+	clear: left;
+	float: left;
+	width: 230px;
+}
+.icons img {
+	float: left;
+	margin-right: 2px;
+	margin-top: -2px;
+}
+ul.challenge {
+	margin: 30px 0 12px;
+	padding: 0;
+}
+ul.challenge li {
+	background: transparent url(../images/icon-challenge.gif) no-repeat scroll 0 10px;
+	list-style-type: none;
+	padding: 12px 0 6px 35px;
+	color: #2f2f2f;
+}
+ul.results {
+	margin: 35px 0 12px;
+	padding: 0;
+}
+ul.results li {
+	background: transparent url(../images/icon-checkmark.gif) no-repeat scroll 0 10px;
+	list-style-type: none;
+	padding: 12px 0 6px 25px;
+	color: #2f2f2f;
+}
+div.screenshot-header h3 {
+	padding: 0 0 10px 40px;
+	margin: 12px 0px 0px;
+}
+.expand {
+	background: #ffffff url(../images/portfolio-background.gif) repeat-x left top;
+	clear: left;
+	float: left;
+	padding: 10px 0px 30px 325px;
+	width: 543px;
+}
+.expand a {
+	color: #005b92;
+}
+div.people {
+	margin: 50px 0 0;
+	clear: left;
+}
+div.people-box-content {
+	background: url(../images/people-box-bottom.gif) no-repeat 0 100% #e4f3f8;
+	width: 362px;
+	float: right;
+}
+div.people-box-content-inner {
+	padding: 10px 15px;
+	background: url(../images/people-box-top.gif) no-repeat 0 0;
+}
+/* People Photos */
+div.people-photo {
+	background: url(../images/content-photo-shadow.gif) no-repeat 100% 100%;
+	padding: 5px 5px 5px 0;
+	margin: 0 10px 5px 0;
+	float: left;
+	display: inline;
+}
+div.people-photo div {
+	border-left: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;
+	padding: 2px;
+}
+div.people h2 {
+	float: left;
+	margin: 0 15px;
+}
+div.people h3 {
+	color: #64b0d6;
+	margin: 0;
+	padding: 1px 0 0;
+	line-height: 175%;
+	font-weight: normal;
+}
+div.people-description {
+	float: left;
+	clear: both;
+	margin: 10px 0;
+}
+div.people-box-content-inner img {
+	margin: 0px 10px 0 0;
+	float: left;
+}
+div.people-box-content-inner p {
+	padding: 7px 0 0;
+	line-height: 30%;
+	font-size: 14px;
+}
+div.people-box-content-inner a {
+	text-decoration: none;
+}
+div.people-lined-area {
+	float: left;
+	margin: 0 0 20px;
+}
+div.people-lined-area h3 {
+	color: #64b0d6;
+	margin: 0;
+	padding: 0;
+	line-height: 175%;
+	font-weight: normal;
+}	
+ul.people-lined-area {
+	margin: 0;
+	padding: 0;
+	width: 536px;
+}
+ul.people-lined-area li {
+	background: transparent url(../images/people-bullet.gif) no-repeat scroll 5px 10px;
+	list-style-type: none;
+	padding: 9px 0 6px 25px;
+	color: #2f2f2f;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #adcbdc;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #adcbdc;
+}
+div.people-links {
+	float: left;
+}
+div.people-links a {
+	text-decoration: none;
+}
+div.people-links h3 {
+	color: #2f2f2f;
+}
+div.people-linkbox {
+	background: url(../images/link-box-background.gif) no-repeat 0 0;
+	padding: 4px 0;
+	width: 536px;
+	height: 26px;
+}
+div.people-linkbox img {
+	margin: 0 5px 5px 25px;
+	vertical-align: middle;
+}
+div.people-linkbox p {
+	padding: 7px 0 0;
+	line-height: 80%;
+	font-size: 14px;
+}
+div.people-links {
+	float: left;
+	margin: 0 0 30px;
+}
