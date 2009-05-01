@@ -7,12 +7,12 @@
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta name="Description" content="description" />
 		<meta name="Keywords" content="keywords" />
-		<%= css_include_tag 'reset-fonts', :media => 'screen, projection' %>
-		<%= css_include_tag 'base-min', :media => 'screen, projection, print' %>
-		<%= css_include_tag 'main', :media => 'screen, projection' %>
+		<link href="css/reset-fonts.css" rel="stylesheet" type="text/css" media="screen, projection" />
+		<link href="css/base-min.css" rel="stylesheet" type="text/css" media="screen, projection, print" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />
 		
 		<!--[if lte IE 6]>
-			<%= css_include_tag 'ie6', :media => 'screen, projection' %>
+			<link href="ie6" rel="stylesheet" type="text/css" media="screen, projection" />
 		<![endif]-->
 	</head>
 	<body>
@@ -43,17 +43,17 @@
 			<!-- main content -->
 			<div class="main">
 				
-				<%= catch_content :for_layout %>
+			  {{ content }}
+			  <!--<%= catch_content :for_layout %>-->
 				
 			</div><!-- /main content -->
-
-			<%= default_sidebar %>
-			<%= catch_content :sidebar %>
+			{% include default_sidebar.html %}
+			<!--<%= catch_content :sidebar %>-->
 			
 		</div>
 		<!-- / Body -->
-		
-		<%= partial('layout/footer') %>
+		{% include footer.html %}
+		<!--<%= partial('layout/footer') %>-->
 		
 	</body>
 </html>
