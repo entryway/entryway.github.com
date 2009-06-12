@@ -32,7 +32,7 @@ div#hd {
 	padding-bottom: 6px;
 }
 div#hd-inner {
-	background: url(../images/hd-bkg.gif) repeat-x 0 0 #86c0dc;
+
 }
 div#hd-content {
 	width: 876px;
@@ -125,10 +125,11 @@ div#ft ul li a:hover {
 div#logo {
 	width: 224px;
 	height: 134px;
-	background: url(../images/entryway-logo.gif) no-repeat 0 0;
 	text-indent: -9000px;
 	float: left;
 	display: inline;
+}
+div#logo {
 }
 div#logo a {
 	display: block;
@@ -268,12 +269,12 @@ ul.tab-box li {
 }
 ul.tab-box li a {
 	display: block;
-	background: url(../images/tab-right.gif) no-repeat 100% 0;
+	/*background: url(../images/tab-right.gif) no-repeat 100% 0;*/
 	margin-right: 2px;
 }
 ul.tab-box li a span {
 	display: block;
-	background: url(../images/tab-left.gif) no-repeat 0 0;
+	/*background: url(../images/tab-left.gif) no-repeat 0 0;*/
 	line-height: 27px;
 	padding: 0 23px;
 }
@@ -290,7 +291,7 @@ ul.tab-box li a:hover span, ul.tab-box li a.active span {
 }
 
 div.tab-box-content {
-	background: url(../images/tab-box-btm.gif) no-repeat 0 100% #c5e1ee;
+    /*background: url(../images/tab-box-btm.gif) no-repeat 0 100% #c5e1ee;*/
 }
 div.tab-box-content-inner {
 	padding: 15px;
@@ -326,7 +327,7 @@ div.main img.solutions-graphic {
 	margin-bottom: 15px;
 }
 div.main div.left-main {
-	width: 244px;
+	width: 544px;
 	float: left;
 	display: inline;
 }
@@ -345,8 +346,8 @@ div.main div.left-main h2 {
 	font-size: 116%;
 	color: #2a67af;
 	margin: 0;
-	background: url(../images/blue-checkmark.gif) no-repeat 0 0;
-	padding: 4px 0 0 22px;
+	/* background: url(../images/blue-checkmark.gif) no-repeat 0 0; */
+	padding: 4px 0 0 0;
 }
 div.main div.left-main h2 a:link, div.main div.left-main h2 a:visited {
 	color: #2a67af;
@@ -356,7 +357,7 @@ div.main div.left-main h2 a:hover {
 	text-decoration: underline;
 }
 div.main div.left-main p {
-	padding-left: 22px;
+        /* padding-left: 22px;*/
 }
 div.main div.left-main a:link, div.main div.left-main a:visited {
 	text-decoration: none;
@@ -488,7 +489,7 @@ div#nav ul li {
 }
 div#nav ul li a {
 	display: block;
-	background: url(../images/nav-tab-right.gif) no-repeat 100% 0;
+	/*background: url(../images/nav-tab-right.gif) no-repeat 100% 0;*/
 	text-transform: uppercase;
 	font-size: 116%;
 	letter-spacing: 1px;
@@ -496,7 +497,7 @@ div#nav ul li a {
 div#nav ul li a span {
 	padding: 0 17px 0 17px;
 	display: block;
-	background: url(../images/nav-tab-left.gif) no-repeat 0 0;
+	/*background: url(../images/nav-tab-left.gif) no-repeat 0 0;*/
 	line-height: 35px;
 }
 div#nav a:link, div#nav a:visited {
