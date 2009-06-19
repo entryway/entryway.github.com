@@ -4,3 +4,6 @@ div#hd-inner {
 div#logo {
     background: url(../images/entryway-logo.gif) no-repeat 0 0;
 }
+a.active span {
+    color: #70b7d5;
+}

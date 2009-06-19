@@ -12,25 +12,38 @@
   <!-- main nav -->
   <div id="nav">
     <ul>
-      <li><a class="active" href="index.html"><span>Home</span></a></li>
-      <li><a href=""><span>About Us</span></a>
-	<ul>
-	  <li class="shadow"></li>
-	  <li class="clear"><a href="our-story.html">our story</a></li>
-	  <li><a href="our-team.html">our team</a></li>
-	  <li><a href="social-responsibility.html">social responsibility</a></li>
-	</ul>
-      </li>
-      <li><a href="our-services.html"><span>Our Services</span></a></li>
-      <li><a href="our-work.html"><span>Our Work</span></a>
-	<ul>
-	  <li class="shadow"></li>
-	  <li class="clear"><a href="">featured projects</a></li>
-	  <li><a href="inside.html">case studies</a></li>
-	  <li><a href="inside.html">client list</a></li>
-	</ul>	
-      </li>
-      <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% case page.title %}
+      {% when 'home' %}
+        <li><a class="active" href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'about-us' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a class="active" href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'our-services' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a class="active" href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'our-work' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a class="active" href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'contact-us' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a class="active" href="contact-us.html"><span>Contact</span></a></li>
+      {% endcase %}
     </ul>
   </div><!-- /main nav -->
 </div><!-- /nav box -->

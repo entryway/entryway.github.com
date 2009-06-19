@@ -36,26 +36,22 @@
        	    {% include feature_paragraph_our_services.html %}
 	  {% when 'our-work' %}
 	    {% include feature_paragraph_our_work.html %}
+	  {% when 'contact-us' %}
+	    {% include contact_form.html %}
 	  {% endcase %}
-	</div><!-- /head content -->
+	</div>
+	<!-- /head content -->
       </div>
     </div>
     <!-- / Head -->
     
     <!-- Body -->
     <div id="bd" class="clearfix">
-      
       <!-- main content -->
-	{{ content }}
-	<!--<%= catch_content :for_layout %>-->
-	
+      {{ content }}
       {% include default_sidebar.html %}
-      <!--<%= catch_content :sidebar %>-->
-      
     </div>
     <!-- / Body -->
     {% include footer.html %}
-    <!--<%= partial('layout/footer') %>-->
-    
   </body>
 </html>
