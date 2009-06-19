@@ -7,3 +7,6 @@ div#logo {
 a.active span {
     color: #562242;
 }
+div#feature-text p {
+    color: #999;
+}

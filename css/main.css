@@ -16,6 +16,10 @@ Default Links - links
 Misc - anything that doesn't fit elsewhere
 */
 
+div.main h2, div.main-1col h2 {
+    color:#999;
+}
+
 /* @group HTML, Body */
 html {
 	background-color: #fff;
@@ -581,7 +585,7 @@ div#util-nav ul {
 	display: inline;
 }
 div#util-nav ul li {
-	border-left: 1px solid #8bcbe2;
+	border-left: 1px solid #999;
 	float: left;
 	display: inline;
 }
@@ -594,7 +598,7 @@ div#util-nav ul li a {
 	font-size: 85%;
 }
 div#util-nav ul li a:link, div#util-nav ul li a:visited {
-	color: #8bcbe2;
+	color: #999;
 	text-decoration: none;
 }
 div#util-nav ul li a:hover {
@@ -645,7 +649,7 @@ div.main h1, div.main-1col h1 {
 }
 div.main h2, div.main-1col h2 {
 	font-size: 138.5%;
-	color: #005b92;
+	color: #999;
 	margin: 0 0 5px 0;
 }
 
