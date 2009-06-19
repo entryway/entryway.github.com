@@ -1,0 +1,9 @@
+div#hd-inner {
+    background: url(../images/hd-bkg_purple.gif) repeat-x 0 0 #562242;
+}
+div#logo {
+    background: url(../images/entryway-logo-purple.gif) no-repeat 0 0;
+}
+a.active span {
+    color: #562242;
+}

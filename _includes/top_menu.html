@@ -1,0 +1,49 @@
+<!-- nav box -->
+<div id="nav-box">
+  <!-- util nav -->
+  <div id="util-nav">
+    <ul>
+      <li><a href="">Client Login</a></li>
+      <li><a href="http://blogs.entryway.net">Blog</a></li>
+      <li><a href="">Careers</a></li>
+    </ul>
+  </div>
+
+  <!-- main nav -->
+  <div id="nav">
+    <ul>
+      {% case page.title %}
+      {% when 'home' %}
+        <li><a class="active" href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'about-us' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a class="active" href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'our-services' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a class="active" href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'our-work' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a class="active" href="our-work.html"><span>Our Work</span></a></li>
+        <li><a href="contact-us.html"><span>Contact</span></a></li>
+      {% when 'contact-us' %}
+        <li><a href="index.html"><span>Home</span></a></li>
+        <li><a href="about-us.html"><span>About Us</span></a></li>
+        <li><a href="our-services.html"><span>Services</span></a></li>
+        <li><a href="our-work.html"><span>Our Work</span></a></li>
+        <li><a class="active" href="contact-us.html"><span>Contact</span></a></li>
+      {% endcase %}
+    </ul>
+  </div><!-- /main nav -->
+</div><!-- /nav box -->
