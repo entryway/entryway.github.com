@@ -12,35 +12,35 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />
     <link href="css/{{ page.style }}.css" rel="stylesheet" type="text/css" media="screen, projection" />
     <!--[if lte IE 6]>
-	<link href="ie6" rel="stylesheet" type="text/css" media="screen, projection" />
-	<![endif]-->
+      <link href="ie6" rel="stylesheet" type="text/css" media="screen, projection" />
+    <![endif]-->
   </head>
   <body>
     <!-- Head -->
     <div id="hd">
       <div id="hd-inner">
-	<!-- head content -->
-	<div id="hd-content" class="clearfix">
-	  <!-- logo -->
-	  <div id="logo"><a href="index.html">entryway software development</a></div>
-	  
-	  {% include top_menu.html %}
-	  
-	  <!-- feature text -->
-	  {% case page.title %}
-	  {% when 'home' %}
-	    {% include feature_paragraph_home.html %}
-	  {% when 'about-us' %}
-	    {% include feature_paragraph_about_us.html %}
-	  {% when 'our-services' %}
-       	    {% include feature_paragraph_our_services.html %}
-	  {% when 'our-work' %}
-	    {% include feature_paragraph_our_work.html %}
-	  {% when 'contact-us' %}
-	    {% include contact_form.html %}
-	  {% endcase %}
-	</div>
-	<!-- /head content -->
+  <!-- head content -->
+  <div id="hd-content" class="clearfix">
+    <!-- logo -->
+    <div id="logo"><a href="index.html">entryway software development</a></div>
+    
+    {% include top_menu.html %}
+    
+    <!-- feature text -->
+    {% case page.title %}
+    {% when 'home' %}
+      {% include feature_paragraph_home.html %}
+    {% when 'about-us' %}
+      {% include feature_paragraph_about_us.html %}
+    {% when 'our-services' %}
+            {% include feature_paragraph_our_services.html %}
+    {% when 'our-work' %}
+      {% include feature_paragraph_our_work.html %}
+    {% when 'contact-us' %}
+      {% include contact_form.html %}
+    {% endcase %}
+  </div>
+  <!-- /head content -->
       </div>
     </div>
     <!-- / Head -->
