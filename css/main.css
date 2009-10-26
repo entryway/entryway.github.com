@@ -134,6 +134,7 @@ div#logo {
 	display: inline;
 }
 div#logo {
+  background: url(../images/logo.png) no-repeat 0 0;
 }
 div#logo a {
 	display: block;
