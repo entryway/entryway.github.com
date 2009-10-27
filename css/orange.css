@@ -3,7 +3,9 @@ div#hd-inner {
 }
 
 div#logo {
-    background: url(../images/entryway-logo-orange.gif) no-repeat 0 0;
+    background: url(../images/logo.png) no-repeat 0 0;
+    margin-top: 13px;
+    
 }
 
 a.active span {

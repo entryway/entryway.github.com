@@ -4,6 +4,7 @@ div#hd-inner {
 div#logo {
     background: url(../images/logo.png) no-repeat 0 0;
     width: 250px;
+    margin-top: 13px;
 }
 a.active span {
     color: #70b7d5;

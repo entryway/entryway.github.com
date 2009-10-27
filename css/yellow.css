@@ -1,6 +1,9 @@
 div#hd-inner {
-    background: url(../images/hd-bkg_yellow.gif) repeat-x 0 0 #ffe448;
+    background: url(../images/hd-bkg_yellow.gif) repeat-x 0 0 #FFCC00;
 }
 div#logo {
-    background: url(../images/entryway-logo-yellow.gif) no-repeat 0 0;
+    background: url(../images/logo.png) no-repeat 0 0;
+    margin-top: 13px;
+    
 }
+

@@ -1,11 +1,14 @@
 div#hd-inner {
-    background: url(../images/hd-bkg_purple.gif) repeat-x 0 0 #562242;
+    background: url(../images/hd-bkg_purple.gif) repeat-x 0 0 #52125A;
 }
+/* Bobby's Purple #562242 */
+
 div#logo {
-    background: url(../images/entryway-logo-purple.gif) no-repeat 0 0;
+    background: url(../images/logo.png) no-repeat 0 0;
+    margin-top: 13px;
 }
 a.active span {
-    color: #562242;
+    color: #52125A;
 }
 div#feature-text p {
     color: #999;

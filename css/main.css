@@ -135,6 +135,7 @@ div#logo {
 }
 div#logo {
   background: url(../images/logo.png) no-repeat 0 0;
+  width: 250px;
 }
 div#logo a {
 	display: block;
@@ -144,14 +145,14 @@ div#logo a {
 /* Nav Box */
 div#nav-box {
 	height: 88px;
-	width: 650px;
+	width: 600px;
 	float: right;
 	display: inline;
 }
 
 /* Feature Text */
 div#feature-text {
-	padding: 10px 70px;
+	padding: 0 70px 10px 70px;
 	overflow: hidden;
 }
 div#feature-text h1 {
@@ -517,6 +518,21 @@ div#nav li:hover a:link, div#nav li:hover a:visited, div#nav li.sfhover a:link, 
 }
 div#nav li:hover a span, div#nav li.sfhover a span, div#nav li a.active span {
 	background-position: 0 -165px;
+}
+div#nav ul li.home a:hover span {
+  color: #70B7D5;
+}
+div#nav ul li.about a:hover span {
+  color: #562242;
+}
+div#nav ul li.services a:hover span {
+  color: #D06834;
+}
+div#nav ul li.work a:hover span {
+  color: #75A743;
+}
+div#nav ul li.contact a:hover span {
+  color: #FFCC00;
 }
 
 /* Nav Drop Down */
