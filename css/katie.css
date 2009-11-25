@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
+  background-color: #fffcf1; /* Off White */
+  width: 100%;
+  min-width: 900px;
+}
+h1 {
+  font-size: 3.5em;
+  color: #545146;/*Medium Brown*/
+  font-weight: normal;
+}
+h2 {
+  font-style: italic;
+  font-size: 3em; 
+  color: #1d1c18;/*Dark Brown*/
+}
+h3 {
+    font-size: 2em; 
+    color: #85806f;/*Light Brown*/
+    margin: 0;
+    padding: 0;
+}
+h4 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #1d1c18;/*Dark Brown*/
+  margin: 0;
+  
+}
+h5 {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+  color: #A12800;/*Deep Red*/  
+}
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #1d1c18;/*Dark Brown*/
+}
+img {
+  border: none;
+}
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #6ba6bb;/*Brand Blue*/
+}
+a:active{
+  
+}
+a:hover{
+  text-decoration: underline;
+}
+ul{
+  
+}
+ol{
+  
+}
+li {
+  list-style-type: none;
+}
+div.content {
+  padding: 1em 3em;
+  float: left;
+  width: 100%;
+}
+div.content p{
+  width: 662px;
+}
+/*Header*/
+div.header {
+  background-color: #1d1c18; /*Dark Brown*/
+  float: left;
+  width: 100%;
+}
+div.logo {
+  float: left;
+  background: transparent url(../images/splash/logo.png) no-repeat 0 0;
+  height: 12em;
+  width: 35%;
+  text-indent:-9000px;
+  margin-left: 3em;
+}
+div.logo h1 {
+
+}
+div.nav-right {
+  float: right;
+  text-align: right;
+  background: transparent url(../images/lines-dots.png) no-repeat 0 10px;
+  height: 75px;
+}
+div.top-nav {
+  padding-right: 3em;
+  float: right;
+}
+div.top-nav a{
+  background-color: #545146;/*Medium Brown*/
+  font-size: 1.1em;
+  padding: .2em 1em;
+  color: #fffcf1; /* Off White */
+}
+div.top-nav a:hover{
+  background-color: #85806f;/*Light Brown*/
+  color: #1d1c18;/*Dark Brown*/
+  text-decoration: none;
+}
+div.main-nav {
+  margin-top: 9.5em;
+}
+div.main-nav a{
+  font-size: 1.8em;
+  padding: 0 2em;
+}
+div.main-nav a:hover {
+  text-decoration: none;
+  color: #fffcf1; /* Off White */
+}
+
+/*   Branding  */
+
+div.branding {
+  clear: both;
+  background:  url(../images/bg-red.gif) repeat-x 0 0;  
+}
+div.what {
+  float: left;
+  width: 20%;
+}
+ul.products {
+}
+ul.products li{
+  margin: 0 0 1.8em 0;
+}
+ul.products li a {
+  display: block;
+}
+ul.products li a:hover {
+  background-color: #85806f;/*Light Brown*/
+  text-decoration: none;
+}
+ul.products li a:hover h3{
+  color: #fffcf1; /* Off White */
+}
+div.overview {
+  float: right;
+  width: 70%;
+}
+div.overview img{
+  margin-top: 1em;
+  border: 3px solid #A12800;/*Deep Red*/
+}
+div.overview h1{
+  width: 664px;
+}
+div.link-bar {
+  clear: both;
+}
+div#red {
+  background: #A12800;/*Deep Red*/
+}
+div#orange {
+  background: #FFA300;/*Bright Orange*/
+}
+div#green {
+  background: #6F8924;/*Bright Green*/
+}
+div#blue {
+  background: #6ba6bb;/*Brand Blue*/
+}
+div.link-bar a{
+  display: block;
+  text-align: right;
+  padding: 1em;
+  background: url(../images/lines-dots.png) no-repeat -60px 5px;
+  color: #fffcf1; /* Off White */
+  font-size: 1.5em;
+  height: 15px;
+}
+div.link-bar a:hover{
+  background: url(../images/lines-dots.png) no-repeat -60px -73px;
+  height: 15px;
+}
+/* Feature */
+
+div.feature {
+  clear: both;
+  background:  url(../images/bg-orange.gif) repeat-x 0 0;
+  width: 100%;
+}
+div.feat-info {
+  float: left;
+  width: 20%;
+  padding-left: 2em;
+  
+}
+div.feat-info p {
+  width: 225px;
+}
+div.feat-info a {
+  font-size: 1.5em;
+  color: #FFA300; /*Orange*/
+}
+div.feat-slides {
+  float: right;
+  width: 70%;
+}
+ul.slides-nav {
+  float: left;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+
+}
+ul.slides-nav li{
+  display: block;
+  float: left;
+}
+ul.slides-nav li a{
+  display: block;
+  background: transparent url(../images/splash/arrows.png) no-repeat 0 0;
+  width: 18px;
+  height: 18px;
+}
+ul.slides-nav li.left-arrow {
+  padding-right: 23em;
+}
+ul.slides-nav li.left-arrow a{
+  background-position: 0 0;  
+}
+ul.slides-nav li.left-arrow a:hover{
+  background-position: 0 -18px;
+}
+ul.slides-nav li.bullet {
+  padding-right: 2em;
+}
+ul.slides-nav li.bullet a{
+  background-position: 0 -36px ;
+}
+ul.slides-nav li.bullet a:hover{
+  background-position: -18px -36px;
+}
+ul.slides-nav li.right-arrow {
+  padding-left: 23em;
+}
+ul.slides-nav li.right-arrow a{
+  background-position: -18px 0;
+}
+ul.slides-nav li.right-arrow a:hover{
+  background-position: -18px -18px;
+}
+div.feat-slides img {
+  clear: left;
+  display: block;
+  border: 3px solid #FFA300;
+  margin-bottom: 1em;
+}
+
+
+/*  Layout */
+
+/*  Process   */ 
+
+div.process {
+  clear: both;
+  background:  url(../images/bg-green.gif) repeat-x 0 0;
+  width: 100%;
+}
+div.diagram {
+  clear: both;
+  float: left;
+  width: 20%;
+  padding: 2em;
+  
+}
+div.diagram img {
+  border: 3px solid #6F8924;/*Bright Green*/
+}
+div.agile {
+  float: right;
+  width: 70%;
+}
+/*  Team  */
+div.team {
+  width: 100%;
+  clear: both;
+  background:  url(../images/bg-blue.gif) repeat-x 0 0;
+}
+div.pics {
+  clear: both;
+  float: left;
+  width: 25%;
+  height: 250px;
+  padding: 2em;
+}
+img.big {
+  border: 3px solid #6ba6bb; /*Brand Blue*/
+}
+div.pics a {
+  margin: 1em 1.4em 0 0;
+  display: block;
+  float: left;
+  
+}
+div.pics a:hover {
+  border-bottom: 3px solid #6ba6bb; /*Brand Blue*/
+  
+}
+div.info {
+  float: right;
+  width: 70%;
+}
+
+/*  Footer */
+
+div.footer {
+  width: 100%;
+  clear: both;
+  background: #1d1c18 url(../images/bg-brown.gif) repeat-x 0 0; 
+  float: left;
+  height: 400px;
+}
+div.footer ul {
+  float: left;
+  margin: 2em;
+  width: 100%;
+}
+div.footer ul li {
+  float: left;
+  width: 33%;
+}
+div.footer h3{
+  border-bottom: 2px dotted #85806f;/*Light Brown*/
+  width: 80%;
+}
+div.footer p {
+  color: #fffcf1; /* Off White */
+  width: 80%;
+  
+}
+div.footer blockquote {
+  color: #fffcf1; /* Off White */
+  width: 80%;
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+#twtr-widget-1 .twtr-avatar {
+display:block;
+}
+
+.twtr-avatar {
+  display:block;
+  float:left;
+  padding: .1em;
+}
