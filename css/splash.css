@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
+  background-color: #fffcf1;
+  width: 100%;
+}
+h1 {
+  font-size: 4em;
+  color: #545146;/*Medium Brown*/
+}
+h2 {
+  font-style: italic;
+  font-size: 3em; 
+  color: #1d1c18;/*Dark Brown*/
+}
+h3 {
+    font-size: 2em; 
+    color: #85806f;/*Light Brown*/
+    margin: 0;
+    padding: 0;
+}
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  color: #1d1c18;/*Dark Brown*/
+  margin: 0;
+  
+}
+h5 {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+  color: #545146;/*Medium Brown*/  
+}
+p {
+  font-size: 1em;
+  color: #1d1c18;/*Dark Brown*/
+}
+img {
+  border: none;
+}
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #6ba6bb;/*Brand Blue*/
+}
+a:active{
+  
+}
+a:hover{
+  text-decoration: underline;
+}
+ul{
+  
+}
+ol{
+  
+}
+li {
+  list-style-type: none;
+}
+
+/*Header*/
+div.header {
+  background-color: #1d1c18;
+}
+div.logo {
+  float: left;
+  background: transparent url(../images/logo.png) 0 0;
+  height: 10em;
+}
+div.nav-right {
+  float: right;
+  
+}
+div.top-nav a{
+  background: transparent url (images/top-nav-bg.png) 0 0;
+}
+div.top-nav a:hover{
+  background: transparent url (images/top-nav-bg.png) 0 0;
+}
+div.main-nav a{
+  font-size: 2em;
+  padding: 0 3em;
+}
+
+/*   Branding  */
+
+div.branding {
+  clear: both;
+  background: transparent url(images/branding-bg.gif) bottom left;
+}
+ul.products {
+  float: left;
+  width: 20%;
+  margin: 6em;
+}
+ul.products li{
+  margin: 2em 0;
+  padding-left: 1em;
+}
+ul.products li a {
+  display: block;
+}
+ul.products li a:hover {
+  background-color: #6ba6bb; /*Brand Blue*/
+}
+div.overview {
+  float: left;
+}
+
+/* Feature */
+
+div.feature {
+  clear: left;
+}
+div.feat-info {
+  float: left;
+}
+div.feat-slides {
+  float: right;
+}
+ul.slides-nav {
+  
+}
+ul.slides-nav li{
+  display: inline;
+}
+ul.slides-nav li a{
+}
+
+/*  Layout */
+div.side-1 {
+  clear: both;
+  float: left;
+}
+div.side-2 {
+  float: right;
+}
+/*  Process   */
+div.process {
+  margin: 2em;
+  
+}
+div.content {
+  margin: 2em;
+}
