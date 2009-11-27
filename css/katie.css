@@ -64,6 +64,16 @@ ol{
 li {
   list-style-type: none;
 }
+input {
+  margin: .5em 0;
+  padding: .3em;
+  display: block;
+}
+textarea {
+}
+submit {
+  
+}
 div.content {
   padding: 1em 3em;
   float: left;
@@ -126,7 +136,7 @@ div.main-nav a:hover {
 
 div.branding {
   clear: both;
-  background:  url(../images/bg-red.gif) repeat-x 0 0;  
+  background:  url(../images/bg-blue.gif) repeat-x 0 0;  
 }
 div.what {
   float: left;
@@ -153,7 +163,7 @@ div.overview {
 }
 div.overview img{
   margin-top: 1em;
-  border: 3px solid #A12800;/*Deep Red*/
+  border: 3px solid #6ba6bb;/*Brand Blue*/
 }
 div.overview h1{
   width: 664px;
@@ -268,7 +278,7 @@ div.feat-slides img {
 
 div.process {
   clear: both;
-  background:  url(../images/bg-green.gif) repeat-x 0 0;
+  background:  url(../images/bg-red.gif) repeat-x 0 0;
   width: 100%;
 }
 div.diagram {
@@ -279,7 +289,7 @@ div.diagram {
   
 }
 div.diagram img {
-  border: 3px solid #6F8924;/*Bright Green*/
+  border: 3px solid #A12800;/*Deep Red*/
 }
 div.agile {
   float: right;
@@ -289,7 +299,7 @@ div.agile {
 div.team {
   width: 100%;
   clear: both;
-  background:  url(../images/bg-blue.gif) repeat-x 0 0;
+  background:  url(../images/bg-green.gif) repeat-x 0 0;
 }
 div.pics {
   clear: both;
@@ -299,7 +309,7 @@ div.pics {
   padding: 2em;
 }
 img.big {
-  border: 3px solid #6ba6bb; /*Brand Blue*/
+  border: 3px solid #6F8924;/*Bright Green*/
 }
 div.pics a {
   margin: 1em 1.4em 0 0;
@@ -323,7 +333,6 @@ div.footer {
   clear: both;
   background: #1d1c18 url(../images/bg-brown.gif) repeat-x 0 0; 
   float: left;
-  height: 400px;
 }
 div.footer ul {
   float: left;
@@ -358,4 +367,40 @@ display:block;
   display:block;
   float:left;
   padding: .1em;
+}
+div.marquee {
+  background-color: #1d1c18;
+}
+div.marquee h2{
+  color: #fffcf1; /* Off White */
+  
+}
+
+
+/*************** Internal Pages *****************/
+
+/*  Services  */
+
+div.services {
+  clear: both;
+  width: 100%;
+  background: #fffcf1 url(../images/bg-blue.gif) repeat-x 0 0;
+  float: left;
+}
+div.sidebar {
+  margin: 1em 3em;
+  width: 20%;
+  float: left;
+}
+div.divider {
+  background: transparent url(../images/splash/divider.png) no-repeat bottom left;
+  width: 50px;
+  height: 1000px;
+  padding-top: 3em;
+  float: left;
+}
+div.main {
+  margin: 1em 3em;
+  width: 60%;
+  float: left;
 }
