@@ -40,6 +40,7 @@ p {
   font-size: 1.3em;
   line-height: 1.5em;
   color: #1d1c18;/*Dark Brown*/
+  margin-top: .5em;
 }
 img {
   border: none;
@@ -204,11 +205,16 @@ div.link-bar a:hover{
   height: 15px;
 }
 /* Feature */
-
-div.feature {
-  clear: both;
-  background:  url(../images/bg-orange.gif) repeat-x 0 0;
+div.feature{
+  clear:both;
   width: 100%;
+  background:  url(../images/splash/fade-grey-bg.png) repeat-x bottom left;
+  
+}
+div.shadow{
+  background:  url(../images/splash/shadow.png) no-repeat 5px -26px ;
+  width: 100%;
+  height: 27px;
 }
 div.feat-info {
   float: left;
@@ -285,7 +291,6 @@ div.feat-slides img {
 
 div.process {
   clear: both;
-  background:  url(../images/bg-red.gif) repeat-x 0 0;
   width: 100%;
 }
 div.diagram {
@@ -306,7 +311,6 @@ div.agile {
 div.team {
   width: 100%;
   clear: both;
-  background:  url(../images/bg-green.gif) repeat-x 0 0;
 }
 div.pics {
   clear: both;
@@ -322,10 +326,11 @@ div.pics a {
   margin: 1em 1.4em 0 0;
   display: block;
   float: left;
+  padding: 0 .4em;
   
 }
 div.pics a:hover {
-  border-bottom: 3px solid #6ba6bb; /*Brand Blue*/
+  border-bottom: 3px solid #6F8924;/*Bright Green*/
   
 }
 div.info {
@@ -396,26 +401,28 @@ div.services {
 }
 div.sidebar {
   margin: 1em 3em;
-  width: 20%;
+  width: 25%;
   float: left;
+}
+div.services .sidebar img {
+  margin: 1em 0;
+  border: 3px solid #6ba6bb;/*Brand Blue*/
 }
 div.divider {
   background: transparent url(../images/splash/divider.png) no-repeat bottom left;
-  width: 50px;
-  height: 1000px;
-  padding-top: 3em;
+  width: 68px;
+  height: 960px;
   float: left;
 }
 div.div-green{
-  background: transparent url(../images/splash/div-green.png) no-repeat bottom left;
-  width: 50px;
-  height: 1000px;
-  padding-top: 3em;
+  background: transparent url(../images/splash/div-green.png) no-repeat 0 0;
+  width: 68px;
+  height: 960px;
   float: left;
 }
 div.main {
-  margin: 1em 3em;
-  width: 60%;
+  margin: 1em 4em;
+  width: 50%;
   float: left;
 }
 div.main img.icon {
@@ -423,7 +430,7 @@ div.main img.icon {
   width: 48px;
   height: 48px;
 }
-div.main h3 {
+div.services div.main h3 {
   padding: 24px 0 0 50px;
 }
 /*
@@ -445,5 +452,51 @@ div.about {
   clear: both;
   float: left;
   background: #fffcf1 url(../images/bg-green.gif) repeat-x 0 0;
-  
+  min-width: 960px;
+}
+div.people img{
+  margin-bottom: 1em;
+  border: 3px solid #6F8924;/*Bright Green*/;
+}
+div.people-links {
+	float: left;
+}
+div.people-links a {
+	text-decoration: none;
+}
+div.people-links h3 {
+	color: #2f2f2f;
+}
+div.people-linkbox {
+	background: url(../images/splash/link-box-bg.png) no-repeat 0 0;
+	padding: 4px 0;
+	width: 536px;
+	height: 26px;
+}
+div.people-linkbox img {
+	margin: 0 5px 5px 25px;
+	vertical-align: middle;
+}
+div.people-linkbox p {
+	padding: 7px 0 0;
+	line-height: 80%;
+	font-size: 14px;
+}
+div.people-links {
+	float: left;
+	margin: 0 0 30px;
+}
+
+div.content-photo {
+  float: left;
+  padding: 0 1em 1em 0;
+}
+
+/* Portfolio */
+div.portfolio-wrap {
+  clear: both;
+  float: left;
+  background: #fffcf1 url(../images/bg-orange.gif) repeat-x 0 0;
+  min-width: 960px;
+  width: 100%;
 }

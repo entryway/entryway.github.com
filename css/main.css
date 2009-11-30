@@ -715,8 +715,8 @@ form.contact-form label {
 /* @end */
 
 /* @group Default Links - link visited hover active */
-a:link, a:visited {
-	color: #005b92;
+/*a:link, a:visited {
+	color: #005b92;*/
 }
 a:hover {
 	text-decoration: none;
@@ -977,9 +977,9 @@ ul.people-lined-area {
 	width: 536px;
 }
 ul.people-lined-area li {
-	background: transparent url(../images/people-bullet.gif) no-repeat scroll 5px 10px;
+	background: transparent url(../images/splash/dot-gr.png) no-repeat scroll 8px 9px;
 	list-style-type: none;
-	padding: 9px 0 6px 25px;
+	padding: 9px 0 6px 28px;
 	color: #2f2f2f;
 	border-top-width: 1px;
 	border-top-style: solid;
