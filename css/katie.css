@@ -5,7 +5,7 @@ body {
   font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
   background-color: #fffcf1; /* Off White */
   width: 100%;
-  min-width: 900px;
+  min-width: 960px;
 }
 h1 {
   font-size: 3.5em;
@@ -79,7 +79,7 @@ submit {
   
 }
 div.content {
-  padding: 1em 3em;
+  padding: 0 4em 1em 4em;
   float: left;
   width: 100%;
 }
@@ -106,8 +106,8 @@ div.logo h1 {
 div.nav-right {
   float: right;
   text-align: right;
-  background: transparent url(../images/lines-dots.png) no-repeat 0 10px;
-  height: 75px;
+  background: transparent url(../images/lines-dots.png) no-repeat 0 20px;
+  height: 85px;
 }
 div.top-nav {
   padding-right: 3em;
@@ -115,8 +115,8 @@ div.top-nav {
 }
 div.top-nav a{
   background-color: #545146;/*Medium Brown*/
-  font-size: 1.1em;
-  padding: .2em 1em;
+  font-size: 1.3em;
+  padding: .2em 1.1em;
   color: #fffcf1; /* Off White */
 }
 div.top-nav a:hover{
@@ -147,12 +147,16 @@ div.branding {
 }
 div.what {
   float: left;
-  width: 20%;
+  width: 25%;
+  margin-top: 2em;
 }
 ul.products {
+  padding: 0;
+  
 }
 ul.products li{
   margin: 0 0 1.8em 0;
+  width: 80%;
 }
 ul.products li a {
   display: block;
@@ -166,7 +170,7 @@ ul.products li a:hover h3{
 }
 div.overview {
   float: right;
-  width: 70%;
+  width: 75%;
 }
 div.overview img{
   margin-bottom: 1em;
@@ -219,11 +223,10 @@ div.shadow{
 div.feat-info {
   float: left;
   width: 20%;
-  padding-left: 2em;
   
 }
 div.feat-info p {
-  width: 225px;
+  width: 200px;
 }
 div.feat-info a {
   font-size: 1.5em;
@@ -231,7 +234,7 @@ div.feat-info a {
 }
 div.feat-slides {
   float: right;
-  width: 70%;
+  width: 75%;
 }
 ul.slides-nav {
   float: left;
@@ -297,15 +300,15 @@ div.diagram {
   clear: both;
   float: left;
   width: 20%;
-  padding: 2em;
   
 }
 div.diagram img {
   border: 3px solid #A12800;/*Deep Red*/
+  margin-top: 2em;
 }
 div.agile {
   float: right;
-  width: 70%;
+  width: 75%;
 }
 /*  Team  */
 div.team {
@@ -317,7 +320,6 @@ div.pics {
   float: left;
   width: 25%;
   height: 250px;
-  padding: 2em;
 }
 img.big {
   border: 3px solid #6F8924;/*Bright Green*/
@@ -335,7 +337,7 @@ div.pics a:hover {
 }
 div.info {
   float: right;
-  width: 70%;
+  width: 75%;
 }
 
 /*  Footer */
