@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -77,6 +80,9 @@ textarea {
 }
 submit {
   
+}
+hr {
+  color: #1d1c18;/*Dark Brown*/
 }
 div.content {
   padding: 0 4em 1em 4em;
@@ -269,7 +275,10 @@ ul.slides-nav li.bullet a{
   background-position: 0 -36px ;
 }
 ul.slides-nav li.bullet a:hover{
-  background-position: -18px -36px;
+  background-position: -16px -36px;
+}
+ul.slides-nav li.bullet a.active{
+  background-position: -16px -36px;
 }
 ul.slides-nav li.right-arrow {
   padding-left: 23em;
@@ -360,6 +369,7 @@ div.footer ul li {
 div.footer h3{
   border-bottom: 2px dotted #85806f;/*Light Brown*/
   width: 80%;
+  margin-bottom: .5em;
 }
 div.footer p {
   color: #fffcf1; /* Off White */
@@ -377,10 +387,16 @@ div.footer blockquote {
 display:block;
 }
 
-.twtr-avatar {
+li.twtr img{
+  clear: left;
   display:block;
   float:left;
-  padding: .1em;
+  padding: .2em;
+  display: block;
+}
+li.twtr p {
+  
+  
 }
 div.marquee {
   background-color: #1d1c18;
@@ -403,12 +419,16 @@ div.services {
 }
 div.sidebar {
   margin: 1em 3em;
-  width: 25%;
+  width: 30%;
   float: left;
 }
 div.services .sidebar img {
-  margin: 1em 0;
+  margin: 0 .3em 1em 0;
   border: 3px solid #6ba6bb;/*Brand Blue*/
+  float: left;
+}
+div.services .sidebar p {
+  clear: left;
 }
 div.divider {
   background: transparent url(../images/splash/divider.png) no-repeat bottom left;
@@ -424,7 +444,7 @@ div.div-green{
 }
 div.main {
   margin: 1em 4em;
-  width: 50%;
+  width: 45%;
   float: left;
 }
 div.main img.icon {
@@ -457,8 +477,13 @@ div.about {
   min-width: 960px;
 }
 div.people img{
-  margin-bottom: 1em;
+  margin: 0 .3em 1em 0;
   border: 3px solid #6F8924;/*Bright Green*/;
+  float: left;
+  width: 145px;
+}
+div.people-description p {
+  clear: left;
 }
 div.people-links {
 	float: left;
@@ -495,10 +520,46 @@ div.content-photo {
 }
 
 /* Portfolio */
-div.portfolio-wrap {
+div.portfolio {
   clear: both;
   float: left;
+  width: 100%;
   background: #fffcf1 url(../images/bg-orange.gif) repeat-x 0 0;
   min-width: 960px;
+  padding: 0 3em;
+}
+div.intro h2 {
   width: 100%;
+  background: transparent url(../images/splash/divider-half.png) no-repeat top right;
+  height: 70px;
+  margin: 0;
+  margin-top: 1em;
+}
+div.intro p {
+  width: 50%;
+}
+div.piece {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+div.description {
+  float: left;
+  width: 30%;
+}
+div.portfolio .feat-slides {
+  width: 65%;
+}
+div.divider-hz {
+  clear: both;
+  background: transparent url(../images/splash/divider-ht.png) no-repeat 0 0;
+  height: 40px;
+  margin: 3em 0;
+  width: 100%;
+}
+div#final{
+  clear: both;
+  background: transparent url(../images/splash/divider-hz.png) no-repeat 0 0;
+  height: 70px;
+  margin: 1em 0;
 }
