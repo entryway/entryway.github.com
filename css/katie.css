@@ -60,7 +60,10 @@ a:hover{
   text-decoration: underline;
 }
 ul{
-  
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 ol{
   margin: 0;
@@ -158,7 +161,7 @@ div.what {
 }
 ul.products {
   padding: 0;
-  
+  font-size: 1em;
 }
 ul.products li{
   margin: 0 0 1.8em 0;
@@ -166,6 +169,7 @@ ul.products li{
 }
 ul.products li a {
   display: block;
+  padding: .5em .2em;
 }
 ul.products li a:hover {
   background-color: #85806f;/*Light Brown*/
@@ -247,7 +251,7 @@ ul.slides-nav {
   text-align: center;
   padding: 1em;
   margin: 0;
-
+  width: 625px;
 }
 ul.slides-nav li{
   display: block;
@@ -260,7 +264,7 @@ ul.slides-nav li a{
   height: 18px;
 }
 ul.slides-nav li.left-arrow {
-  padding-right: 23em;
+  padding-right: 200px;
 }
 ul.slides-nav li.left-arrow a{
   background-position: 0 0;  
@@ -281,7 +285,8 @@ ul.slides-nav li.bullet a.active{
   background-position: -16px -36px;
 }
 ul.slides-nav li.right-arrow {
-  padding-left: 23em;
+  float: right;
+  padding-right: 20px;
 }
 ul.slides-nav li.right-arrow a{
   background-position: -18px 0;
@@ -356,6 +361,7 @@ div.footer {
   clear: both;
   background: #1d1c18 url(../images/bg-brown.gif) repeat-x 0 0; 
   float: left;
+  font-size: .75em;
 }
 div.footer ul {
   float: left;
@@ -550,6 +556,9 @@ div.description {
 div.portfolio .feat-slides {
   width: 65%;
 }
+div.more-slides{
+  display: none;
+}
 div.divider-hz {
   clear: both;
   background: transparent url(../images/splash/divider-ht.png) no-repeat 0 0;
@@ -562,4 +571,14 @@ div#final{
   background: transparent url(../images/splash/divider-hz.png) no-repeat 0 0;
   height: 70px;
   margin: 1em 0;
+}
+ul.other-clients {
+  float: left;
+  width: 100%;
+  margin: 1em;
+}
+ul.other-clients li{
+  float: left;
+  width: 33%;
+  display: block;
 }
