@@ -137,8 +137,8 @@ div.main-nav {
   margin-top: 9.5em;
 }
 div.main-nav a{
-  font-size: 1.8em;
-  padding: 0 2em;
+  font-size: 1.7em;
+  padding: 0 1.5em;
 }
 div.main-nav a:hover {
   text-decoration: none;
@@ -198,6 +198,9 @@ div#red {
 }
 div#orange {
   background: #FFA300;/*Bright Orange*/
+}
+div#orange a {
+  color: #fff;
 }
 div#green {
   background: #6F8924;/*Bright Green*/
@@ -318,7 +321,7 @@ div.diagram {
 }
 div.diagram img {
   border: 3px solid #A12800;/*Deep Red*/
-  margin-top: 2em;
+  margin: 2em 0 1em 0;
 }
 div.agile {
   float: right;
@@ -484,9 +487,12 @@ div.about {
 }
 div.people img{
   margin: 0 .3em 1em 0;
-  border: 3px solid #6F8924;/*Bright Green*/;
+  border: 3px solid #6F8924;/*Bright Green*/
   float: left;
   width: 145px;
+}
+div.people a {
+  color: #6F8924;/*Bright Green*/;
 }
 div.people-description p {
   clear: left;
@@ -585,3 +591,32 @@ ul.other-clients li{
 
 /*  Process  */
 
+div.process {
+  clear: both;
+  float: left;
+  min-width: 960px;
+}
+div.testimonial img{
+  margin: 0 .3em 1em 0;
+  border: 3px solid #A12800;/*Deep Red*/
+  float: left;
+  width: 145px;
+}
+div.testimonial a {
+  color: #A12800;/*Deep Red*/
+}
+div.div-red {
+  background: transparent url(../images/splash/div-red.png) no-repeat 0 0;
+  width: 68px;
+  height: 960px;
+  float: left;
+}
+
+/*  Splash  */ 
+
+#greenling img{
+  margin: 2em 0 0 0;
+}
+#dots {
+  width: 40%;
+}
