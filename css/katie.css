@@ -97,7 +97,7 @@ div.content p{
 }
 /*Header*/
 div.header {
-  background-color: #1d1c18; /*Dark Brown*/
+  background: #1d1c18 url(../images/splash/texture.png) repeat-x 0 0; /*Dark Brown*/
   float: left;
   width: 100%;
 }
@@ -119,6 +119,7 @@ div.nav-right {
   height: 85px;
 }
 div.top-nav {
+  background: transparent url(../images/watermark-dots.png) no-repeat 0 0;
   padding-right: 3em;
   float: right;
 }
@@ -362,13 +363,14 @@ div.info {
 div.footer {
   width: 100%;
   clear: both;
-  background: #1d1c18 url(../images/bg-brown.gif) repeat-x 0 0; 
+  background: #1d1c18 url(../images/splash/texture.png) repeat 0 0; 
   float: left;
   font-size: .75em;
 }
 div.footer ul {
+  background: transparent url(../images/splash/watermark-dots2.png) no-repeat bottom left;
   float: left;
-  margin: 2em;
+  padding: 2em;
   width: 100%;
 }
 div.footer ul li {
