@@ -1,57 +1,71 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <title>Custom Software - Web Development, Mobile Development, Desktop Applications, Design Services, IT Solutions </title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta name="Description" content="description" />
-    <meta name="Keywords" content="keywords" />
-    <link href="css/reset-fonts.css" rel="stylesheet" type="text/css" media="screen, projection" />
-    <link href="css/base-min.css" rel="stylesheet" type="text/css" media="screen, projection, print" />
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="screen, projection" />
-    <link href="css/{{ page.style }}.css" rel="stylesheet" type="text/css" media="screen, projection" />
-    <!--[if lte IE 6]>
-      <link href="ie6" rel="stylesheet" type="text/css" media="screen, projection" />
-    <![endif]-->
-  </head>
-  <body>
-    <!-- Head -->
-    <div id="hd">
-      <div id="hd-inner">
-  <!-- head content -->
-  <div id="hd-content" class="clearfix">
-    <!-- logo -->
-    <div id="logo"><a href="index.html">entryway software development</a></div>
-    
-    {% include top_menu.html %}
-    
-    <!-- feature text -->
-    {% case page.title %}
-    {% when 'home' %}
-      {% include feature_paragraph_home.html %}
-    {% when 'about-us' %}
-      {% include feature_paragraph_about_us.html %}
-    {% when 'our-services' %}
-            {% include feature_paragraph_our_services.html %}
-    {% when 'our-work' %}
-      {% include feature_paragraph_our_work.html %}
-    {% when 'contact-us' %}
-      {% include contact_form.html %}
-    {% endcase %}
-  </div>
-  <!-- /head content -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+   
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Entryway</title>
+    <link rel="stylesheet" href="css/katie.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <!-- Date: 2009-11-23 -->
+</head>
+<body>
+    <div class="header">
+      <div class="logo">
+        <h1><a href="#">Entryway</a></h1>
       </div>
-    </div>
-    <!-- / Head -->
-    
-    <!-- Body -->
-    <div id="bd" class="clearfix">
-      <!-- main content -->
-      {{ content }}
-      {% include default_sidebar.html %}
-    </div>
-    <!-- / Body -->
-    {% include footer.html %}
-  </body>
+      <div class="nav-right">
+        <div class="top-nav">
+          <a href="#">Login</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="main-nav">
+          <a href="/services.html">SERVICES</a>
+          <a href="/portfolio.html">PORTFOLIO</a>
+          <a href="/process.html">PROCESS</a>
+          <a href="/about.html">ABOUT</a>
+        </div>
+      </div>
+    </div><!--header-->
+
+    {{ content }}
+
+    <div class="footer">
+      <ul>
+        <li>
+          <h3>Testimonials</h3>
+          <p><strong>Assessing Parenting</strong></p>
+          <blockquote>Curabitur placerat, dui ac feugiat commodo, turpis risus vestibulum orci, id volutpat massa mi ut mauris. Nam posuere, mi ut porta blandit, magna quam commodo turpis, et auctor sem turpis vel magna.
+          </blockquote>
+          <p><strong>Himilayan Institute</strong></p>
+          <blockquote>Curabitur placerat, dui ac feugiat commodo, turpis risus vestibulum orci, id volutpat massa mi ut mauris. Nam posuere, mi ut porta blandit, magna quam commodo turpis, et auctor sem turpis vel magna.
+          </blockquote>
+          <br/>
+          <h3>Floyd,VA - Where?</h3>
+          <br/>
+          <blockquote>Floyd is a rural community with an appreciation for rural living. Recent downtown improvements offer the possibility of a sustainable local economy with an active commercial center. This, together with the well established arts community of Floyd and emerging artisan-agriculture based businesses make for a lively sense of growth and energy.
+          </blockquote>
+        </li>
+        <li class="twtr">
+          <h3>Twitter Feed</h3>
+          <img src="../images/splash/katie.jpg" alt="katie"/>
+          <p>Today, I witnessed my 4 (3/4) year old chop down a 10" tree with an ax.  Then we went biking and he jumped his first ramp. Proud Mama!<p>
+          <img src="../images/splash/bobby.jpg" alt="bobby"/>
+          <p>logrotate your rails logs http://bit.ly/7UHgXr the other devs will thank you<p>
+        <li><h3>Contact Us</h3>
+          <p><strong>Entryway Software Develpment</strong></p>
+          <p>109 E. Main Street<br/>
+          Floyd, Virginia 24091</p>
+          <p>(540)745-5279</p>
+          <p><a href="#">service@entryway.net</a></p>
+          <p><strong>send us a message</strong></p>
+          <input type="text" value="Your Name"/>
+          <input type="text" value="Your Email Address"/>
+          <input type="text" value="Subject"/>
+          <textarea rows="4" cols="28">Message</textarea>
+          <submit name="contact" value="Send"></submit>
+        </li>
+      </ul>
+    </div><!--footer-->
+</body>
 </html>
