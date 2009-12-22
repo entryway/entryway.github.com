@@ -349,11 +349,13 @@ div.team {
   width: 100%;
   clear: both;
 }
+div.team a {
+  color: #6F8924;/*Bright Green*/
+}
 div.pics {
   clear: both;
   float: left;
   width: 25%;
-  height: 250px;
 }
 img.big {
   border: 3px solid #6F8924;/*Bright Green*/
@@ -361,12 +363,13 @@ img.big {
 div.pics a {
   margin: 1em 1.4em 0 0;
   display: block;
-  float: left;
-  padding: 0 .4em;
+  float: left;  
+}
+div.pics a img {
+  border: 3px solid #6F8924;/*Bright Green*/
   
 }
 div.pics a:hover {
-  border-bottom: 3px solid #6F8924;/*Bright Green*/
   
 }
 div.info {
