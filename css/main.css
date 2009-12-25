@@ -22,7 +22,7 @@ h2 {
 }
 h3 {
     font-size: 2em; 
-    color: #85806f;/*Light Brown*/
+    color: #005B92;
     margin: 0;
     padding: 0;
 }
@@ -42,7 +42,7 @@ h5 {
 p {
   font-size: 1.3em;
   line-height: 1.5em;
-  color: #1d1c18;/*Dark Brown*/
+  color: #3D3D3D;
   margin-top: .5em;
 }
 img {
@@ -135,9 +135,8 @@ div.header {
 div.logo {
   float: left;
   background: transparent url(/images/splash/logo.png) no-repeat 0 0;
-  height: 9em;
+  height: 12em;
   width: 35%;
-  z-index: 1000px;
   text-indent:-9000px;
   margin-left: 3em;
 }
@@ -449,7 +448,10 @@ div.services {
   float: left;
 }
 div.services h2 {
-  color: #6ba6bb;/*Brand Blue*/
+  color: #454545;
+}
+div.services h3 {
+  color: #005B92; 
 }
 div.sidebar {
   margin: 1em 3em;
