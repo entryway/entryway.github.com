@@ -14,6 +14,8 @@ h1 {
   font-size: 3.5em;
   color: #545146;/*Medium Brown*/
   font-weight: normal;
+  padding: 0;
+  margin: .5em 0 .5px;
 }
 h2 {
   font-style: italic;
@@ -29,7 +31,7 @@ h3 {
 h4 {
   font-size: 1.3em;
   font-weight: bold;
-  color: #1d1c18;/*Dark Brown*/
+  color: #47494B;
   margin: 0;
   
 }
@@ -194,9 +196,6 @@ div.what {
 div.what h3 {
   color: #6ba6bb;
 }
-div.what h4 {
-  color: #47494B;
-}
 ul.products {
   padding: 0;
   font-size: 1em;
@@ -223,9 +222,6 @@ div.overview {
 div.overview h1 {
   color: #6ba6bb;
   width: 664px;
-  font-weight: bold;
-  padding: 0;
-  margin: .5em 0 .5px;
 }
 div.overview img {
   margin-bottom: 1em;
@@ -482,7 +478,7 @@ div.services h2 {
   color: #454545;
 }
 div.services h3 {
-  color: #005B92; 
+  color: #6ba6bb;
 }
 div.sidebar {
   margin: 1em 3em;
@@ -543,8 +539,11 @@ div.about {
   background: #fffcf1 url(/images/bg-green.gif) repeat-x 0 0;
   min-width: 960px;
 }
-div.about h2 {
+div.about h1 {
   color: #6F8924;/*Bright Green*/
+}
+div.about h3 {
+  color: #6F8924;
 }
 div.people img {
   margin: 0 .8em 1em 0;
@@ -604,26 +603,32 @@ div.portfolio {
   min-width: 960px;
   padding: 0 3em;
 }
-div.portfolio h2 {
+div.portfolio h1 {
   color: #EB9400;/*Bright Orange*/;
+  background: transparent url(/images/splash/divider-half.png) no-repeat top right;
+  width: 100%;  
+  height: 70px;
 }
 div.portfolio h3 {
-  padding-top: 1em;
+  color: #EB9400;
 }
 div.intro h2 {
   width: 100%;
-  background: transparent url(/images/splash/divider-half.png) no-repeat top right;
   height: 70px;
   margin: 0;
   margin-top: 1em;
 }
 div.intro p {
   width: 50%;
+  margin-top: -25px;
 }
 div.piece {
   clear: both;
   float: left;
   width: 100%;
+}
+div.portfolio div.piece h3 {
+  padding-top: 1em;
 }
 div.description {
   float: left;
@@ -653,10 +658,17 @@ ul.other-clients {
   width: 100%;
   margin: 1em;
 }
-ul.other-clients li{
+ul.other-clients li { 
   float: left;
   width: 33%;
   display: block;
+}
+ul.other-clients h2 {
+  padding: 0;
+  margin: 0;
+}
+ul.other-clients h3 {
+  padding-top: .5em;
 }
 
 /*  Process  */
