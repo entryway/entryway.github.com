@@ -17,8 +17,8 @@ h1 {
 }
 h2 {
   font-style: italic;
-  font-size: 3em; 
-  color: #1d1c18;/*Dark Brown*/
+  font-size: 2.8em; 
+  color: #454545;
 }
 h3 {
     font-size: 2em; 
@@ -40,7 +40,7 @@ h5 {
   color: #A12800;/*Deep Red*/  
 }
 p {
-  font-size: 1.3em;
+  font-size: 1.4em;
   line-height: 1.5em;
   color: #3D3D3D;
   margin-top: .5em;
@@ -191,6 +191,12 @@ div.what {
   width: 25%;
   margin-top: 2em;
 }
+div.what h3 {
+  color: #6ba6bb;
+}
+div.what h4 {
+  color: #47494B;
+}
 ul.products {
   padding: 0;
   font-size: 1em;
@@ -204,7 +210,7 @@ ul.products li a {
   padding: .5em .2em;
 }
 ul.products li a:hover {
-  background-color: #85806f;/*Light Brown*/
+  background-color: #6ba6bb;/*Light Brown*/
   text-decoration: none;
 }
 ul.products li a:hover h3 {
@@ -214,13 +220,16 @@ div.overview {
   float: right;
   width: 75%;
 }
+div.overview h1 {
+  color: #6ba6bb;
+  width: 664px;
+  font-weight: bold;
+  padding: 0;
+  margin: .5em 0 .5px;
+}
 div.overview img {
   margin-bottom: 1em;
   border: 3px solid #6ba6bb;/*Brand Blue*/
-}
-div.overview h1 {
-  width: 664px;
-  margin: .5em 0;
 }
 div.link-bar {
   clear: both;
@@ -244,6 +253,9 @@ div.feature {
   width: 100%;
   background:  url(/images/splash/fade-grey-bg.png) repeat-x bottom left;
   
+}
+div.feature h3 {
+  color: #EB9400;
 }
 div.shadow {
   background:  url(/images/splash/shadow.png) no-repeat 5px -26px ;
@@ -344,6 +356,9 @@ div.agile {
   float: right;
   width: 75%;
 }
+div.agile h3 {
+  color: #A12800;
+}
 /*  Team  */
 div.team {
   width: 100%;
@@ -376,7 +391,12 @@ div.info {
   float: right;
   width: 75%;
 }
-
+div.info h2 {
+  color: #454545;
+}
+div.info h3 {
+  color: #6F8924;
+}
 /*  Footer */
 
 div.footer {
@@ -385,6 +405,22 @@ div.footer {
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0; 
   float: left;
   font-size: .75em;
+}
+div.footer h3 {
+  border-bottom: 2px dotted;
+  width: 80%;
+  margin-bottom: .5em;
+  color: #8bcbe2;
+}
+div.footer li.testimonials h3 {
+  color: #eb9400;
+}
+div.footer h4 {
+  color: #8bcbe2;
+  font-size: 1.4em;
+}
+div.footer li.twitter h3 {
+  color: #6F8924;
 }
 div.footer ul {
   background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom left;
@@ -395,11 +431,6 @@ div.footer ul {
 div.footer ul li {
   float: left;
   width: 33%;
-}
-div.footer h3 {
-  border-bottom: 2px dotted #85806f;/*Light Brown*/
-  width: 80%;
-  margin-bottom: .5em;
 }
 div.footer p {
   color: #fffcf1; /* Off White */
@@ -413,18 +444,18 @@ div.footer blockquote {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-#twtr-widget-1 .twtr-avatar {
+#twitter-widget-1 .twitter-avatar {
   display:block;
 }
 
-li.twtr img {
+li.twitter img {
   clear: left;
   display:block;
   float:left;
   padding: .2em;
   display: block;
 }
-li.twtr p {
+li.twitter p {
   
   
 }
