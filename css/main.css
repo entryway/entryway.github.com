@@ -593,8 +593,24 @@ div.content-photo {
   padding: 0 1em 1em 0;
 }
 
-/* Portfolio */
+/* Intro */
+div.intro {
+  padding: 0 3em;
+}
+div.intro h1 {
+  background: transparent url(/images/splash/divider-half.png) no-repeat top right;
+  width: 100%;  
+  height: 70px;
+}
+div.intro p {
+  width: 50%;
+  margin-top: -25px;
+}
 
+/* Portfolio */
+div.portfolio h1 {
+  color: #EB9400;
+}
 div.portfolio {
   clear: both;
   float: left;
@@ -603,25 +619,10 @@ div.portfolio {
   min-width: 960px;
   padding: 0 3em;
 }
-div.portfolio h1 {
-  color: #EB9400;/*Bright Orange*/;
-  background: transparent url(/images/splash/divider-half.png) no-repeat top right;
-  width: 100%;  
-  height: 70px;
-}
 div.portfolio h3 {
   color: #EB9400;
 }
-div.intro h2 {
-  width: 100%;
-  height: 70px;
-  margin: 0;
-  margin-top: 1em;
-}
-div.intro p {
-  width: 50%;
-  margin-top: -25px;
-}
+
 div.piece {
   clear: both;
   float: left;
