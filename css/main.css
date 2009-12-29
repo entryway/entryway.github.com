@@ -136,8 +136,8 @@ div.header {
 }
 div.logo {
   float: left;
-  background: transparent url(/images/splash/logo.png) no-repeat 0 0;
-  height: 12em;
+  background: transparent url(/images/logo4.png) no-repeat 0 0;
+  height: 9em;
   width: 35%;
   text-indent:-9000px;
   margin-left: 3em;
@@ -148,7 +148,7 @@ div.logo h1 {
 div.nav-right {
   float: right;
   text-align: right;
-  background: transparent url(/images/lines-dots.png) no-repeat 0 20px;
+  background: transparent url(/images/lines-dots.png) no-repeat 0 0;
   height: 85px;
 }
 div.top-nav {
@@ -168,7 +168,7 @@ div.top-nav a:hover {
   text-decoration: none;
 }
 div.main-nav {
-  margin-top: 9.5em;
+  margin-top: 7em;
 }
 div.main-nav a {
   font-size: 1.7em;
