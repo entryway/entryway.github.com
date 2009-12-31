@@ -42,7 +42,7 @@ h5 {
   color: #A12800;/*Deep Red*/  
 }
 p {
-  font-size: 1.4em;
+  font-size: 1.6em;
   line-height: 1.5em;
   color: #3D3D3D;
   margin-top: .5em;
@@ -133,12 +133,14 @@ div.header {
   background: #1d1c18 url(/images/splash/texture.png) repeat-x 0 0; /*Dark Brown*/
   float: left;
   width: 100%;
+  height: 10em;
+  
 }
 div.logo {
   float: left;
   background: transparent url(/images/logo6.png) no-repeat 0 0;
-  height: 10em;
   width: 35%;
+  height: 100px;
   text-indent:-9000px;
   margin-left: 3em;
 }
@@ -148,10 +150,11 @@ div.logo h1 {
 div.nav-right {
   float: right;
   text-align: right;
-  background: transparent url(/images/lines-dots.png) no-repeat 0 0;
-  height: 85px;
+  width: 60%;
+  height: 100%;
+  background: transparent url(/images/splash/watermark-dots.png) no-repeat -130px 0;
 }
-div.top-nav {
+div.tn-nav {
   background: transparent url(/images/watermark-dots.png) no-repeat 0 0;
   padding-right: 3em;
   float: right;
@@ -172,21 +175,30 @@ div.main-nav {
 }
 div.main-nav a {
   font-size: 1.7em;
-  padding: 0 1.5em;
+  margin: 0 1.5em;
+  padding-top: .2em;
 }
 div.main-nav a:hover {
-  text-decoration: none;
+  border-top: 2px dotted #85806f;
   color: #fffcf1; /* Off White */
+  text-decoration: none;
 }
 div.main-nav a.active {
   color: #fffcf1; /* Off White */
+  border-top: 2px dotted #85806f;
+  
 }
 
 /*   Branding  */
-
+div.branding-wrap {
+  background:  url(/images/bg-blue.gif) repeat-x 0 0; 
+  clear: both;
+  padding-top: 3px; 
+  
+}
 div.branding {
   clear: both;
-  background:  url(/images/bg-blue.gif) repeat-x 0 0;  
+  background:  url(/images/bg-blue3.gif) repeat-x 0 0;  
 }
 div.what {
   float: left;
@@ -246,14 +258,14 @@ div.link-bar a:hover {
 div.feature {
   clear:both;
   width: 100%;
-  background:  url(/images/splash/fade-grey-bg.png) repeat-x bottom left;
+  background:  url(/images/bg-orange3.gif) repeat-x 0 0;  
   
 }
 div.feature h3 {
   color: #EB9400;
 }
 div.shadow {
-  background:  url(/images/splash/shadow.png) no-repeat 5px -26px ;
+  background:  url(/images/splash/shadow2.png) repeat-x 0 0 ;
   width: 100%;
   height: 27px;
 }
@@ -336,6 +348,8 @@ div.feat-slides img {
 div.agile-process {
   clear: both;
   width: 100%;
+  background:  url(/images/bg-red3.gif) repeat-x 0 0;  
+  
 }
 div.diagram {
   clear: both;
@@ -356,6 +370,7 @@ div.agile h3 {
 }
 /*  Team  */
 div.team {
+  background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;
   width: 100%;
   clear: both;
 }
@@ -394,6 +409,12 @@ div.info h3 {
 }
 /*  Footer */
 
+div.footer-wrap {
+  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
+  float: left;
+  width: 100%;
+  padding-top: 3px;
+}
 div.footer {
   width: 100%;
   clear: both;
@@ -405,17 +426,23 @@ div.footer h3 {
   border-bottom: 2px dotted;
   width: 80%;
   margin-bottom: .5em;
-  color: #8bcbe2;
+  color: #83cbe5;/*Bright Blue*/
 }
 div.footer li.testimonials h3 {
   color: #eb9400;
 }
+div.footer li.testimonials h3.floyd {
+  color: #d63500;/*Bright Red*/
+}
 div.footer h4 {
-  color: #8bcbe2;
+  color: #fffcf1; /* Off White */
   font-size: 1.4em;
 }
+div.footer a {
+  color: #83cbe5;/*Bright Blue*/
+}
 div.footer li.twitter h3 {
-  color: #6F8924;
+  color: #8bac2d;/*Bright Green*/
 }
 div.footer ul {
   background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom left;
@@ -430,12 +457,12 @@ div.footer ul li {
 div.footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
-  
+  margin-bottom: 1em;
 }
 div.footer blockquote {
   color: #fffcf1; /* Off White */
   width: 80%;
-  margin: 0;
+  margin: 0 0 1em 0;
   font-size: 1.2em;
   line-height: 1.5em;
 }
@@ -454,30 +481,57 @@ li.twitter p {
   
   
 }
-div.marquee {
-  background-color: #1d1c18;
-}
-div.marquee h2 {
-  color: #fffcf1; /* Off White */
+li.contact {
   
 }
-
+li.contact img {
+  float: left;
+}
 
 /*************** Internal Pages *****************/
 
+/* Intro */
+div.intro {
+  background: url(/images/lines-dots.png) no-repeat 300px -80px;
+  padding: 0 0 0 12em;
+  margin: 7px 0 0 0;
+  float: left;
+  width: 100%;
+}
+div.intro h1 {
+  height: 70px;
+}
+div.intro p {
+  width: 70%;
+  margin-top: -25px;
+}
+div.intro-btm {
+  float: left;
+  width: 100%;
+  height: 7px;
+}
 /*  Services  */
 
 div.services {
   clear: both;
   width: 100%;
-  background: #fffcf1 url(/images/bg-blue.gif) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-blue2.gif) repeat-x 0 0;
   float: left;
 }
+div.services h1 {
+  color: #fffcf1; /* Off White */
+}
 div.services h2 {
-  color: #454545;
+  color: #454545;/* Dark Grey*/
 }
 div.services h3 {
-  color: #6ba6bb;
+  color: #6ba6bb;/*Brand Blue*/
+}
+div.services div.intro {
+  background-color: #6ba6bb;/*Brand Blue*/;
+}
+div.services div.intro-btm {
+  background: #6ba6bb url(/images/bg-blue-btm.gif) repeat-x 0 0;
 }
 div.sidebar {
   margin: 1em 3em;
@@ -535,14 +589,20 @@ div.main h3#desktop {
 div.about {
   clear: both;
   float: left;
-  background: #fffcf1 url(/images/bg-green.gif) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-green2.gif) repeat-x 0 0;
   min-width: 960px;
 }
 div.about h1 {
-  color: #6F8924;/*Bright Green*/
+  color: #fffcf1; /* Off White */
 }
 div.about h3 {
-  color: #6F8924;
+  color: #6F8924;/*Bright Green*/
+}
+div.about div.intro {
+  background-color: #6F8924;/*Bright Green*/
+}
+div.about div.intro-btm {
+  background: #6F8924 url(/images/bg-green-btm.gif) repeat-x 0 0;
 }
 div.people img {
   margin: 0 .8em 1em 0;
@@ -592,21 +652,16 @@ div.content-photo {
   padding: 0 1em 1em 0;
 }
 
-/* Intro */
-div.intro {
-  padding: 0 3em;
+/* Portfolio */
+
+div.portfolio div.intro {
+  padding: 0;
 }
-div.intro h1 {
+div.portfolio div.intro h1 {
   background: transparent url(/images/splash/divider-half.png) no-repeat top right;
   width: 100%;  
   height: 70px;
 }
-div.intro p {
-  width: 50%;
-  margin-top: -25px;
-}
-
-/* Portfolio */
 div.portfolio h1 {
   color: #EB9400;
 }
@@ -679,7 +734,13 @@ div.process {
   min-width: 960px;
   background: #fffcf1 url(/images/bg-red.gif) repeat-x 0 0;
 }
+div.process h1 {
+  color: #A12800;/*Deep Red*/
+}
 div.process h2 {
+  color: #454545;
+}
+div.process h3 {
   color: #A12800;/*Deep Red*/
 }
 div.testimonial img {
