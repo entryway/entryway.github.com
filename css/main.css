@@ -1,8 +1,9 @@
 html {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
+  overflow: auto;
 }
 body {
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   font-size: 62.5%;
   font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
@@ -118,16 +119,6 @@ div#blue {
   background: #6ba6bb;/*Brand Blue*/
 }
 
-/* Content */
-
-div.content {
-  padding: 0 4em 1em 4em;
-  float: left;
-  width: 100%;
-}
-div.content p {
-  width: 662px;
-}
 /*Header*/
 div.header {
   background: #1d1c18 url(/images/splash/texture.png) repeat-x 0 0; /*Dark Brown*/
@@ -171,7 +162,7 @@ div.top-nav a:hover {
   text-decoration: none;
 }
 div.main-nav {
-  margin-top: 7em;
+  margin: 7em 1em 0 0;
 }
 div.main-nav a {
   font-size: 1.7em;
@@ -188,6 +179,14 @@ div.main-nav a.active {
   border-top: 2px dotted #85806f;
   
 }
+/* Content */
+
+div.content {
+  margin: 0 5% 0 5%;
+  float: left;
+  width: 90%;
+}
+
 
 /*   Branding  */
 div.branding-wrap {
@@ -199,6 +198,8 @@ div.branding-wrap {
 div.branding {
   clear: both;
   background:  url(/images/bg-blue3.gif) repeat-x 0 0;  
+  float: left;
+  width: 100%;
 }
 div.what {
   float: left;
@@ -229,7 +230,10 @@ ul.products li a:hover h3 {
 }
 div.overview {
   float: right;
-  width: 75%;
+  width: 73%;
+}
+div.overview p {
+  width: 662px;
 }
 div.overview h1 {
   width: 664px;
@@ -283,7 +287,7 @@ div.feat-info a {
 }
 div.feat-slides {
   float: right;
-  width: 75%;
+  width: 73%;
 }
 ul.slides-nav {
   float: left;
@@ -363,7 +367,7 @@ div.diagram img {
 }
 div.agile {
   float: right;
-  width: 75%;
+  width: 73%;
 }
 div.agile h3 {
   color: #A12800;
@@ -399,7 +403,7 @@ div.pics a:hover {
 }
 div.info {
   float: right;
-  width: 75%;
+  width: 73%;
 }
 div.info h2 {
   color: #454545;
