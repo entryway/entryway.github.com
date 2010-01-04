@@ -182,9 +182,8 @@ div.portfolio div.intro {
 div.portfolio div.intro-btm {
   background: transparent url(/images/bg-orange-btm.png) repeat-x 0 0;
 }
-div.portfolio div.intro h1 {
-  width: 100%;  
-  height: 70px;
+div.portfolio h1 {
+
 }
 div.portfolio h3 {
   color: #EB9400;
@@ -201,10 +200,16 @@ div.portfolio div.piece h3 {
 }
 div.description {
   float: left;
-  width: 30%;
+  width: 26%;
+  margin: 0 4% 0 0;
 }
 div.portfolio .feat-slides {
-  width: 65%;
+  width: 63%;
+  margin: 0 3%;
+  float: right;
+}
+.feat-slides img{
+  border: 3px solid #EB9400;
 }
 div.more-slides {
   display: none;

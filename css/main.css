@@ -1,5 +1,4 @@
 html {
-  overflow-x: hidden;
 }
 body {
   margin: 0 ;
@@ -131,7 +130,7 @@ div#header {
 }
 div#logo {
   float: left;
-  background: transparent url(/images/logo6.png) no-repeat 0 0;
+  background: transparent url(/images/logo11.png) no-repeat 0 0;
   width: 30%;
   height: 100px;
   text-indent:-9000px;
@@ -195,14 +194,14 @@ div.content p{
 }
 div.section-side {
   float: left;
-  width: 24%;
-  margin: 0 3%;
+  width: 25%;
+  margin: 0 2%;
   padding: 0;
 }
 div.section-main {
   float: left;
-  width: 60%;
-  margin: 0 5%;
+  width: 64%;
+  margin: 0 3%;
   padding: 0;
 }
 div.link-bar {
@@ -419,6 +418,7 @@ div#footer h4 {
 }
 div#footer a {
   color: #83cbe5;/*Bright Blue*/
+  font-size: 110%;
 }
 div#footer li.twitter h3 {
   color: #8bac2d;/*Bright Green*/
@@ -436,6 +436,8 @@ div#footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
   margin-bottom: 1em;
+  font-size: 100%;
+  
 }
 div#footer blockquote {
   color: #fffcf1; /* Off White */
