@@ -89,7 +89,9 @@ submit {
 hr {
   color: #1d1c18;/*Dark Brown*/
 }
+
 /* Colors */
+  
 .blue {
   color: #6ba6bb;/*Brand Blue*/
 }
@@ -97,8 +99,9 @@ hr {
   color: #EB9400;/*Bright Orange*/
 }
 .red {
-  color: #A12800;/*Deep Red*/
+  color: #bf3000;/*Bright Red*/
 }
+/*#A12800; Deep Red*/
 .green {
   color: #6F8924;/*Bright Green*/
 }
@@ -119,14 +122,14 @@ div#blue {
 }
 
 /*Header*/
-div.header {
+div#header {
   background: #1d1c18 url(/images/splash/texture.png) repeat-x 0 0; /*Dark Brown*/
   float: left;
   width: 100%;
   height: 10em;
   
 }
-div.logo {
+div#logo {
   float: left;
   background: transparent url(/images/logo6.png) no-repeat 0 0;
   width: 30%;
@@ -134,10 +137,10 @@ div.logo {
   text-indent:-9000px;
   margin-left: 3em;
 }
-div.logo h1 {
+div#logo h1 {
 
 }
-div.nav-right {
+div#nav-right {
   float: right;
   text-align: right;
   width: 65%;
@@ -149,45 +152,81 @@ div.tn-nav {
   padding-right: 3em;
   float: right;
 }
-div.top-nav a {
+div#top-nav a {
   background-color: #545146;/*Medium Brown*/
   font-size: 1.3em;
   padding: .2em 1.1em;
   color: #fffcf1; /* Off White */
 }
-div.top-nav a:hover {
+div#top-nav a:hover {
   background-color: #85806f;/*Light Brown*/
   color: #1d1c18;/*Dark Brown*/
   text-decoration: none;
 }
-div.main-nav {
+div#main-nav {
   margin: 7em 1em 0 0;
 }
-div.main-nav a {
+div#main-nav a {
   font-size: 1.7em;
   margin: 0 1.5em;
   padding-top: .2em;
 }
-div.main-nav a:hover {
+div#main-nav a:hover {
   border-top: 2px dotted #85806f;
   color: #fffcf1; /* Off White */
   text-decoration: none;
 }
-div.main-nav a.active {
+div#main-nav a.active {
   color: #fffcf1; /* Off White */
   border-top: 2px dotted #85806f;
   
 }
-/* Content */
+
+/*  Layout */
 
 div.content {
-  padding: 0 5%;
+  clear: both;
+  padding: 0 3%;
   float: left;
-  width: 90%;
+  width: 94%;
 }
 div.content p{
   width: 590px;
 }
+div.section-side {
+  float: left;
+  width: 24%;
+  margin: 0 3%;
+  padding: 0;
+}
+div.section-main {
+  float: left;
+  width: 60%;
+  margin: 0 5%;
+  padding: 0;
+}
+div.link-bar {
+  clear: both;
+}
+div.link-bar a {
+  display: block;
+  text-align: right;
+  padding: 1em;
+  background: url(/images/lines-dots.png) no-repeat -60px 5px;
+  color: #fffcf1; /* Off White */
+  font-size: 1.5em;
+  height: 15px;
+}
+div.link-bar a:hover {
+  background: url(/images/lines-dots.png) no-repeat -60px -73px;
+  height: 15px;
+}
+div.shadow {
+  background:  url(/images/splash/shadow2.png) repeat-x 0 0 ;
+  width: 100%;
+  height: 27px;
+}
+
 /*   Branding  */
 
 div.branding {
@@ -205,12 +244,7 @@ div.branding div.intro-btm {
 div.branding div.content {
   background:  url(/images/bg-blue3.gif) repeat-x 0 0; 
 }
-div.what {
-  float: left;
-  width: 24%;
-  margin: 0 3%;
-}
-div.what h3 {
+div.branding h3 {
   color: #6ba6bb;
 }
 ul.products {
@@ -232,35 +266,9 @@ ul.products li a:hover {
 ul.products li a:hover h3 {
   color: #fffcf1; /* Off White */
 }
-div.overview {
-  float: right;
-  width: 73%;
-}
-div.overview p {
-  width: 662px;
-}
-div.overview h1 {
-  width: 664px;
-}
-div.overview img {
+div#splash-img img {
   margin: 3em 0 ;
   border: 3px solid #6ba6bb;/*Brand Blue*/
-}
-div.link-bar {
-  clear: both;
-}
-div.link-bar a {
-  display: block;
-  text-align: right;
-  padding: 1em;
-  background: url(/images/lines-dots.png) no-repeat -60px 5px;
-  color: #fffcf1; /* Off White */
-  font-size: 1.5em;
-  height: 15px;
-}
-div.link-bar a:hover {
-  background: url(/images/lines-dots.png) no-repeat -60px -73px;
-  height: 15px;
 }
 
 /* Feature */
@@ -269,31 +277,16 @@ div.feature {
   clear:both;
   width: 100%;
   background:  url(/images/bg-orange3.gif) repeat-x 0 0;  
-  
 }
 div.feature h3 {
   color: #EB9400;
 }
-div.shadow {
-  background:  url(/images/splash/shadow2.png) repeat-x 0 0 ;
+div#feat-info p {
   width: 100%;
-  height: 27px;
 }
-div.feat-info {
-  float: left;
-  width: 20%;
-  
-}
-div.feat-info p {
-  width: 200px;
-}
-div.feat-info a {
+div#feat-info a {
   font-size: 1.5em;
   color: #EB9400; /*Orange*/
-}
-div.feat-slides {
-  float: right;
-  width: 73%;
 }
 ul.slides-nav {
   float: left;
@@ -343,15 +336,12 @@ ul.slides-nav li.right-arrow a {
 ul.slides-nav li.right-arrow a:hover {
   background-position: -18px -18px;
 }
-div.feat-slides img {
+div#feat-slides img {
   clear: left;
   display: block;
   border: 3px solid #EB9400;
   margin-bottom: 1em;
 }
-
-
-/*  Layout */
 
 /*  Agile Process   */ 
 
@@ -359,116 +349,95 @@ div.agile-process {
   clear: both;
   width: 100%;
   background:  url(/images/bg-red3.gif) repeat-x 0 0;  
-  
 }
-div.diagram {
-  clear: both;
-  float: left;
-  width: 20%;
-  
-}
-div.diagram img {
+div#diagram img {
   border: 3px solid #A12800;/*Deep Red*/
   margin: 2em 0 1em 0;
 }
-div.agile {
-  float: right;
-  width: 73%;
-}
-div.agile h3 {
+div#agile h3 {
   color: #A12800;
 }
+
 /*  Team  */
 div.team {
   background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;
   width: 100%;
   clear: both;
 }
-div.team a {
-  color: #6F8924;/*Bright Green*/
-}
-div.pics {
-  clear: both;
-  float: left;
-  width: 25%;
-}
 img.big {
   border: 3px solid #6F8924;/*Bright Green*/
 }
-div.pics a {
-  margin: 1em 1.4em 0 0;
+div#pics a {
+  margin: 1em 1em 0 0;
   display: block;
   float: left;  
 }
-div.pics a img {
+div#pics a img {
   border: 3px solid #6F8924;/*Bright Green*/
+}
+div#pics a:hover {
   
 }
-div.pics a:hover {
-  
-}
-div.info {
-  float: right;
-  width: 73%;
-}
-div.info h2 {
+div#info h2 {
   color: #454545;
 }
-div.info h3 {
+div#info h3 {
   color: #6F8924;
 }
+
 /*  Footer */
 
-div.footer-wrap {
+div#footer-wrap {
   background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
   float: left;
   width: 100%;
   padding-top: 3px;
 }
-div.footer {
-  width: 100%;
+div#footer {
+  width: 97%;
+  padding-left: 3%;
   clear: both;
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0; 
   float: left;
   font-size: .75em;
 }
-div.footer h3 {
+div#footer h3 {
   border-bottom: 2px dotted;
   width: 80%;
   margin-bottom: .5em;
   color: #83cbe5;/*Bright Blue*/
 }
-div.footer li.testimonials h3 {
+div#footer li.testimonials h3 {
   color: #eb9400;
 }
-div.footer li.testimonials h3.floyd {
+div#footer li.testimonials h3.floyd {
   color: #d63500;/*Bright Red*/
 }
-div.footer h4 {
+div#footer h4 {
   color: #fffcf1; /* Off White */
   font-size: 1.4em;
 }
-div.footer a {
+div#footer a {
   color: #83cbe5;/*Bright Blue*/
 }
-div.footer li.twitter h3 {
+div#footer li.twitter h3 {
   color: #8bac2d;/*Bright Green*/
 }
-div.footer ul {
+div#footer ul {
   background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom left;
   float: left;
   padding: 2em;
 }
-div.footer ul li {
+div#footer ul li {
   float: left;
   width: 33%;
 }
-div.footer p {
+div#footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
   margin-bottom: 1em;
 }
-div.footer blockquote {
+div#footer blockquote {
   color: #fffcf1; /* Off White */
   width: 80%;
   margin: 0 0 1em 0;
