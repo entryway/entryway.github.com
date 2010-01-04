@@ -305,7 +305,7 @@ ul.slides-nav li a {
   height: 18px;
 }
 ul.slides-nav li.left-arrow {
-  padding-right: 200px;
+  padding-right: 220px;
 }
 ul.slides-nav li.left-arrow a {
   background-position: 0 0;  
@@ -383,7 +383,9 @@ div#info h2 {
 div#info h3 {
   color: #6F8924;
 }
-
+div#info a {
+  color: #6F8924;/*Bright Green*/
+}
 /*  Footer */
 
 div#footer-wrap {
@@ -436,7 +438,7 @@ div#footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
   margin-bottom: 1em;
-  font-size: 100%;
+  font-size: 120%;
   
 }
 div#footer blockquote {
@@ -454,12 +456,16 @@ li.twitter img {
   clear: left;
   display:block;
   float:left;
-  padding: .2em;
+  padding: 0 .7em 0 0;
   display: block;
 }
 li.twitter p {
   
   
+}
+#blog {
+  clear: left;
+  padding: 1em 0 0 0 ;
 }
 li.contact {
   
