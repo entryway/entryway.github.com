@@ -165,7 +165,9 @@ div.content-photo {
   float: left;
   padding: 0 1em 1em 0;
 }
-
+div.about div.main h3 {
+  padding: 24px 0 0 50px;
+}
 /* Portfolio */
 
 div.portfolio {
@@ -282,6 +284,9 @@ div.div-red {
   width: 68px;
   height: 960px;
   float: left;
+}
+div.process div.main h3 {
+  padding: 24px 0 0 50px;
 }
 
 /*  Splash  */ 
