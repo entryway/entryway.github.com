@@ -179,7 +179,7 @@ div.portfolio {
   
 }
 div.portfolio div.intro {
-  background-color: #bf7900;/*Dark Orange*/
+  background-color: #EB9400;/*Dark Orange*/
 }
 div.portfolio div.intro-btm {
   background: transparent url(/images/bg-orange-btm.png) repeat-x 0 0;
@@ -278,6 +278,10 @@ div.testimonial img {
 }
 div.testimonial a {
   color: #bf3000;/*Bright Red*/
+}
+ul.bavolek {
+  color:#3D3D3D;
+  font-size:1.6em;
 }
 div.div-red {
   background: transparent url(/images/splash/div-red.png) no-repeat 0 0;

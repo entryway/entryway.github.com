@@ -100,7 +100,6 @@ hr {
 .red {
   color: #bf3000;/*Bright Red*/
 }
-/*#A12800; Deep Red*/
 .green {
   color: #6F8924;/*Bright Green*/
 }
@@ -146,21 +145,18 @@ div#nav-right {
   height: 100%;
   background: transparent url(/images/splash/watermark-dots.png) no-repeat -104px 0;
 }
-div.tn-nav {
+div#top-nav {
   background: transparent url(/images/watermark-dots.png) no-repeat 0 0;
-  padding-right: 3em;
+  padding: .8em 2.5em 0 0 ;
   float: right;
 }
 div#top-nav a {
-  background-color: #545146;/*Medium Brown*/
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding: .2em 1.1em;
   color: #fffcf1; /* Off White */
 }
 div#top-nav a:hover {
-  background-color: #85806f;/*Light Brown*/
-  color: #1d1c18;/*Dark Brown*/
-  text-decoration: none;
+  text-decoration: underline;
 }
 div#main-nav {
   margin: 7em 1em 0 0;
@@ -230,15 +226,15 @@ div.shadow {
 
 div.branding {
   clear: both;
-  background:  url(/images/bg-brown2.gif) repeat-x 0 0;  
+  background: #fffcf1 url(/images/bg-blue2.gif) repeat-x 0 0;
   float: left;
   width: 100%;
 }
 div.branding div.intro {
-  background-color: #85806f;/*Light Brown*/
+  background-color: #6ba6bb;/*Brand Blue*/;
 }
 div.branding div.intro-btm {
-  background: transparent url(/images/bg-brown-btm.gif) repeat-x 0 0;
+  background: transparent url(/images/bg-blue-btm.png) repeat-x 0 0;
 }
 div.branding div.content {
   background:  url(/images/bg-blue3.gif) repeat-x 0 0; 
@@ -438,7 +434,7 @@ div#footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
   margin-bottom: 1em;
-  font-size: 125%;
+  font-size: 140%;
   
 }
 div#footer blockquote {
@@ -473,4 +469,21 @@ li.contact {
 li.contact img {
   float: left;
 }
-
+div.expandable {
+  clear: left
+}
+span.read-more, span.re-collapse  {
+  font-size: 130%;
+  text-align: right;
+  width: 100%;
+  display: block;
+  padding-bottom: 1em;
+  color: #6F8924;/*Bright Green*/
+}
+span.read-more a, span.re-collapse a {
+  color: #6F8924;/*Bright Green*/
+  
+}
+span.re-collapse {
+  
+}
