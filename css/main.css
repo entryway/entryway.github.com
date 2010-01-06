@@ -437,6 +437,16 @@ div#footer p {
   font-size: 140%;
   
 }
+a.button {
+  background: transparent url(/images/btn-send.png) no-repeat 0 0;
+  width: 100px;
+  height: 40px;
+  display: block;
+  padding-top: 2px;
+}
+a.button:hover {
+  background-position: 0 -40px;
+}
 div#footer blockquote {
   color: #fffcf1; /* Off White */
   width: 80%;

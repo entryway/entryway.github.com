@@ -17,6 +17,7 @@ div.intro p {
   color: #1d1c18;
   width: 70%;
   margin-top: -25px;
+  min-width: 675px;
 }
 div.intro-btm {
   float: left;
