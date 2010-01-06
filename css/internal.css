@@ -9,6 +9,11 @@ div.intro {
   width: 90%;
   height: 130px;
 }
+div.fixed-wrap{
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+}
 div.intro h1 {
   height: 70px;
   color: #fffcf1; /* Off White */
@@ -41,6 +46,12 @@ div.services h2 {
 div.services h3 {
   color: #6ba6bb;/*Brand Blue*/
 }
+div.services h4 {
+  color: #476D7B;
+}
+div.services h5 {
+  color: #6BA6BB;
+}
 div.services div.intro {
   background-color: #6ba6bb;/*Brand Blue*/;
 }
@@ -53,12 +64,27 @@ div.sidebar {
   float: left;
 }
 div.services .sidebar img {
-  margin: 0 .8em 1em 0;
+  clear: left;
+  margin: 0 .8em 3em 0;
   border: 3px solid #6ba6bb;/*Brand Blue*/
-  float: left;
+  width: 300px;
+  height: 150px;
 }
 div.services .sidebar p {
-  clear: left;
+  font-size: 1.4em;
+  margin-bottom: 3em;
+}
+h3#chrome1 {
+  color:;
+}
+h3#chrome2 {
+  color: #6EAAD2;
+}
+h3#chrome3 {
+  color: #4E8088;
+}
+h3#chrome4 {
+  color: #343A3B;
 }
 div.divider {
   background: transparent url(../images/splash/divider.png) no-repeat bottom left;
@@ -113,6 +139,18 @@ div.about h1 {
 div.about h3 {
   color: #6F8924;/*Bright Green*/
 }
+div.about h4 {
+  color: #60771f;/*Dark Green*/
+  padding: 0;
+}
+div.about h5 {
+  color: #6F8924;/*Bright Green*/
+  padding: 0;
+}
+div.about h6 {
+  color: #6F8924;/*Bright Green*/
+  
+}
 div.about div.intro {
   background-color: #6F8924;/*Bright Green*/
 }
@@ -132,13 +170,14 @@ div#people-description p {
   clear: left;
 }
 ul.people-lined-area li {
-  border-bottom: 2px dotted #6F8924;/*Bright Green*/
+  border-bottom: 1px solid #eee;
 }
 div.people-links {
   float: left;
 }
 div.people-links a {
   text-decoration: none;
+  padding-right: .5em;
 }
 div.people-links h3 {
   color: #2f2f2f;
@@ -149,7 +188,7 @@ div.people-linkbox {
   height: 26px;
 }
 div.people-linkbox img {
-  margin: 0 5px 5px 18px;
+  margin: 0 5px 5px 5px;
   vertical-align: middle;
 }
 div.people-linkbox p {
@@ -195,7 +234,7 @@ div.piece {
   clear: both;
   float: left;
   width: 95%;
-  padding: 0 0 0 5%;
+  padding: 0 0 10px 5%;
   
 }
 div.portfolio div.piece h3 {
@@ -271,18 +310,29 @@ div.process h2 {
 div.process h3 {
   color: #bf3000;/*Bright Red*/
 }
+div.process h4 {
+  color: #A12800;/*Deep Red*/
+}
+div.process h5 {
+  color: #bf3000;/*Bright Red*/
+  padding-top: 0;
+}
 div.testimonial img {
   margin: 0 .8em 1em 0;
-  border: 3px solid #bf3000;/*Bright Red*/
+  border: 3px solid #A12800;/*Deep Red*/
   float: left;
   width: 145px;
+}
+div.testimonial p {
+  font-size: 1.4em;
+  line-height: 1.3em;
 }
 div.testimonial a {
   color: #bf3000;/*Bright Red*/
 }
 ul.bavolek {
   color:#3D3D3D;
-  font-size:1.6em;
+  font-size: 1.4em;
 }
 div.div-red {
   background: transparent url(/images/splash/div-red.png) no-repeat 0 0;

@@ -1,7 +1,7 @@
 html {
 }
 body {
-  margin: 0 ;
+  margin: 0 auto;
   padding: 0;
   font-size: 62.5%;
   font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
@@ -25,20 +25,27 @@ h3 {
     font-size: 2em; 
     color: #545146;
     margin: 0;
-    padding: 0;
+    padding: .1em 0;
 }
 h4 {
-  font-size: 1.3em;
+  font-size: 1.7em;
   font-weight: bold;
-  color: #47494B;
+  color: #454545;
   margin: 0;
-  
+  padding: 0;
 }
 h5 {
-  font-size: 1em;
+  font-size: 1.4em;
   font-style: italic;
   font-weight: bold;
-  color: #bf3000;/*Bright Red*/ 
+  color: #454545;
+  margin: 0;
+  padding: .5em 0;
+}
+h6 {
+  font-size: 1.5em;
+  padding: 0;
+  margin: 1em 0 0 0;
 }
 p {
   font-size: 1.6em;
@@ -77,8 +84,14 @@ li {
 }
 input {
   margin: .5em 0;
-  padding: .3em;
+  padding: .5em;
   display: block;
+}
+input.button {
+  padding: 2em;
+  font-size: 1.4em;
+  width: 90px;
+  
 }
 textarea {
 }
@@ -126,6 +139,11 @@ div#header {
   width: 100%;
   height: 10em;
   
+}
+div#wrap1 {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
 }
 div#logo {
   float: left;
@@ -224,22 +242,22 @@ div.shadow {
 
 /*   Branding  */
 
-div.branding {
+div#branding {
   clear: both;
   background: #fffcf1 url(/images/bg-blue2.gif) repeat-x 0 0;
   float: left;
   width: 100%;
 }
-div.branding div.intro {
+div#branding div.intro {
   background-color: #6ba6bb;/*Brand Blue*/;
 }
-div.branding div.intro-btm {
+div#branding div.intro-btm {
   background: transparent url(/images/bg-blue-btm.png) repeat-x 0 0;
 }
-div.branding div.content {
+div#branding div.content {
   background:  url(/images/bg-blue3.gif) repeat-x 0 0; 
 }
-div.branding h3 {
+div#branding h3 {
   color: #6ba6bb;
 }
 ul.products {
@@ -486,7 +504,7 @@ span.read-more, span.re-collapse  {
   font-size: 130%;
   text-align: right;
   width: 100%;
-  display: block;
+  display: inline;
   padding-bottom: 1em;
   color: #6F8924;/*Bright Green*/
 }
