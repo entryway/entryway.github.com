@@ -4,23 +4,25 @@ task :deploy do
   require 'highline/import'
   require 'net/ssh'
  
-  branch = "master"
- 
-  username = ask("Username: ") { |q| q.echo = true }
-  password = ask("Password: ") { |q| q.echo = "*" }
+  branch = 'master'
+  path = '/var/www/'
+  site = 'staging.entryway.net'
+  site_path = path + site
+  temp_site_path = path + '_' + site
+
+  username = ask('Username: ') { |q| q.echo = true }
+  password = ask('Password: ') { |q| q.echo = "*" }
  
   Net::SSH.start('another.entryway.net', username, :password => password) do |ssh|
     commands = <<EOF
-cd /var/www/staging.entryway.net/
+cd #{site_path}
 git checkout #{branch}
 git pull origin #{branch}
 git checkout -f
-rm -rf _site
 jekyll --no-auto
-mv _site ../_#{branch}
-mv ../#{branch} _old
-mv ../_#{branch} ../#{branch}
-rm -rf _old
+rm *.*
+cp _site/*.* .
+rm -rf _site
 EOF
     commands = commands.gsub(/\n/, "; ")
     ssh.exec commands
