@@ -43,9 +43,10 @@ h5 {
   padding: .5em 0;
 }
 h6 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding: 0;
-  margin: 1em 0 0 0;
+  margin: .5em 0 0 0;
+  color: #454545;
 }
 p {
   font-size: 1.6em;
@@ -117,7 +118,7 @@ hr {
   color: #6F8924;/*Bright Green*/
 }
 .purple {
-  color: #8d3db3;/*Bright Purple
+  color: #8d3db3;/*Bright Purple*/
 }
 div#red {
   background: #A12800;/*Deep Red*/
@@ -133,6 +134,9 @@ div#green {
 }
 div#blue {
   background: #6ba6bb;/*Brand Blue*/
+}
+div#purple {
+  background: #6d2f8a;/*Deep Purple*/
 }
 
 /*Header*/
@@ -154,7 +158,6 @@ div#logo {
   width: 30%;
   height: 100px;
   text-indent:-9000px;
-  margin-left: 3em;
 }
 div#logo h1 {
 
@@ -207,7 +210,7 @@ div.content {
   width: 94%;
 }
 div.content p{
-  width: 590px;
+  width: 100%;
 }
 div.section-side {
   float: left;
@@ -247,16 +250,11 @@ div.shadow {
 
 div#branding {
   clear: both;
-  background: #fffcf1 url(/images/bg-blue2.gif) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-blue2.png) repeat-x 0 0;
   float: left;
   width: 100%;
 }
-div#branding div.intro {
-  background-color: #6ba6bb;/*Brand Blue*/;
-}
-div#branding div.intro-btm {
-  background: transparent url(/images/bg-blue-btm.png) repeat-x 0 0;
-}
+
 div#branding div.content {
   background:  url(/images/bg-blue3.gif) repeat-x 0 0; 
 }
@@ -276,11 +274,14 @@ ul.products li a {
   padding: .5em .2em;
 }
 ul.products li a:hover {
-  background-color: #6ba6bb;/*Light Brown*/
+  background-color: #6ba6bb;/*Brand Blue*/
   text-decoration: none;
 }
 ul.products li a:hover h3 {
   color: #fffcf1; /* Off White */
+}
+ul.products h4 {
+  font-size: 1.4em;
 }
 div#splash-img img {
   margin: 3em 0 ;
@@ -374,7 +375,20 @@ div#agile h3 {
   color: #A12800;
 }
 
+/* Blog */
+
+div.blogger {
+  clear: both;
+  width: 100%;
+  background:  url(/images/bg-purple3.gif) repeat-x 0 0;  
+}
+div#stock img {
+  border: 3px solid #6d2f8a;/*Deep Purple*/
+  margin: 2em 0 1em 0;
+}
+
 /*  Team  */
+
 div.team {
   background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;
   width: 100%;
@@ -403,6 +417,7 @@ div#info h3 {
 div#info a {
   color: #6F8924;/*Bright Green*/
 }
+
 /*  Footer */
 
 div#footer-wrap {
@@ -412,12 +427,16 @@ div#footer-wrap {
   padding-top: 3px;
 }
 div#footer {
-  width: 97%;
-  padding-left: 3%;
+  width: 100%;
   clear: both;
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0; 
   float: left;
   font-size: .75em;
+}
+div#footer-dots {
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom right;
+  width: 100%;
+  float: left;
 }
 div#footer h3 {
   border-bottom: 2px dotted;
@@ -428,7 +447,7 @@ div#footer h3 {
 div#footer li.testimonials h3 {
   color: #eb9400;
 }
-div#footer li.testimonials h3.floyd {
+div#footer li.testimonials h3#floyd {
   color: #d63500;/*Bright Red*/
 }
 div#footer h4 {
@@ -443,9 +462,8 @@ div#footer li.twitter h3 {
   color: #8bac2d;/*Bright Green*/
 }
 div#footer ul {
-  background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom left;
   float: left;
-  padding: 2em;
+  padding: 2em 0;
 }
 div#footer ul li {
   float: left;
@@ -490,9 +508,10 @@ li.twitter p {
   
   
 }
-#blog {
+div#footer h3#blog {
   clear: left;
   padding: 1em 0 0 0 ;
+  color: #70308e;
 }
 li.contact {
   

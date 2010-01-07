@@ -61,8 +61,7 @@ div.services .sidebar img {
   clear: left;
   margin: 0 .8em 3em 0;
   border: 3px solid #6ba6bb;/*Brand Blue*/
-  width: 300px;
-  height: 150px;
+  width: 270px;
 }
 div.services .sidebar p {
   font-size: 1.4em;
@@ -137,12 +136,11 @@ div.about h4 {
   color: #60771f;/*Dark Green*/
   padding: 0;
 }
-div.about h5 {
+div.about h5, div.about h5 a {
   color: #6F8924;/*Bright Green*/
   padding: 0;
 }
 div.about h6 {
-  color: #6F8924;/*Bright Green*/
   
 }
 
@@ -158,12 +156,7 @@ div.people a {
 div#people-description p {
   clear: left;
 }
-ul.people-lined-area li {
-  border-bottom: 1px solid #eee;
-}
-div.people-links {
-  float: left;
-}
+
 div.people-links a {
   text-decoration: none;
   padding-right: .5em;
@@ -171,10 +164,14 @@ div.people-links a {
 div.people-links h3 {
   color: #2f2f2f;
 }
+div.people-linkbox h5 {
+  padding: 0 0 .3em .5em;
+}
 div.people-linkbox {
+  background: transparent url(/images/splash/green-box.gif) no-repeat 0 0;
   padding: 4px 0;
-  width: 536px;
-  height: 26px;
+  width: 288px;
+  height: 50px;
 }
 div.people-linkbox img {
   margin: 0 5px 5px 5px;
@@ -207,9 +204,7 @@ div.portfolio {
   width: 100%;
   
 }
-div.portfolio div.intro {
-  background-color: #EB9400;/*Dark Orange*/
-}
+
 
 div.portfolio h1 {
 
@@ -220,9 +215,8 @@ div.portfolio h3 {
 div.piece {
   clear: both;
   float: left;
-  width: 95%;
-  padding: 0 0 10px 5%;
-  
+  width: 100%; 
+  margin: 4em 0; 
 }
 div.portfolio div.piece h3 {
   padding-top: 1em;
@@ -259,7 +253,7 @@ div#final {
 ul.other-clients {
   float: left;
   width: 100%;
-  margin: 1em;
+  margin: 1em 0;
 }
 ul.other-clients li { 
   float: left;
