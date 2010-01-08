@@ -23,7 +23,7 @@ jQuery.extend( jQuery.easing, // from the jquery.easing plugin
   }
 });
 jQuery(function(){
-   jQuery("div.svwp").prepend("<img src='images/loading.gif' class='ldrgif' alt='loading...'/ >");  
+   jQuery("div.svwp").prepend("<img src='/images/loading.gif' class='ldrgif' alt='loading...'/ >");  
 });
 var j = 0;
 jQuery.fn.slideViewerPro = function(settings) {
