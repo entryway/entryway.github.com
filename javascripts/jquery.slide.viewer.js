@@ -97,8 +97,8 @@ jQuery.fn.slideViewerPro = function(settings) {
     
       jQuery("div#thumbSlider" + j + " a").each(function(z) {     
         jQuery(this).bind("click", function(){
-          //jQuery(this).find("p.tmbrdr").css({borderColor: settings.thumbsActiveBorderColor, opacity: settings.thumbsActiveBorderOpacity});
-        //  jQuery(this).parent().parent().find("p.tmbrdr").not(jQuery(this).find("p.tmbrdr")).css({borderColor: settings.thumbsBorderColor, opacity: settings.thumbsBorderOpacity});
+          jQuery(this).find("p.tmbrdr").css({borderColor: settings.thumbsActiveBorderColor, opacity: settings.thumbsActiveBorderOpacity});
+          jQuery(this).parent().parent().find("p.tmbrdr").not(jQuery(this).find("p.tmbrdr")).css({borderColor: settings.thumbsBorderColor, opacity: settings.thumbsBorderOpacity});
           var cnt = -(pictWidth*z);
           (cnt != container.find("ul").css("left").replace(/px/, "")) ? container.find("span.typo").animate({"opacity": 0}, 250) : null ;
           container.find("ul").animate({ left: cnt}, settings.easeTime, settings.easeFunc, function(){container.find("span.typo").animate({"opacity": settings.typoFullOpacity}, 250)});          
@@ -152,17 +152,17 @@ jQuery.fn.slideViewerPro = function(settings) {
       jQuery("div#thumbSlider" + j + " ul").css({width: (thumbsWidth*pictEls)+settings.thumbsRightMargin*pictEls, position: "relative", left: "0", top: "0"});
       jQuery("div#thumbSlider" + j + " ul li").css({marginRight: settings.thumbsRightMargin});
           
-      //jQuery("div#thumbSlider" + j).find("p.tmbrdr").css({width: (thumbsWidth-tBorder*2)+"px", height: (thumbsHeight-tBorder*2) +"px", top: -(thumbsHeight) +"px", border: settings.thumbsBorderWidth +"px solid "+settings.thumbsBorderColor, opacity: settings.thumbsBorderOpacity});     
+      jQuery("div#thumbSlider" + j).find("p.tmbrdr").css({width: (thumbsWidth-tBorder*2)+"px", height: (thumbsHeight-tBorder*2) +"px", top: -(thumbsHeight) +"px", border: settings.thumbsBorderWidth +"px solid "+settings.thumbsBorderColor, opacity: settings.thumbsBorderOpacity});     
       jQuery("div#thumbSlider" + j + " a:first p.tmbrdr").css({borderColor: settings.thumbsActiveBorderColor, opacity: settings.thumbsActiveBorderOpacity});
       
       var rbttLeftMargin = (pictWidth/2) + (jQuery("div#thumbSlider" + j).width()/2) + settings.thumbsRightMargin + contBorder;
       var lbttLeftMargin = (pictWidth/2) - (jQuery("div#thumbSlider" + j).width()/2) - (settings.buttonsWidth + settings.thumbsRightMargin) + contBorder;     
       var innerImgH = jQuery("a#right" + j + " span img").attr("height");
       
-    //  jQuery("a#left" + j).css({display: "block", textAlign: "center", width: settings.buttonsWidth + "px" , height: thumbsHeight+"px",  margin: -(thumbsHeight-settings.thumbsTopMargin) +"px 0 0 "+lbttLeftMargin+"px", textDecoration: "none", lineHeight: thumbsHeight+"px", color: settings.buttonsTextColor});
-      //jQuery("a#right" + j).css({display: "block", textAlign: "center", width: settings.buttonsWidth + "px", height: thumbsHeight+"px" , margin: -(thumbsHeight) +"px 0 0 "+rbttLeftMargin+"px", textDecoration: "none", lineHeight: thumbsHeight+"px", color: settings.buttonsTextColor});     
- //     jQuery("a#left" + j + " span img").css({margin: Math.round((thumbsHeight/2)-(innerImgH/2))+"px 0 0 0"});
-   //   jQuery("a#right" + j + " span img").css({margin: Math.round((thumbsHeight/2)-(innerImgH/2))+"px 0 0 0"});
+      jQuery("a#left" + j).css({display: "block", textAlign: "center", width: settings.buttonsWidth + "px" , height: thumbsHeight+"px",  margin: -(thumbsHeight-settings.thumbsTopMargin) +"px 0 0 "+lbttLeftMargin+"px", textDecoration: "none", lineHeight: thumbsHeight+"px", color: settings.buttonsTextColor});
+      jQuery("a#right" + j).css({display: "block", textAlign: "center", width: settings.buttonsWidth + "px", height: thumbsHeight+"px" , margin: -(thumbsHeight) +"px 0 0 "+rbttLeftMargin+"px", textDecoration: "none", lineHeight: thumbsHeight+"px", color: settings.buttonsTextColor});     
+      jQuery("a#left" + j + " span img").css({margin: Math.round((thumbsHeight/2)-(innerImgH/2))+"px 0 0 0"});
+      jQuery("a#right" + j + " span img").css({margin: Math.round((thumbsHeight/2)-(innerImgH/2))+"px 0 0 0"});
 
       authorityMixing();
   
@@ -197,7 +197,7 @@ jQuery.fn.slideViewerPro = function(settings) {
       }
       var uiDisplay = (settings.thumbsVis)? "block":"none";
       jQuery("div#thumbSlider" + j).wrapAll("<div style='width:"+ pictWidth +"px; display: "+uiDisplay+"' id='ui"+j+"'><\/div>"); 
-     // jQuery("div#thumbSlider" + j + ", a#left" + j + ", a#right" + j).wrapAll("<div style='width:"+ pictWidth +"px; display: "+uiDisplay+"' id='ui"+j+"'><\/div>");      
+      jQuery("div#thumbSlider" + j + ", a#left" + j + ", a#right" + j).wrapAll("<div style='width:"+ pictWidth +"px; display: "+uiDisplay+"' id='ui"+j+"'><\/div>");      
       jQuery("div#svwp"+ j + ", div#ui" + j).wrapAll("<div style='width:"+ pictWidth +"px'><\/div>");
       });
       (jQuery("div#thumbSlider" + j).width()+(settings.buttonsWidth*2) >= pictWidth)? alert("ALERT: THE THUMBNAILS SLIDER IS TOO WIDE! \nthumbsPercentReduction and/or buttonsWidth needs to be scaled down!") : null;

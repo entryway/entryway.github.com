@@ -353,10 +353,13 @@ ul.slides-nav li.right-arrow a {
 ul.slides-nav li.right-arrow a:hover {
   background-position: -18px -18px;
 }
+
+div#feat-slides {
+  height: 350px;
+}
 div#feat-slides img {
   clear: left;
   display: block;
-  border: 3px solid #EB9400;
   margin-bottom: 1em;
 }
 
