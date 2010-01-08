@@ -155,6 +155,11 @@ div.people a {
 }
 div#people-description p {
   clear: left;
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+div#people-description p em{
+  top-padding: 1em;
 }
 
 div.people-links a {

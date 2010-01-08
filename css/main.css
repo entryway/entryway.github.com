@@ -198,8 +198,8 @@ div#main-nav a:hover {
 div#main-nav a.active {
   color: #fffcf1; /* Off White */
   border-top: 2px dotted #85806f;
-  
 }
+div#main-nav a:hover
 
 /*  Layout */
 
