@@ -1,24 +1,4 @@
  
-$(window).bind('load', function() { 
-
-  $('div#home-slideshow').slideViewerPro({
-    galBorderWidth: 3,
-    galBorderColor: '#EB9400',
-    thumbsActiveBorderColor: '#EB9400',
-    thumbsVis: false,
-    thumbsTopMargin: 5,
-    autoSlide: true
-  });
-
-  $('div.portfolio-slideshow').slideViewerPro({
-    galBorderWidth: 3,
-    galBorderColor: '#EB9400',
-    thumbsActiveBorderColor: '#EB9400',
-    thumbsVis: false
-  });
-}); 
-
-
 $(function () {
 
   $('div.expandable').expander();
@@ -36,7 +16,23 @@ $(function () {
       headingText: 'Latest Tweets',
       showProfileLink: true
   });*/
-   
+  
+$(window).bind('load', function() { 
+
+  $('div#home-slideshow').slideViewerPro({
+    galBorderWidth: 3,
+    galBorderColor: '#EB9400',
+    thumbsVis: false,
+    autoSlide: true
+  });
+
+  $('div.portfolio-slideshow').slideViewerPro({
+    galBorderWidth: 3,
+    galBorderColor: '#EB9400',
+    thumbsActiveBorderColor: '#EB9400',
+    thumbsVis: false
+  });
+}); 
 });
 
 
