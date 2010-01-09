@@ -40,11 +40,11 @@ div.divider {
   width: 7%;
   height: 960px;
   float: left;
-  margin: 2em 8em;
+  margin: 2em 5em;
 }
 div.main {
   margin: 1em 0;
-  width: 45%;
+  width: 50%;
   float: left;
 }
 /*  Services  */
@@ -52,7 +52,7 @@ div.main {
 div.services {
   clear: both;
   width: 100%;
-  background: #fffcf1 url(/images/bg-blue2.gif) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-blue2.png) repeat-x 0 0;
   float: left;
 }
 div.services h1 {
