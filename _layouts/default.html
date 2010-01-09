@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="css/internal.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/slideshow.css" type="text/css" media="screen" />  
   <link rel="stylesheet" href="css/jquery.tweet.css" type="text/css" media="screen" />  
+  <link rel="stylesheet" href="css/blueprint/src/grid.css" type="text/css" media="screen, projection">
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+  <![endif]-->
 
   <script type="text/javascript" src="javascripts/jquery.js"></script> 
   <script type="text/javascript" src="javascripts/jquery.expander.js"></script> 
@@ -41,13 +45,15 @@
 
     {{ content }}
 
-    <div class="tweet"></div>
+    <div id="entryway-tweet" class="tweet"></div>
+    <div id="gustin-tweet" class="tweet"></div>
+    <div id="bobby-tweet" class="tweet"></div>
+
     <div id="footer-wrap">
       <div id="footer">
-        <div id="footer-dots">
-          <div class="fixed-wrap">
-            <ul>
-              <li class="testimonials">
+        <div id="footer-dots" class="container">
+
+              <div id="testimonials" class="span-8">
                 <h3>Testimonials</h3>
                 <h4><a href="/process.html">Mason Arnold - Greenling</a></h4>
                 <p>Entryway has been the best web development company I’ve ever worked with or even
@@ -61,11 +67,14 @@
                 <br/>
                 <p><a href="http://www.visitfloyd.org">Floyd</a> is a rural community with an appreciation for rural living. This small one-stop-light town has a surprising amount of community and culture. This, together with the well established arts community and emerging artisan-agriculture based businesses make for a lively sense of growth and energy.
                 </p>
-              </li>
-              <li class="twitter">
-                <h3>Twitter Feed</h3>
+              </div>
+
+              <div id="twitter" class="span-8">
+                <h3>Tweets</h3>
+
                 <img src="/images/splash/katie.jpg" alt="katie"/>
-                <p>Today, I witnessed my 4 (3/4) year old chop down a 10" tree with an ax.  Then we went biking and he jumped his first ramp. Proud Mama!<p>
+                <p id="katie-tweet" ><p>
+
                 <img src="/images/splash/bobby-th.jpg" alt="bobby"/>
                 <p>logrotate your rails logs http://bit.ly/7UHgXr the other devs will thank you<p>
             
@@ -73,9 +82,10 @@
                 <h4>Gustin :: 12/31/09</h4>
                 <p>Floyd is a rural community with an appreciation for rural living. Recent downtown improvements offer the possibility of a sustainable local economy with an active commercial center. <a href="/blog.html">read more...</a>
                 </p>
-              </li>
-              <a name="contact"></a>
-              <li class="contact"><h3>Contact Us</h3>
+              </div>
+
+              <div id="contact" class="span-8 last">
+                <h3>Contact Us</h3>
                 <img src="/images/logo-footer.png"/>
                 <p>109 E. Main Street<br/>
                 Floyd, Virginia 24091<br/>
@@ -88,9 +98,8 @@
                 <input type="text" value="Subject"/>
                 <textarea rows="4" cols="28">Message</textarea>
                 <input type="submit" value="send" class="button" />
-              </li>          
-            </ul>
-          </div><!--fixed-wrap-->
+              </div>          
+
         </div><!--footer-dots-->
       </div><!--footer-->
     </div><!--footer-wrap-->

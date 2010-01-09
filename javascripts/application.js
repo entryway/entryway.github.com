@@ -1,22 +1,4 @@
- 
-$(function () {
 
-  $('div.expandable').expander();
-  
-  var path = window.location.href.split('/').slice(-1)[0];
-  var selector = 'a[href=\'/' + path + '\']';
-  $(selector).addClass('active');
-
- /* $('#twitter').getTwitter({
-      userName: 'entryway',
-      numTweets: 5,
-      loaderText: 'Loading tweets...',
-      slideIn: true,
-      showHeading: false,
-      headingText: 'Latest Tweets',
-      showProfileLink: true
-  });*/
-  
 $(window).bind('load', function() { 
 
   $('div#home-slideshow').slideViewerPro({
@@ -33,6 +15,49 @@ $(window).bind('load', function() {
     thumbsVis: false
   });
 }); 
+
+$(function () {
+
+  $('div.expandable p').expander();
+  
+  var path = window.location.href.split('/').slice(-1)[0];
+  var selector = 'a[href=\'/' + path + '\']';
+  $(selector).addClass('active');
+
+  $('div#entryway-tweet').tweet({
+    username: 'entryway',
+    count: 1
+  });
+
+  $('div#gustin-tweet').tweet({
+    username: 'gustin',
+    count: 1
+  });
+
+  $('p#katie-tweet').tweet({
+    username: 'ktluroberts',
+    count: 1
+  });
+
+  $('div#bobby-tweet').tweet({
+    username: 'bobbywilson0',
+    count: 1
+  });
+
+ /* $(".tweet").tweet({
+    username: ['gustin', 'ktluroberts', 'entryway', ],
+    query: "from:ktluroberts AND from:gustin AND from:entryway",
+    join_text: "auto",
+    avatar_size: 32,
+    count: 10,
+    auto_join_text_default: "proclaimed,", 
+    auto_join_text_ed: "we",
+    auto_join_text_ing: "we were",
+    auto_join_text_reply: "we replied to",
+    auto_join_text_url: "we were checking out",
+    loading_text: "loading tweets..."
+  });*/
+  
 });
 
 
