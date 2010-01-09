@@ -28,6 +28,25 @@ div.intro-btm {
   width: 100%;
   height: 11px;
 }
+
+/* Layout  */
+
+div.sidebar {
+  margin: 1em 0 0 0;
+  width: 30%;
+  float: left;
+}
+div.divider {
+  width: 7%;
+  height: 960px;
+  float: left;
+  margin: 2em 8em;
+}
+div.main {
+  margin: 1em 0;
+  width: 45%;
+  float: left;
+}
 /*  Services  */
 
 div.services {
@@ -51,11 +70,6 @@ div.services h4 {
 div.services h5 {
   color: #6BA6BB;
 }
-div.sidebar {
-  margin: 1em 3em;
-  width: 30%;
-  float: left;
-}
 div.services .sidebar img {
   clear: left;
   margin: 0 .8em 3em 0;
@@ -78,22 +92,9 @@ h3#chrome3 {
 h3#chrome4 {
   color: #343A3B;
 }
-div.divider {
-  background: transparent url(../images/splash/divider.png) no-repeat bottom left;
-  width: 68px;
-  height: 960px;
-  float: left;
-}
-div.div-green {
+
+div#div-green {
   background: transparent url(../images/splash/div-green.png) no-repeat 0 0;
-  width: 68px;
-  height: 960px;
-  float: left;
-}
-div.main {
-  margin: 1em 4em;
-  width: 45%;
-  float: left;
 }
 div.main img.icon {
   float: left;
@@ -124,6 +125,9 @@ div.about {
   background: #fffcf1 url(/images/bg-green2.gif) repeat-x 0 0;
   min-width: 960px;
   width: 100%;
+}
+div#div-blue {
+  background: transparent url(../images/splash/divider.png) no-repeat bottom left;
 }
 div.about h1 {
   color: #fffcf1; /* Off White */
@@ -313,11 +317,8 @@ ul.bavolek {
   color:#3D3D3D;
   font-size: 1.4em;
 }
-div.div-red {
+div#div-red {
   background: transparent url(/images/splash/div-red.png) no-repeat 0 0;
-  width: 68px;
-  height: 960px;
-  float: left;
 }
 div.process div.main h3 {
   padding: 24px 0 0 50px;
@@ -351,11 +352,9 @@ div.blog a {
   color: #6d2f8a;/*Deep Purple*/
   
 }
-div.div-purple {
+div#div-purple {
   background: transparent url(/images/splash/div-purple.png) no-repeat 0 0;
-  width: 68px;
-  height: 960px;
-  float: left;
+
 }
 
 /*  Splash  */ 
