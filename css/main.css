@@ -261,26 +261,26 @@ div#branding div.content {
 div#branding h3 {
   color: #6ba6bb;
 }
-ul.products {
+ul#products {
   padding: 0;
   font-size: 1em;
 }
-ul.products li {
+ul#products li {
   margin: 0 0 1.8em 0;
   width: 80%;
 }
-ul.products li a {
+ul#products li a {
   display: block;
   padding: .5em .2em;
 }
-ul.products li a:hover {
+ul#products li a:hover {
   background-color: #6ba6bb;/*Brand Blue*/
   text-decoration: none;
 }
-ul.products li a:hover h3 {
+ul#products li a:hover h3 {
   color: #fffcf1; /* Off White */
 }
-ul.products h4 {
+ul#products h4 {
   font-size: 1.4em;
 }
 div#splash-img img {
