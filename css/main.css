@@ -430,6 +430,7 @@ div#footer-wrap {
   float: left;
   width: 100%;
   padding-top: 3px;
+	padding-left: 10px;
 }
 div#footer {
   width: 100%;
@@ -449,10 +450,10 @@ div#footer h3 {
   margin-bottom: .5em;
   color: #83cbe5;/*Bright Blue*/
 }
-div#footer li.testimonials h3 {
+div#footer #testimonials h3 {
   color: #eb9400;
 }
-div#footer li.testimonials h3#floyd {
+div#footer #testimonials h3#floyd {
   color: #d63500;/*Bright Red*/
 }
 div#footer h4 {
@@ -463,7 +464,7 @@ div#footer a {
   color: #83cbe5;/*Bright Blue*/
   font-size: 110%;
 }
-div#footer li.twitter h3 {
+div#footer #twitter h3 {
   color: #8bac2d;/*Bright Green*/
 }
 div#footer ul {
