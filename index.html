@@ -139,8 +139,10 @@ title: website development, iphone -- entryway softweare
         </div>
         <div id="entry" class="section-main">
           <h2>what we share</h2>
-          <h3>Your values are your livelihood</h3>
-          <p>Est nec sit, felis tincidunt a ultrices et luctus dolor, proin adipiscing libero integer suspendisse adipiscing egestas, tempor leo dolor, tristique pulvinar tortor porta urna. Adipiscing nisl metus, ultricies vestibulum gravida morbi pharetra leo, mauris gravida, suspendisse odio at donec eget vestibulum lorem, nulla risus amet donec sed amet. Etiam pellentesque mauris, amet sollicitudin magna, velit at vehicula vitae vehicula luctus, sagittis netus tortor. Wisi risus ullamcorper pede facilisis, ac elit aliquet proin est quam nunc, suscipit elit in tortor, duis volutpat nunc wisi nibh integer elit. Vestibulum nonummy quam par... <br/><a href="/blog.html">Read More...</a>
+          <h3>{{ site.posts.first.title }} </h3>
+          <p>{{ site.posts.first.content | truncatewords: '100' }}
+            <a href="/blog.html">Read More -></a>
+          </p> 
           </p>
         </div><!--entry-->
       </div><!--fixed-wrap-->
