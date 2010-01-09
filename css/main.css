@@ -104,12 +104,17 @@ hr {
 }
 
 /* Colors */
-  
+.white {
+  color: #fffcf1; /* Off White */
+}
 .blue {
   color: #6ba6bb;/*Brand Blue*/
 }
 .orange {
   color: #EB9400;/*Bright Orange*/
+}
+.yellow {
+  color: #fefb86;/*Bright Orange*/
 }
 .red {
   color: #bf3000;/*Bright Red*/
@@ -169,18 +174,35 @@ div#nav-right {
   width: 65%;
   height: 100%;
 }
+div#nav-right ul {
+  font-size: 1em;
+  display: inline;
+  float: right;
+  list-style-type: none;
+  padding: 10px 3px 0 0;
+}
+div#nav-right ul li {
+  display: inline;
+  float: left;
+  border-left: 1px solid #8BCBE2;
+  list-style-type: none;
+}
+div#nav-right ul li:first-child {
+  border: medium none;
+}
+div#nav-right ul li a {
+  font-size: 1.2em;
+  padding: .2em 1.1em;
+  text-transform: uppercase;
+}
+div#nav-right ul li a:hover {
+  text-decoration: underline;
+}
+
 div#top-nav {
   background: transparent url(/images/watermark-dots.png) no-repeat 0 0;
   padding: .8em 2.5em 0 0 ;
   float: right;
-}
-div#top-nav a {
-  font-size: 1.2em;
-  padding: .2em 1.1em;
-  color: #fffcf1; /* Off White */
-}
-div#top-nav a:hover {
-  text-decoration: underline;
 }
 div#main-nav {
   margin: 7em -2em 0 0;
