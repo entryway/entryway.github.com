@@ -213,13 +213,11 @@ div#main-nav a {
   padding-top: .2em;
 }
 div#main-nav a:hover {
-  border-top: 2px dotted #85806f;
-  color: #fffcf1; /* Off White */
+  border-top: 3px dotted;
   text-decoration: none;
 }
 div#main-nav a.active {
-  color: #fffcf1; /* Off White */
-  border-top: 2px dotted #85806f;
+  border-top: 3px dotted;
 }
 div#main-nav a:hover
 
