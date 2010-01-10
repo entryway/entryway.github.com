@@ -1,13 +1,16 @@
-desc 'deploy site to specified environment rake deploy[production], staging is the default'
-task :deploy, :environment do |t, args| 
+desc 'deploy site to specified environment and branch, ie rake deploy[staging, experimental].' 
+task :deploy, :environment, :branch do |t, args| 
   require 'rubygems'
   require 'highline/import'
   require 'net/ssh'
  
   subdomain = args[:environment] || 'staging'
-  subdomain = 'www' if subdomain == 'production'
+  branch = args[:branch] || 'master'
+  if subdomain == 'production'
+    subdomain = 'www'
+    branch = 'master'
+  end
 
-  branch = 'master'
   site = "#{subdomain}.entryway.net"
 
   username = ask('Username: ') { |q| q.echo = true }
