@@ -48,34 +48,34 @@ div.main {
 }
 /*  Services  */
 
-div.services {
+div#services {
   clear: both;
   width: 100%;
   background: #fffcf1 url(/images/bg-blue2.png) repeat-x 0 0;
   float: left;
 }
-div.services h1 {
+div#services h1 {
   color: #fffcf1; /* Off White */
 }
-div.services h2 {
+div#services h2 {
   color: #454545;/* Dark Grey*/
 }
-div.services h3 {
+div#services h3 {
   color: #6ba6bb;/*Brand Blue*/
 }
-div.services h4 {
+div#services h4 {
   color: #476D7B;
 }
-div.services h5 {
+div#services h5 {
   color: #6BA6BB;
 }
-div.services .sidebar img {
+div#services .sidebar img {
   clear: left;
   margin: 0 .8em 3em 0;
   border: 3px solid #6ba6bb;/*Brand Blue*/
   width: 270px;
 }
-div.services .sidebar p {
+div#services .sidebar p {
   font-size: 1.4em;
   margin-bottom: 3em;
 }
@@ -100,7 +100,7 @@ div.main img.icon {
   width: 48px;
   height: 48px;
 }
-div.services div.main h3 {
+div#services div.main h3 {
   padding: 24px 0 0 50px;
 }
 /*
@@ -118,7 +118,7 @@ div.main h3#desktop {
 }*/
 
 /* About */
-div.about {
+div#about {
   clear: both;
   float: left;
   background: #fffcf1 url(/images/bg-green2.gif) repeat-x 0 0;
@@ -128,21 +128,21 @@ div.about {
 div#div-blue {
   background: transparent url(../images/splash/divider.png) no-repeat bottom left;
 }
-div.about h1 {
+div#about h1 {
   color: #fffcf1; /* Off White */
 }
-div.about h3 {
+div#about h3 {
   color: #6F8924;/*Bright Green*/
 }
-div.about h4 {
+div#about h4 {
   color: #60771f;/*Dark Green*/
   padding: 0;
 }
-div.about h5, div.about h5 a {
+div#about h5, div#about h5 a {
   color: #6F8924;/*Bright Green*/
   padding: 0;
 }
-div.about h6 {
+div#about h6 {
   
 }
 
@@ -198,25 +198,25 @@ div.content-photo {
   float: left;
   padding: 0 1em 1em 0;
 }
-div.about div.main h3 {
+div#about div.main h3 {
   padding: 24px 0 0 50px;
 }
 /* Portfolio */
 
-div.portfolio {
+div#portfolio {
   clear: both;
   float: left;
   background: #fffcf1 url(/images/bg-orange4.png) repeat-x 0 0;
   min-width: 960px;
   width: 100%;
-  
 }
-
-
-div.portfolio h1 {
+div#portfolio h1 {
 
 }
-div.portfolio h3 {
+div#portfolio h2 {
+  padding-left: 3%;
+}
+div#portfolio h3 {
   color: #EB9400;
 }
 div.piece {
@@ -225,14 +225,18 @@ div.piece {
   width: 100%; 
   margin: 4% 0; 
 }
-div.portfolio div.piece h3 {
+div.piece#first-piece {
+  margin-top: 1em
+}
+div#portfolio div.piece h3 {
   padding-top: 1em;
 }
 div.description {
   float: left;
   width: 26%;
+  padding-left: 3%;
 }
-div.portfolio .feat-slides {
+div#portfolio .feat-slides {
   width: 63%;
   margin: 0 3%;
   float: left;
@@ -258,8 +262,9 @@ div#final {
 }
 ul.other-clients {
   float: left;
-  width: 100%;
+  width: 97%;
   margin: 1em 0;
+  padding-left: 3%;
 }
 ul.other-clients li { 
   float: left;
@@ -276,27 +281,31 @@ ul.other-clients h3 {
 
 /*  Process  */
 
-div.process {
+div#process {
   clear: both;
   float: left;
   min-width: 960px;
   background: #fffcf1 url(/images/bg-red2.gif) repeat-x 0 0;
   width: 100%;
 }
-div.process h1 {
+div#process h1 {
 }
-div.process h2 {
+div#process h2 {
   color: #454545;
 }
-div.process h3 {
+div#process h3 {
   color: #bf3000;/*Bright Red*/
 }
-div.process h4 {
+div#process h4 {
   color: #A12800;/*Deep Red*/
 }
-div.process h5 {
+div#process h5 {
   color: #bf3000;/*Bright Red*/
   padding-top: 0;
+}
+div#process a {
+  color: #A12800;/*Deep Red*/
+  
 }
 div.testimonial img {
   margin: 0 .8em 1em 0;
@@ -318,7 +327,7 @@ ul.bavolek {
 div#div-red {
   background: transparent url(/images/splash/div-red.png) no-repeat 0 0;
 }
-div.process div.main h3 {
+div#process div.main h3 {
   padding: 24px 0 0 50px;
 }
 

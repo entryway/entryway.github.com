@@ -252,7 +252,7 @@ div.content p{
 div.section-side {
   float: left;
   width: 25%;
-  margin: 0 2% 0 0;
+  margin: 0 2% 0 3%;
   padding: 0;
 }
 div.section-main {
@@ -485,7 +485,7 @@ div#footer-line {
 }
 div.footer-col{
   float: left;
-  width: 33%;
+  width: 32%;
 }
 div#footer h3 {
   border-bottom: 2px dotted;
@@ -523,6 +523,9 @@ a.button {
 }
 a.button:hover {
   background-position: 0 -40px;
+}
+div#footer #testimonials {
+  padding-left: 4%;
 }
 div#footer #testimonials h3 {
   color: #d63500;/*Bright Red*/
