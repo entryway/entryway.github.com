@@ -17,15 +17,11 @@ $(document).ready(function(){
   
 });
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refactors slide methods
 var Slide = function(element, slideright, speed) {
   var slidespeed = speed || slidespeed;
-  var total_images = parseInt($('.total-images').val());
-  var current_image_number = parseInt($('.active-image').val());
-  var next_image_number = ((current_image_number + total_images + (slideright ? 1 : -1)) % total_images); 
+  var total_images = parseInt($(element).closest('ul').prevAll('.total-images').val());
+  var current_image_number = parseInt($(element).closest('ul').prevAll('.active-image').val());
+  var next_image_number = ((current_image_number + total_images + (slideright ? 1 : -1)) % total_images);
   var navigation_ul = $(element).closest('ul');
   var image_div = navigation_ul.nextAll('div.slideViewer');
   var current_slide = image_div.find('li.slide-' + current_image_number);
@@ -40,12 +36,14 @@ var Slide = function(element, slideright, speed) {
 }
 
 var bulletSlide = function(element) {
-  var bullet_number = $(element).attr('class').substr(-1, 1);
+  var bullet_number = parseInt($(element).attr('class').substr(-1, 1));
   var current_image_number = parseInt($('.active-image').val());
   var slide_right = (bullet_number > current_image_number);
   slide_amount = Math.abs(bullet_number - current_image_number);
   speed = slidespeed/slide_amount;
-  Slide(element, slide_right, speed);
+  if (slide_amount > 0) {
+    Slide(element, slide_right, speed);
+  }
   //this is kind of tricky:
   //for multiple slides we want to move through them faster but evenly. This sets an interval and
   //then clears it after the correct multiple of time has elapsed.
@@ -58,7 +56,3 @@ var bulletSlide = function(element) {
   }
 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> refactors slide methods

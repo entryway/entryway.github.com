@@ -35,6 +35,30 @@
   font: normal 10px Verdana;
 }
 
+.slide-0 {
+  z-index: 1;
+}
+.slide-1 {
+  display:none; 
+  z-index: 2;
+}
+
+.slide-2 {
+  display:none; 
+  z-index: 3;
+}
+
+.slide-3{
+  display:none; 
+  z-index: 4;
+}
+
+.slide-4 {
+  display:none; 
+  z-index: 5;
+}
+
+
 .thumbSlider { /*the thumbnails slider*/
   overflow: hidden;
   width: 1%;

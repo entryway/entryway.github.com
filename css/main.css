@@ -88,6 +88,11 @@ input {
   padding: .5em;
   display: block;
 }
+
+input.hidden {
+  display:none;
+}
+
 input.button {
   padding: 2em;
   font-size: 1.4em;
