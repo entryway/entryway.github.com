@@ -215,16 +215,30 @@ div#main-nav {
 div#main-nav a {
   font-size: 1.7em;
   margin: 0 1.5em;
-  padding-top: .2em;
+  padding: .4em .1em 0 0;
 }
 div#main-nav a:hover {
-  border-top: 3px dotted;
   text-decoration: none;
 }
-div#main-nav a.active {
-  border-top: 3px dotted;
+div#main-nav a.green:hover, a.green.active {
+  background: transparent url(/images/splash/nav-dots-green.png) no-repeat scroll 0 0;
+}
+div#main-nav a.orange:hover, a.orange.active {
+  background: transparent url(/images/splash/nav-dots-orange.png) no-repeat scroll 0 0;
+}
+div#main-nav a.red:hover, a.red.active {
+  background: transparent url(/images/splash/nav-dots-red.png) no-repeat scroll 0 0;
+}
+div#main-nav a.blue:hover, a.blue.active {
+  background: transparent url(/images/splash/nav-dots-blue.png) no-repeat scroll 0 0;
+}
+div#main-nav a.purple:hover, a.purple.active {
+  background: transparent url(/images/splash/nav-dots-purple.png) no-repeat scroll 0 0;
 }
 
+/*div#main-nav a.active {
+  border-top: 3px dotted;
+}*/
 /*  Layout */
 
 div.content {
@@ -461,15 +475,15 @@ div#footer-wrap {
   padding-top: 3px;
   float: left;
 }
-div#footer-dots {
+div#footer-line {
   background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
   width: 100%;
+  height: 3px;
   float: left;
 }
 div.footer-col{
   float: left;
-  width: 30%;
-  margin-left: 3%;
+  width: 33%;
 }
 div#footer h3 {
   border-bottom: 2px dotted;
