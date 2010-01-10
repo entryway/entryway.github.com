@@ -185,7 +185,6 @@ div#nav-right ul {
 div#nav-right ul li {
   display: inline;
   float: left;
-  border-left: 1px solid #8BCBE2;
   list-style-type: none;
 }
 div#nav-right ul li:first-child {
@@ -503,6 +502,12 @@ div#footer #testimonials h3 {
 }
 div#footer #testimonials h3#floyd {
   color: #d63500;/*Bright Red*/
+}
+div#footer #testimonials p {
+  font-style: italic;
+}
+div#footer #testimonials p:last-child {
+  font-style: normal;
 }
 div#footer blockquote {
   color: #fffcf1; /* Off White */
