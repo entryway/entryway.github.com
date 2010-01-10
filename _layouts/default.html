@@ -18,26 +18,7 @@
   <script type="text/javascript" src="/javascripts/analytics.js"></script> 
 </head>
 <body>
-    <div id="header">
-      <div class="fixed-wrap">
-        <div id="logo">
-          <a href="/"><h1>Entryway</h1></a>
-        </div>
-        <div id="nav-right">
-          <ul id="top-nav">
-            <li><a href="/" class="white">HOME </a></li>
-            <li><a href="/blog.html" class="purple">BLOG</a></li>
-            <li><a href="#contact" class="yellow">CONTACT</a></li>
-          </ul>
-          <div id="main-nav">
-            <a class="green" href="/about.html">ABOUT</a>
-            <a class="orange" href="/portfolio.html">PORTFOLIO</a>
-            <a class="red" href="/process.html">PROCESS</a>
-            <a class="blue" href="/services.html">SERVICES</a>
-          </div>
-        </div>
-      </div><!--fixed-wrap-->
-    </div><!--header-->
+    {% include header.html %}
 
     {{ content }}
 
