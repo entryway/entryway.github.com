@@ -31,6 +31,7 @@ $(function () {
 
   $('div#gustin-tweet').tweet({
     username: 'gustin',
+    join_text: 'auto',
     count: 1
   });
 
