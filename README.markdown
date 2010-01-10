@@ -1,7 +1,10 @@
-!Deploying
+# Deploying
 
-rake deploy[:environment] where :environment can be staging or production
+    rake deploy[:environment] where :environment can be staging or production
 
-rake deploy[production]
+to deploy to staging:
+    rake deploy
 
-environment defaults to staging so 'rake deploy' is all that is needed to deploy to staging
+to deploy to production:
+    rake deploy[production]
+
