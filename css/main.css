@@ -243,9 +243,8 @@ div#main-nav a.purple:hover, a.purple.active {
 
 div.content {
   clear: both;
-  padding: 0 3%;
   float: left;
-  width: 94%;
+  width: 100%;
 }
 div.content p{
   width: 100%;
@@ -473,7 +472,7 @@ div#footer {
   float: left;
 }
 div#footer-wrap {
-  background: transparent url(/images/splash/watermark-dots2.png) no-repeat right bottom; 
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat left bottom; 
   width: 100%;
   padding-top: 3px;
   float: left;

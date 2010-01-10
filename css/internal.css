@@ -223,7 +223,7 @@ div.piece {
   clear: both;
   float: left;
   width: 100%; 
-  margin: 4em 0; 
+  margin: 4% 0; 
 }
 div.portfolio div.piece h3 {
   padding-top: 1em;
@@ -231,12 +231,11 @@ div.portfolio div.piece h3 {
 div.description {
   float: left;
   width: 26%;
-  margin: 0 4% 0 0;
 }
 div.portfolio .feat-slides {
   width: 63%;
   margin: 0 3%;
-  float: right;
+  float: left;
 }
 .feat-slides img{
   border: 3px solid #EB9400;
