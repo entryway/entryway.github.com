@@ -206,7 +206,7 @@ div#top-nav {
   float: right;
 }
 div#main-nav {
-  margin: 7em -2em 0 0;
+  margin: 7em 0 0 0;
 }
 div#main-nav a {
   font-size: 1.7em;
@@ -456,7 +456,6 @@ div#footer {
   clear: both;
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0; 
   float: left;
-  font-size: .75em;
 }
 div#footer-dots {
   background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom right;
@@ -490,7 +489,10 @@ div#footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
   margin-bottom: 1em;
-  font-size: 140%;
+  
+}
+div#footer span {
+  color: #fffcf1; /* Off White */
   
 }
 a.button {
@@ -521,10 +523,10 @@ ul.tweet-list li {
   
 }
 div#entryway-tweet ul {
-  background: transparent url(/images/splash/jon-th.jpg) no-repeat 0 0;
+  background: transparent url(/images/splash/entryway-th.jpg) no-repeat 0 0;
 }
 div#gustin-tweet ul{
-  background: transparent url(/images/splash/jon-th.jpg) no-repeat 0 0;
+  background: transparent url(/images/splash/gustin-th.jpg) no-repeat 0 0;
 }
 div#bobby-tweet ul{
    background: transparent url(/images/splash/bobby-th.jpg) no-repeat 0 0;
@@ -533,9 +535,7 @@ div#katie-tweet ul{
   background: transparent url(/images/splash/katie-th.jpg) no-repeat 0 0;
   
 }
-div#entryway-tweet {
-  
-}
+
 div#footer h3#blog {
   clear: left;
   padding: 1em 0 0 0 ;
