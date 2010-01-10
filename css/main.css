@@ -453,23 +453,29 @@ div#footer {
   width: 100%;
   clear: both;
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0;
+  float: left;
 }
 div#footer-wrap {
   background: transparent url(/images/splash/watermark-dots2.png) no-repeat right bottom; 
   width: 100%;
   padding-top: 3px;
-  margin-left: 155px;
+  float: left;
 }
 div#footer-dots {
   background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
   width: 100%;
   float: left;
 }
+div.footer-col{
+  float: left;
+  width: 30%;
+  margin-left: 3%;
+}
 div#footer h3 {
   border-bottom: 2px dotted;
   width: 80%;
   margin-bottom: .5em;
-  color: #fefb86;/*Bright Blue*/
+  color: #83cbe5;/*Bright Blue*/
 }
 div#footer h4 {
   color: #fffcf1; /* Off White */
