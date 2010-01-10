@@ -4,7 +4,7 @@ task :deploy, :environment do |t, args|
   require 'highline/import'
   require 'net/ssh'
  
-  subdomain = args[:environmnet] || 'staging'
+  subdomain = args[:environment] || 'staging'
   subdomain = 'www' if subdomain == 'production'
 
   branch = 'master'
@@ -21,9 +21,9 @@ git pull origin #{branch}
 git checkout -f
 rm -rf _site
 jekyll --no-auto
-mv _site ../_#{branch}
-mv ../#{branch} _old
-mv ../_#{branch} ../#{branch}
+mv _site ../_public
+mv ../public _old
+mv ../_public ../public
 rm -rf _old
 EOF
     commands = commands.gsub(/\n/, "; ")
