@@ -445,20 +445,20 @@ div#info a {
 
 /*  Footer */
 
-div#footer-wrap {
-  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
-  float: left;
-  width: 100%;
-  padding-top: 3px;
-}
 div#footer {
   width: 100%;
   clear: both;
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0; 
   float: left;
 }
+div#footer-wrap {
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom right; 
+  float: left;
+  width: 100%;
+  padding-top: 3px;
+}
 div#footer-dots {
-  background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom right;
+  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
   width: 100%;
   float: left;
 }
