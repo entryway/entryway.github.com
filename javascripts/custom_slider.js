@@ -17,7 +17,10 @@ $(document).ready(function(){
   
 });
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refactors slide methods
 var Slide = function(element, slideright, speed) {
   var slidespeed = speed || slidespeed;
   var total_images = parseInt($('.total-images').val());
@@ -55,4 +58,7 @@ var bulletSlide = function(element) {
   }
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> refactors slide methods
