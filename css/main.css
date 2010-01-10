@@ -450,7 +450,7 @@ div#footer {
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0;
 }
 div#footer-wrap {
-  background: transparent url(/images/splash/watermark-dots2.png) no-repeat right; 
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat right bottom; 
   width: 100%;
   padding-top: 3px;
   margin-left: 155px;
