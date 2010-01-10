@@ -1,12 +1,15 @@
 .tweet {
-  display: inline;
+  display: block;
+  margin: 1em 0;
 }
   
 .tweet .tweet_list {
   -webkit-border-radius: .5em;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 59px;
+  min-height: 57px;
+  width: 200px;
 }
     
 .tweet .tweet_list li {

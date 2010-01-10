@@ -162,6 +162,7 @@ div#logo {
   float: left;
   background:  url(/images/logo11.png) no-repeat 0 0;
   width: 30%;
+  margin-left: 4%;
   height: 100px;
   text-indent:-9000px;
 }
@@ -219,7 +220,6 @@ div#main-nav a:hover {
 div#main-nav a.active {
   border-top: 3px dotted;
 }
-div#main-nav a:hover
 
 /*  Layout */
 
@@ -241,7 +241,7 @@ div.section-side {
 div.section-main {
   float: left;
   width: 64%;
-  margin: 0 0 0 4%;
+  margin: 0 0 0 0;
   padding: 0;
 }
 div.link-bar {
@@ -486,14 +486,6 @@ div#footer a {
 div#footer #twitter h3 {
   color: #8bac2d;/*Bright Green*/
 }
-div#footer ul {
-  float: left;
-  padding: 2em 0;
-}
-div#footer ul li {
-  float: left;
-  width: 33%;
-}
 div#footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
@@ -518,19 +510,30 @@ div#footer blockquote {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-#twitter-widget-1 .twitter-avatar {
-  display:block;
-}
+div.tweet {
 
-li.twitter img {
-  clear: left;
-  display:block;
-  float:left;
-  padding: 0 .7em 0 0;
-  display: block;
 }
-li.twitter p {
+ul.tweet-list {
+  width: 80%;
+  padding-left: 6em;
+}
+ul.tweet-list li {
   
+}
+div#entryway-tweet ul {
+  background: transparent url(/images/splash/jon-th.jpg) no-repeat 0 0;
+}
+div#gustin-tweet ul{
+  background: transparent url(/images/splash/jon-th.jpg) no-repeat 0 0;
+}
+div#bobby-tweet ul{
+   background: transparent url(/images/splash/bobby-th.jpg) no-repeat 0 0;
+} 
+div#katie-tweet ul{
+  background: transparent url(/images/splash/katie-th.jpg) no-repeat 0 0;
+  
+}
+div#entryway-tweet {
   
 }
 div#footer h3#blog {

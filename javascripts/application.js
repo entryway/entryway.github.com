@@ -34,7 +34,7 @@ $(function () {
     count: 1
   });
 
-  $('p#katie-tweet').tweet({
+  $('div#katie-tweet').tweet({
     username: 'ktluroberts',
     count: 1
   });

@@ -3,10 +3,9 @@
 /* Intro */
 div.intro {
   background: url(/images/lines-dots.png) no-repeat 500px -80px;
-  padding: 0 0 0 10%;
   margin: 7px 0 0 0;
   float: left;
-  width: 90%;
+  width: 100%;
   height: 130px;
 }
 div.fixed-wrap{
@@ -15,12 +14,12 @@ div.fixed-wrap{
   height: 100%;
 }
 div.intro h1 {
-  height: 70px;
   color: #fffcf1; /* Off White */
+  margin-left: 80px;
 }
 div.intro p {
   color: #1d1c18;
-  margin-top: -25px;
+  margin: 0 0 0 80px;
   min-width: 675px;
 }
 div.intro-btm {
@@ -32,7 +31,7 @@ div.intro-btm {
 /* Layout  */
 
 div.sidebar {
-  margin: 1em 0 0 0;
+  margin: 1em 0 0 3%;
   width: 30%;
   float: left;
 }
@@ -40,11 +39,11 @@ div.divider {
   width: 7%;
   height: 960px;
   float: left;
-  margin: 2em 5em;
+  margin: 2em 3em;
 }
 div.main {
   margin: 1em 0;
-  width: 50%;
+  width: 48%;
   float: left;
 }
 /*  Services  */
