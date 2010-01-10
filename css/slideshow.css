@@ -3,24 +3,28 @@
 
 .slideViewer { 
   position: relative;
-  overflow: hidden; 
-  margin: 0;
+/*  overflow: hidden; 
+*/  margin: 0;
   padding: 0;
   background: #fff;
 }
 
 .slideViewer ul {  /*your list of images*/
   position: relative;
+  float:left;
   left: 0;
   top: 0;
-  width: 1%;
+  width: 625px;
+  height: 331px;
   list-style-type: none;
   margin: 0; 
   padding: 0;
 }
 
 .slideViewer ul li {
+  position:absolute;
   float:left;
+  width: 625px;
 }
 
 /*typographic info*/
@@ -30,6 +34,30 @@
   color: #000;
   font: normal 10px Verdana;
 }
+
+.slide-0 {
+  z-index: 1;
+}
+.slide-1 {
+  display:none; 
+  z-index: 2;
+}
+
+.slide-2 {
+  display:none; 
+  z-index: 3;
+}
+
+.slide-3{
+  display:none; 
+  z-index: 4;
+}
+
+.slide-4 {
+  display:none; 
+  z-index: 5;
+}
+
 
 .thumbSlider { /*the thumbnails slider*/
   overflow: hidden;
