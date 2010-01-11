@@ -24,9 +24,8 @@ $(function () {
   var selector = 'a[href=\'/' + path + '\']';
   $(selector).addClass('active');
 
-  /*
   $('div#entryway-tweet').tweet({
-    username: 'entryway',
+username: 'entryway',
     count: 1,
     join_text: 'auto',
     auto_join_text_default: "we proclaimed,", 
@@ -56,7 +55,7 @@ $(function () {
     auto_join_text_reply: 'bobby replied to',
     auto_join_text_default: 'bobby proclaimed,'
   });
-*/
+
  /* $(".tweet").tweet({
     username: ['gustin', 'ktluroberts', 'entryway', ],
     query: "from:ktluroberts AND from:gustin AND from:entryway",
