@@ -44,17 +44,15 @@ var bulletSlide = function(element) {
   if (slide_amount > 0) {
     Slide(element, slide_right, speed);
   }
+  //this is kind of tricky:
+  //for multiple slides we want to move through them faster but evenly. This sets an interval and
+  //then clears it after the correct multiple of time has elapsed.
   if (slide_amount > 1)
   {
-     var remaining_slides = slide_amount - 1
-     var delayed_slides = function() { 
-       Slide(element, slide_right, speed);
-       if (remaining_slides > 1) {
-         remaining_slides -= 1;
-         setTimeout(delayed_slides, speed);
-       }
-     }
-     setTimeout(delayed_slides, speed);
+     var delayed_slide = function() { Slide(element, slide_right, speed)};
+     var delayed_slides = setInterval(delayed_slide, speed);
+     var clear_delays = function() { clearInterval(delayed_slides) };
+     setTimeout(clear_delays, speed * (slide_amount - 1));
   }
 
 }
