@@ -1,20 +1,4 @@
-
-desc "Compiles all .less files in the stylesheets directory."
-task :less do
- 
- require 'less'
- 
- directory = 'css/'
- stylesheets = Dir.entries(directory)
- 
- stylesheets.each do |sheet|
-  if(File.extname(sheet) == ".less")
-   `lessc #{directory + sheet}`
-  end
- end
-end
-
-desc "Deploy site to specified environment and branch, ie rake deploy[staging, experimental]."
+desc 'deploy site to specified environment and branch, ie rake deploy[staging, experimental].' 
 task :deploy, :environment, :branch do |t, args| 
   require 'rubygems'
   require 'highline/import'
