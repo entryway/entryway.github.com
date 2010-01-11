@@ -578,7 +578,7 @@ div#footer h3#blog {
 li.contact {
   
 }
-li.contact img {
+div#contact img {
   float: left;
 }
 div.expandable {
