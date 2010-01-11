@@ -215,23 +215,36 @@ div#main-nav {
 div#main-nav a {
   font-size: 1.7em;
   margin: 0 1.5em;
-  padding-top: .2em;
+  padding: .4em .1em 0 0;
 }
 div#main-nav a:hover {
-  border-top: 3px dotted;
   text-decoration: none;
 }
-div#main-nav a.active {
-  border-top: 3px dotted;
+div#main-nav a.green:hover, a.green.active {
+  background: transparent url(/images/splash/nav-dots-green.png) no-repeat scroll 0 0;
+}
+div#main-nav a.orange:hover, a.orange.active {
+  background: transparent url(/images/splash/nav-dots-orange.png) no-repeat scroll 0 0;
+}
+div#main-nav a.red:hover, a.red.active {
+  background: transparent url(/images/splash/nav-dots-red.png) no-repeat scroll 0 0;
+}
+div#main-nav a.blue:hover, a.blue.active {
+  background: transparent url(/images/splash/nav-dots-blue.png) no-repeat scroll 0 0;
+}
+div#main-nav a.purple:hover, a.purple.active {
+  background: transparent url(/images/splash/nav-dots-purple.png) no-repeat scroll 0 0;
 }
 
+/*div#main-nav a.active {
+  border-top: 3px dotted;
+}*/
 /*  Layout */
 
 div.content {
   clear: both;
-  padding: 0 3%;
   float: left;
-  width: 94%;
+  width: 100%;
 }
 div.content p{
   width: 100%;
@@ -239,13 +252,13 @@ div.content p{
 div.section-side {
   float: left;
   width: 25%;
-  margin: 0 2% 0 0;
+  margin: 0 2% 0 3%;
   padding: 0;
 }
 div.section-main {
   float: left;
   width: 64%;
-  margin: 0 0 0 0;
+  margin-left: 2%;
   padding: 0;
 }
 div.link-bar {
@@ -426,8 +439,11 @@ div.team {
 img.big {
   border: 3px solid #6F8924;/*Bright Green*/
 }
+div#pics {
+  min-height: 350px;
+}
 div#pics a {
-  margin: 1em 1em 0 0;
+  margin: 1em 1.5em 0 0;
   display: block;
   float: left;  
 }
@@ -435,7 +451,7 @@ div#pics a img {
   border: 3px solid #6F8924;/*Bright Green*/
 }
 div#pics a:hover {
-  
+  border-color: #91b32e;/*Brighter Green*/
 }
 div#info h2 {
   color: #454545;
@@ -453,23 +469,29 @@ div#footer {
   width: 100%;
   clear: both;
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0;
+  float: left;
 }
 div#footer-wrap {
-  background: transparent url(/images/splash/watermark-dots2.png) no-repeat right bottom; 
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat left bottom; 
   width: 100%;
   padding-top: 3px;
-  margin-left: 155px;
+  float: left;
 }
-div#footer-dots {
+div#footer-line {
   background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
   width: 100%;
+  height: 3px;
   float: left;
+}
+div.footer-col{
+  float: left;
+  width: 32%;
 }
 div#footer h3 {
   border-bottom: 2px dotted;
   width: 80%;
   margin-bottom: .5em;
-  color: #83cbe5;/*Bright Blue*/
+  color: #eb9400;/*Bright Orange*/
 }
 div#footer h4 {
   color: #fffcf1; /* Off White */
@@ -502,11 +524,14 @@ a.button {
 a.button:hover {
   background-position: 0 -40px;
 }
-div#footer #testimonials h3 {
-  color: #eb9400;
+div#footer #testimonials {
+  padding-left: 4%;
 }
-div#footer #testimonials h3#floyd {
+div#footer #testimonials h3 {
   color: #d63500;/*Bright Red*/
+}
+div#footer h3#floyd {
+  color: #eb9400;/*Bright Orange*/
 }
 div#footer #testimonials p {
   font-style: italic;
@@ -553,7 +578,7 @@ div#footer h3#blog {
 li.contact {
   
 }
-li.contact img {
+div#contact img {
   float: left;
 }
 div.expandable {
