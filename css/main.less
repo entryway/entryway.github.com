@@ -1,0 +1,607 @@
+html {
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 62.5%;
+  font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
+  background: #fffcf1 url(/images/splash/texture.png) repeat-x 0 0; /* Off White */
+  width: 100%;
+  min-width: 960px;
+}
+h1 {
+  font-size: 3.5em;
+  color: #545146;/*Medium Brown*/
+  font-weight: normal;
+  padding: 0;
+  margin: .5em 0 .5px;
+}
+h2 {
+  font-style: italic;
+  font-size: 2.8em; 
+  color: #454545;
+}
+h3 {
+    font-size: 2em; 
+    color: #545146;
+    margin: 0;
+    padding: .1em 0;
+}
+h4 {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: #454545;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: bold;
+  color: #454545;
+  margin: 0;
+  padding: .5em 0;
+}
+h6 {
+  font-size: 1.3em;
+  padding: 0;
+  margin: .5em 0 0 0;
+  color: #454545;
+}
+p {
+  font-size: 1.6em;
+  line-height: 1.5em;
+  color: #3D3D3D;
+  margin-top: .5em;
+}
+img {
+  border: none;
+}
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #6ba6bb;/*Brand Blue*/
+}
+a:active {
+  
+}
+a:hover {
+  text-decoration: underline;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+ol{
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #1d1c18;/*Dark Brown*/
+}
+li {
+  list-style-type: none;
+}
+input {
+  margin: .5em 0;
+  padding: .5em;
+  display: block;
+}
+
+input.hidden {
+  display:none;
+}
+
+input.button {
+  padding: 2em;
+  font-size: 1.4em;
+  width: 90px;
+  
+}
+textarea {
+}
+submit {
+  
+}
+hr {
+  color: #1d1c18;/*Dark Brown*/
+}
+
+/* Colors */
+@off-white: #5B83AD;
+@brand-blue: #6ba6bb;
+@bright-orange: #EB9400;
+@mellow-yellow: #fefb86;
+@bright-red: #bf3000;
+@bright-green: #6F8924;
+@bright-purple: #8d3db3;
+.white {
+  color: @off-white;
+}
+.blue {
+  color: @brand-blue;
+}
+.orange {
+  color: @bright-orange;
+}
+.yellow {
+  color: @mellow-yellow;
+}
+.red {
+  color: @bright-red;
+}
+.green {
+  color: @bright-green;
+}
+.purple {
+  color: @bright-purple;
+}
+div#red {
+  background: #A12800;/*Deep Red*/
+}
+div#orange {
+  background: #EB9400;/*Bright Orange*/
+}
+div#orange a {
+  color: #fff;
+}
+div#green {
+  background: #6F8924;/*Bright Green*/
+}
+div#blue {
+  background: #6ba6bb;/*Brand Blue*/
+}
+div#purple {
+  background: #6d2f8a;/*Deep Purple*/
+}
+
+/*Header*/
+
+div#header {
+  background: transparent url(/images/splash/watermark-dots.png) no-repeat 310px -15px;
+  float: left;
+  width: 100%;
+  height: 10em;
+  
+}
+div#wrap1 {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+}
+div#logo {
+  float: left;
+  background:  url(/images/logo11.png) no-repeat 0 0;
+  width: 30%;
+  margin-left: 4%;
+  height: 100px;
+  text-indent:-9000px;
+}
+div#logo h1 {
+
+}
+div#nav-right {
+  float: right;
+  text-align: right;
+  width: 65%;
+  height: 100%;
+}
+div#nav-right ul {
+  font-size: 1em;
+  display: inline;
+  float: right;
+  list-style-type: none;
+  padding: 10px 3px 0 0;
+}
+div#nav-right ul li {
+  display: inline;
+  float: left;
+  list-style-type: none;
+}
+div#nav-right ul li:first-child {
+  border: medium none;
+}
+div#nav-right ul li a {
+  font-size: 1.2em;
+  padding: .2em 1.1em;
+  text-transform: uppercase;
+}
+div#nav-right ul li a:hover {
+  text-decoration: underline;
+}
+
+div#top-nav {
+  background: transparent url(/images/watermark-dots.png) no-repeat 0 0;
+  padding: .8em 2.5em 0 0 ;
+  float: right;
+}
+div#main-nav {
+  margin: 7em 0 0 0;
+}
+div#main-nav a {
+  font-size: 1.7em;
+  margin: 0 1.5em;
+  padding: .4em .1em 0 0;
+}
+div#main-nav a:hover {
+  text-decoration: none;
+}
+div#main-nav a.green:hover, a.green.active {
+  background: transparent url(/images/splash/nav-dots-green.png) no-repeat scroll 0 0;
+}
+div#main-nav a.orange:hover, a.orange.active {
+  background: transparent url(/images/splash/nav-dots-orange.png) no-repeat scroll 0 0;
+}
+div#main-nav a.red:hover, a.red.active {
+  background: transparent url(/images/splash/nav-dots-red.png) no-repeat scroll 0 0;
+}
+div#main-nav a.blue:hover, a.blue.active {
+  background: transparent url(/images/splash/nav-dots-blue.png) no-repeat scroll 0 0;
+}
+div#main-nav a.purple:hover, a.purple.active {
+  background: transparent url(/images/splash/nav-dots-purple.png) no-repeat scroll 0 0;
+}
+
+/*div#main-nav a.active {
+  border-top: 3px dotted;
+}*/
+/*  Layout */
+
+div.content {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+div.content p{
+  width: 100%;
+}
+div.section-side {
+  float: left;
+  width: 25%;
+  margin: 0 2% 0 3%;
+  padding: 0;
+}
+div.section-main {
+  float: left;
+  width: 64%;
+  margin-left: 2%;
+  padding: 0;
+}
+div.link-bar {
+  clear: both;
+}
+div.link-bar a {
+  display: block;
+  text-align: right;
+  padding: 1em;
+  background: url(/images/lines-dots.png) no-repeat -60px 5px;
+  color: #fffcf1; /* Off White */
+  font-size: 1.5em;
+  height: 15px;
+}
+div.link-bar a:hover {
+  background: url(/images/lines-dots.png) no-repeat -60px -73px;
+  height: 15px;
+}
+div.shadow {
+  background:  url(/images/splash/shadow2.png) repeat-x 0 0 ;
+  width: 100%;
+  height: 27px;
+}
+
+/*   Branding  */
+
+div#branding {
+  clear: both;
+  background: #fffcf1 url(/images/bg-blue2.png) repeat-x 0 0;
+  float: left;
+  width: 100%;
+}
+
+div#branding div.content {
+  background:  url(/images/bg-blue3.gif) repeat-x 0 0; 
+}
+div#branding h3 {
+  color: #6ba6bb;
+}
+ul#products {
+  padding: 0;
+  font-size: 1em;
+}
+ul#products li {
+  margin: 0 0 1.8em 0;
+  width: 80%;
+}
+ul#products li a {
+  display: block;
+  padding: .5em .2em;
+}
+ul#products li a:hover {
+  background-color: #6ba6bb;/*Brand Blue*/
+  text-decoration: none;
+}
+ul#products li a:hover h3 {
+  color: #fffcf1; /* Off White */
+}
+ul#products h4 {
+  font-size: 1.4em;
+}
+div#splash-img img {
+  margin: 3em 0 ;
+  border: 3px solid #6ba6bb;/*Brand Blue*/
+}
+
+/* Feature */
+
+div.feature {
+  clear:both;
+  width: 100%;
+  background:  url(/images/bg-orange3.gif) repeat-x 0 0;  
+}
+div.feature h3 {
+  color: #EB9400;
+}
+div#feat-info p {
+  width: 100%;
+}
+div#feat-info a {
+  font-size: 1.5em;
+  color: #EB9400; /*Orange*/
+}
+ul.slides-nav {
+  float: left;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+  width: 625px;
+}
+ul.slides-nav li {
+  display: block;
+  float: left;
+}
+ul.slides-nav li a {
+  display: block;
+  background: transparent url(/images/splash/arrows.png) no-repeat 0 0;
+  width: 18px;
+  height: 18px;
+}
+ul.slides-nav li.left-arrow {
+  padding-right: 220px;
+}
+ul.slides-nav li.left-arrow a {
+  background-position: 0 0;  
+}
+ul.slides-nav li.left-arrow a:hover {
+  background-position: 0 -18px;
+}
+ul.slides-nav li.bullet {
+  padding-right: 2em;
+}
+ul.slides-nav li.bullet a {
+  background-position: 0 -36px ;
+}
+ul.slides-nav li.bullet a:hover {
+  background-position: -16px -36px;
+}
+ul.slides-nav li.bullet a.active {
+  background-position: -16px -36px;
+}
+ul.slides-nav li.right-arrow {
+  float: right;
+  padding-right: 20px;
+}
+ul.slides-nav li.right-arrow a {
+  background-position: -18px 0;
+}
+ul.slides-nav li.right-arrow a:hover {
+  background-position: -18px -18px;
+}
+
+div#feat-slides {
+  height: 350px;
+}
+div#feat-slides img {
+  clear: left;
+  display: block;
+  margin-bottom: 1em;
+}
+
+/*  Agile Process   */ 
+
+div.agile-process {
+  clear: both;
+  width: 100%;
+  background:  url(/images/bg-red3.gif) repeat-x 0 0;  
+}
+div#diagram img {
+  border: 3px solid #A12800;/*Deep Red*/
+  margin: 2em 0 1em 0;
+}
+div#agile h3 {
+  color: #A12800;
+}
+
+/* Blog */
+
+div.blogger {
+  clear: both;
+  width: 100%;
+  background:  url(/images/bg-purple3.gif) repeat-x 0 0;  
+}
+div#stock img {
+  border: 3px solid #6d2f8a;/*Deep Purple*/
+  margin: 2em 0 1em 0;
+}
+div.blogger h3 {
+  color: #6d2f8a;/*Deep Purple*/
+}
+/*  Team  */
+
+div.team {
+  background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;
+  width: 100%;
+  clear: both;
+}
+img.big {
+  border: 3px solid #6F8924;/*Bright Green*/
+}
+div#pics {
+  min-height: 350px;
+}
+div#pics a {
+  margin: 1em 1.5em 0 0;
+  display: block;
+  float: left;  
+}
+div#pics a img {
+  border: 3px solid #6F8924;/*Bright Green*/
+}
+div#pics a:hover {
+  border-color: #91b32e;/*Brighter Green*/
+}
+div#info h2 {
+  color: #454545;
+}
+div#info h3 {
+  color: #6F8924;
+}
+div#info a {
+  color: #6F8924;/*Bright Green*/
+}
+
+/*  Footer */
+
+div#footer {
+  width: 100%;
+  clear: both;
+  background: #1d1c18 url(/images/splash/texture.png) repeat 0 0;
+  float: left;
+}
+div#footer-wrap {
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat left bottom; 
+  width: 100%;
+  padding-top: 3px;
+  float: left;
+}
+div#footer-line {
+  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
+  width: 100%;
+  height: 3px;
+  float: left;
+}
+div.footer-col{
+  float: left;
+  width: 32%;
+}
+div#footer h3 {
+  border-bottom: 2px dotted;
+  width: 80%;
+  margin-bottom: .5em;
+  color: #eb9400;/*Bright Orange*/
+}
+div#footer h4 {
+  color: #fffcf1; /* Off White */
+  font-size: 1.4em;
+}
+div#footer a {
+  color: #83cbe5;/*Bright Blue*/
+  font-size: 110%;
+}
+div#footer #twitter h3 {
+  color: #8bac2d;/*Bright Green*/
+}
+div#footer p {
+  color: #fffcf1; /* Off White */
+  width: 80%;
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+div#footer span {
+  color: #fffcf1; /* Off White */
+  
+}
+a.button {
+  background: transparent url(/images/btn-send.png) no-repeat 0 0;
+  width: 100px;
+  height: 40px;
+  display: block;
+  padding-top: 2px;
+}
+a.button:hover {
+  background-position: 0 -40px;
+}
+div#footer #testimonials {
+  padding-left: 4%;
+}
+div#footer #testimonials h3 {
+  color: #d63500;/*Bright Red*/
+}
+div#footer h3#floyd {
+  color: #eb9400;/*Bright Orange*/
+}
+div#footer #testimonials p {
+  font-style: italic;
+}
+div#footer #testimonials p:last-child {
+  font-style: normal;
+}
+div#footer blockquote {
+  color: #fffcf1; /* Off White */
+  width: 80%;
+  margin: 0 0 1em 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+div.tweet {
+
+}
+ul.tweet-list {
+  width: 80%;
+  padding-left: 6em;
+}
+ul.tweet-list li {
+  
+}
+div#entryway-tweet ul {
+  background: transparent url(/images/splash/entryway-th.jpg) no-repeat 0 0;
+}
+div#gustin-tweet ul{
+  background: transparent url(/images/splash/gustin-th.jpg) no-repeat 0 0;
+}
+div#bobby-tweet ul{
+   background: transparent url(/images/splash/bobby-th.jpg) no-repeat 0 0;
+} 
+div#katie-tweet ul{
+  background: transparent url(/images/splash/katie-th.jpg) no-repeat 0 0;
+  
+}
+
+div#footer h3#blog {
+  clear: left;
+  padding: 1em 0 0 0 ;
+  color: #70308e;
+}
+li.contact {
+  
+}
+div#contact img {
+  float: left;
+}
+div.expandable {
+  clear: left
+}
+span.read-more, span.re-collapse  {
+  text-align: right;
+  width: 100%;
+  display: inline;
+  padding-bottom: 1em;
+  color: #6F8924;/*Bright Green*/
+}
+span.read-more a, span.re-collapse a {
+  color: #6F8924;/*Bright Green*/
+  
+}
+span.re-collapse {
+  
+}
