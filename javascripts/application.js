@@ -5,15 +5,10 @@ $(window).bind('load', function() {
     galBorderWidth: 3,
     galBorderColor: '#EB9400',
     thumbsVis: false,
-    autoSlide: true
+    autoslide: true,
+    asTimer: 2500 
   });
 
-  $('div.portfolio-slideshow').slideViewerPro({
-    galBorderWidth: 3,
-    galBorderColor: '#EB9400',
-    thumbsActiveBorderColor: '#EB9400',
-    thumbsVis: false
-  });
 }); 
 
 $(function () {
@@ -25,7 +20,7 @@ $(function () {
   $(selector).addClass('active');
 
   $('div#entryway-tweet').tweet({
-username: 'entryway',
+    username: 'entryway',
     count: 1,
     join_text: 'auto',
     auto_join_text_default: "we proclaimed,", 
