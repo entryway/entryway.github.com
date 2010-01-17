@@ -304,9 +304,6 @@ ul#products {
 }
 ul#products li {
   margin: 0 0 1.8em 0;
-  width: 80%;
-}
-ul#products li a {
   display: block;
   padding: .5em .2em;
 }
