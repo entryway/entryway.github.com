@@ -65,15 +65,16 @@ div#services h3 {
 }
 div#services h4 {
   color: #476D7B;
-  padding-bottom: 5px;
 }
 div#services h5 {
   color: #6BA6BB;
+  padding: 0;
 }
 div#services .sidebar img {
   clear: left;
   border: 3px solid #6ba6bb;/*Brand Blue*/
   width: 270px;
+  margin-bottom: 3em;
 }
 div#services .sidebar p {
   font-size: 1.4em;
