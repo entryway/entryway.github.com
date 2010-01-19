@@ -78,7 +78,7 @@ div#services .sidebar img {
 }
 div#services .sidebar p {
   font-size: 1.4em;
-  margin-bottom: 1em;
+  margin: .2em 0;
 }
 div#services .main {
   padding-top: 65px;
