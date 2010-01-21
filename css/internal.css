@@ -80,6 +80,11 @@ div#services .sidebar p {
   font-size: 1.4em;
   margin: .2em 0;
 }
+div#services .sidebar a {
+  background: ;
+}
+div#services .sidebar a:hover {
+}
 div#services .main {
   padding-top: 65px;
 }
