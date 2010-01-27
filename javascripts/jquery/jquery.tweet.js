@@ -130,6 +130,11 @@
           var date = '<a href="http://twitter.com/'+item.from_user+'/statuses/'+item.id+'" title="view tweet on twitter">'+relative_time(item.created_at)+'</a>';
           var text = '<span class="tweet_text">' +$([item.text]).linkUrl().linkUser().linkHash().makeHeart().capAwesome().capEpic()[0]+ '</span>';
           
+          // ~gwp Remove reply tweets
+          if (join_text == s.auto_join_text_reply) {
+            // repeatly fetch
+          }
+
           // until we create a template option, arrange the items below to alter a tweet's display.
           list.append('<li>' + avatar + date + join + text + '</li>');
 
