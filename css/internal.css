@@ -342,31 +342,36 @@ div#process div.main h3 {
 
 /* Blog */
 
-div.blog {
+div#blog {
   clear: both;
   float: left;
   min-width: 960px;
   background: #fffcf1 url(/images/bg-purple2.gif) repeat-x 0 0;
   width: 100%;
 }
-div.blog h1 {
+div#blog h1 {
 }
-div.blog h2 {
+div#blog h2 {
   color: #454545;
 }
-div.blog h3 {
+div#blog h3 {
   color: #8d3db3;/*Bright Purple*/
 }
-div.blog h4 {
+div#blog h4 {
   color: #6d2f8a;/*Deep Purple*/
 }
-div.blog h5 {
+div#blog h5 {
   color: #8d3db3;/*Bright Purple*/
   padding-top: 0;
 }
-div.blog a {
+div#blog a {
   color: #6d2f8a;/*Deep Purple*/
   
+}
+div#blog #stock {
+  padding: 5px;
+  margin-left: 115px;
+  border: 3px solid #6d2f8a;
 }
 div#div-purple {
   background: transparent url(/images/splash/div-purple.png) no-repeat 0 0;

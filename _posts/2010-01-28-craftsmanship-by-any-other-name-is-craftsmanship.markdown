@@ -9,9 +9,12 @@ To me, Craftsmanship is a set of principles, techniques, and beliefs focused on 
 
 Craftsmanship by any other name is still Craftsmanship, we are all searching for the true meaning behind the word Craftsmanship. Are there <a href="http://agilemanifesto.org/principles.html">shared principles</a> to this word that we all hold of value? Is there a single, <a href="http://en.wikipedia.org/wiki/Software_Craftsmanship">objective definition</a>? A <a href="http://manifesto.softwarecraftsmanship.org/">manifesto</a> that must be accepted? A canon of <a href="http://www.extremeprogramming.org/rules.html">techniques</a>? 
 
+
 We are all striving to define the true nature of Craftsmanship so we can understand it fully in order to share in, and relate to, the principles that we have found, as a community, that aid in developing high quality and meaningful software. We not only want to provide true value to our customers, we also want to enrich our own sense of well-being, growth and passion for the craft.
 
 The intrinsic nature of the Craftsmanship principles are what makes them so hard to 'teach' and relay in a traditional academic sense. Craftsmanship is a refined skill that is learned over time through experience by placing the utmost care into the creation of software code.
+
+<img id="stock" src="/images/blog/craftsmanship.png"></img>
 
 While we can share and teach certain techniques that we use to develop high quality software, technique alone is not enough to master a craft. Passion, self-discipline, and care are needed. 
 
