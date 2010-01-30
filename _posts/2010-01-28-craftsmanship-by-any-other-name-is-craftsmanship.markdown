@@ -5,11 +5,6 @@ tag: craftsmanship
 author: Gustin Prudner
 ---
 
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
 To me, Craftsmanship is a set of principles, techniques, and beliefs focused on developing software of integrity. Properly crafted software follows a process that cares about, and strives toward high quality, intelligent, and sound computer code.
 
 Craftsmanship by any other name is still Craftsmanship, we are all searching for the true meaning behind the word Craftsmanship. Are there <a href="http://agilemanifesto.org/principles.html">shared principles</a> to this word that we all hold of value? Is there a single, <a href="http://en.wikipedia.org/wiki/Software_Craftsmanship">objective definition</a>? A <a href="http://manifesto.softwarecraftsmanship.org/">manifesto</a> that must be accepted? A canon of <a href="http://www.extremeprogramming.org/rules.html">techniques</a>? 
