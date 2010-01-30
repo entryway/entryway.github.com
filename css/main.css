@@ -68,13 +68,13 @@ a:active {
 a:hover {
   text-decoration: underline;
 }
-ul{
+ul {
   margin: 0;
   padding: 0;
   font-size: 1.3em;
   line-height: 1.5em;
 }
-ol{
+ol {
   margin: 0;
   padding: 0;
   font-size: 1em;
@@ -557,13 +557,13 @@ ul.tweet-list li {
 div#entryway-tweet ul {
   background: transparent url(/images/splash/entryway-th.jpg) no-repeat 0 0;
 }
-div#gustin-tweet ul{
+div#gustin-tweet ul {
   background: transparent url(/images/splash/gustin-th.jpg) no-repeat 0 0;
 }
-div#bobby-tweet ul{
+div#bobby-tweet ul {
    background: transparent url(/images/splash/bobby-th.jpg) no-repeat 0 0;
 } 
-div#katie-tweet ul{
+div#katie-tweet ul {
   background: transparent url(/images/splash/katie-th.jpg) no-repeat 0 0;
   
 }
@@ -578,6 +578,9 @@ li.contact {
 }
 div#contact img {
   float: left;
+}
+div#contact #twitter-icon {
+  float: none;
 }
 div.expandable {
   clear: left
@@ -596,3 +599,4 @@ span.read-more a, span.re-collapse a {
 span.re-collapse {
   
 }
+
