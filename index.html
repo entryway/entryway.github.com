@@ -137,10 +137,10 @@ title: crafting software responsibly - entryway custom applications
         <div id="entry" class="section-main">
           <h2>what we share</h2>
           <h3><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h3>
-          <p>{{ site.posts.first.content | truncatewords: '80' }}
-            <a href="{{ site.posts.first.url }}">Read More -></a>
-          </p> 
-          </p>
+          <h4>by {{ site.posts.first.author }}</h4>
+          <h5>{{ site.posts.first.date | date: '%b. %d, %Y' }}</h5>
+          <p>{{ site.posts.first.content | truncatewords: '80' }} </p> 
+          <p><a href="{{ site.posts.first.url }}">Read More -></a></p>
         </div><!--entry-->
       </div><!--fixed-wrap-->
     </div><!--content-->

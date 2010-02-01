@@ -364,10 +364,24 @@ div#blog h5 {
   color: #8d3db3;/*Bright Purple*/
   padding-top: 0;
 }
+div#blog .sidebar {
+  width: 58%;
+}
+div#blog .main {
+  width: 25%;
+}
 div#blog a {
   color: #6d2f8a;/*Deep Purple*/
-  
 }
+div#blog em  {
+  font-size: 170%;
+  background-color: #FFFECA;
+  padding: 0 0.2em;
+}
+div#blog em, dfn {
+  font-style:italic;
+}
+
 div#blog #stock {
   padding: 5px;
   margin-left: 115px;

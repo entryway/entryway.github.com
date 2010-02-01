@@ -5,6 +5,7 @@
     <title>{{ page.title }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="/images/favicon.ico"/>
+    <link href="http://feeds.feedburner.com/entryway" rel="alternate" title="entryway software" type="application/atom+xml" />
     <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen">
     <link rel="stylesheet" href="/css/internal.css" type="text/css" media="screen">
     <link rel="stylesheet" href="/css/syntax.css" type="text/css" media="screen" />  
@@ -35,6 +36,18 @@
       </div>
       <div class="fixed-wrap">
       <div class="sidebar">
+        <h2>latest piece</h2>
+        <h3>{{ site.posts.first.title }} </h3>
+        <h4>by {{ site.posts.first.author }}</h4>
+        <h5>{{ site.posts.first.date | date: '%b. %d, %Y' }}</h5>
+        {% include readability.html %} <br/>
+        {{ content }}
+        {% include disqus.html %}
+        {{ paginator.next_page }}
+      </div><!--sidebar-->
+      <div id="div-purple" class="divider">
+      </div>
+      <div class="main">
         <div class="archives">
           <h2>archives</h2>
             {% for post in site.posts %}
@@ -42,24 +55,11 @@
               <h5>{{ post.date | date: '%b. %d, %Y' }}</h5>
               <p>{{ post.content | truncate: '137' }}
                 <a href="{{ post.url }}">Read More -></a>
-                <h4><a href="{{ page.url }}#disqus_thread"></a></h4>
+                <h4><a href="{{ page.url }}#disqus_thread">Comments</a></h4>
               </p>
             {% endfor %}
           </div>
         </div>
-      </div><!--sidebar-->
-      <div id="div-purple" class="divider">
-      </div>
-      <div class="main">
-        <h2>latest piece</h2>
-        <h3>{{ site.posts.first.title }} </h3>
-        <h4>by {{ site.posts.first.author }}</h4>
-        <h5>{{ site.posts.first.date | date: '%b. %d, %Y' }}</h5>
-        {% include readability.html %} <br/>
-
-        {{ content }}
-
-        {{ paginator.next_page }}
       </div><!--main-->
     </div><!--process-->
     </div><!--fixed-wrap-->
