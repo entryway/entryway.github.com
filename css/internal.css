@@ -229,6 +229,9 @@ div#portfolio h2 {
 div#portfolio h3 {
   color: #EB9400;
 }
+div#portfolio a {
+  color: #eb9400;
+}
 div.piece {
   clear: both;
   float: left;
