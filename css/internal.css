@@ -373,6 +373,17 @@ div#blog .main {
 div#blog a {
   color: #6d2f8a;/*Deep Purple*/
 }
+div#blog #rss {
+  float:right;
+  display: relative; 
+}
+div#blog #rss img {
+  margin-bottom: 0px;
+}
+div#blog #rss span {
+  font-size: 150%;
+  color: #fff;
+}
 div#blog em  {
   font-size: 170%;
   background-color: #FFFECA;
