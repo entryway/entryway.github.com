@@ -18,6 +18,7 @@ div.intro h1 {
   margin-left: 80px;
 }
 div.intro p {
+  font-size: 1.7em;
   color: #1d1c18;
   margin: 0 0 0 80px;
   min-width: 675px;
@@ -358,10 +359,11 @@ div#blog h3 {
   color: #8d3db3;/*Bright Purple*/
 }
 div#blog h4 {
-  color: #6d2f8a;/*Deep Purple*/
+  color: #454545;
+  /*color: #6d2f8a;Deep Purple*/
 }
 div#blog h5 {
-  color: #8d3db3;/*Bright Purple*/
+  color: #6d2f8a;/*Bright Purple*/
   padding-top: 0;
 }
 div#blog .sidebar {
@@ -400,8 +402,8 @@ div#blog #stock {
 }
 div#div-purple {
   background: transparent url(/images/splash/div-purple.png) no-repeat 0 0;
-
 }
+
 
 /*  Splash  */ 
 

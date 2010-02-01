@@ -167,7 +167,7 @@ div#logo {
   float: left;
   background:  url(/images/logo11.png) no-repeat 0 0;
   width: 30%;
-  margin-left: 4%;
+  margin-left: 3%;
   height: 100px;
   text-indent:-9000px;
 }
@@ -180,34 +180,25 @@ div#nav-right {
   width: 65%;
   height: 100%;
 }
-div#nav-right ul {
-  font-size: 1em;
-  display: inline;
-  float: right;
-  list-style-type: none;
-  padding: 10px 3px 0 0;
-}
 div#nav-right ul li {
   display: inline;
   float: left;
   list-style-type: none;
 }
-div#nav-right ul li:first-child {
-  border: medium none;
-}
-div#nav-right ul li a {
-  font-size: 1.2em;
-  padding: .2em 1.1em;
-  text-transform: uppercase;
-}
 div#nav-right ul li a:hover {
   text-decoration: underline;
 }
-
-div#top-nav {
-  background: transparent url(/images/watermark-dots.png) no-repeat 0 0;
-  padding: .8em 2.5em 0 0 ;
+div#nav-right ul {
+  font-size: 1em;
+  display: inline;
   float: right;
+  list-style-type: none;
+  padding: 6px 3px 0 0;
+}
+div#nav-right ul li  {
+  font-size: 1.2em;
+  margin-right: 16px;
+  text-transform: uppercase;
 }
 div#main-nav {
   margin: 7em 0 0 0;
@@ -423,10 +414,13 @@ div#stock img {
   border: 3px solid #6d2f8a;/*Deep Purple*/
   margin: 2em 0 1em 0;
 }
-
 div#blogger a {
   color: #6d2f8a;
 }
+div#purple a {
+  color: #fffcf1;
+}
+
 /*  Team  */
 
 div#team {
@@ -481,9 +475,10 @@ div#footer-line {
   height: 3px;
   float: left;
 }
-div.footer-col{
+div.footer-col {
   float: left;
   width: 32%;
+  padding-bottom: 2em;
 }
 div#footer h3 {
   border-bottom: 2px dotted;
