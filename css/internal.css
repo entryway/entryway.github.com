@@ -3,10 +3,9 @@
 /* Intro */
 div.intro {
   background: url(/images/lines-dots.png) no-repeat 500px -80px;
-  padding: 0 0 0 10%;
   margin: 7px 0 0 0;
   float: left;
-  width: 90%;
+  width: 100%;
   height: 130px;
 }
 div.fixed-wrap{
@@ -15,13 +14,13 @@ div.fixed-wrap{
   height: 100%;
 }
 div.intro h1 {
-  height: 70px;
   color: #fffcf1; /* Off White */
+  margin-left: 80px;
 }
 div.intro p {
+  font-size: 1.7em;
   color: #1d1c18;
-  width: 70%;
-  margin-top: -25px;
+  margin: 0 0 0 80px;
   min-width: 675px;
 }
 div.intro-btm {
@@ -29,43 +28,66 @@ div.intro-btm {
   width: 100%;
   height: 11px;
 }
-/*  Services  */
 
-div.services {
-  clear: both;
-  width: 100%;
-  background: #fffcf1 url(/images/bg-blue2.gif) repeat-x 0 0;
-  float: left;
-}
-div.services h1 {
-  color: #fffcf1; /* Off White */
-}
-div.services h2 {
-  color: #454545;/* Dark Grey*/
-}
-div.services h3 {
-  color: #6ba6bb;/*Brand Blue*/
-}
-div.services h4 {
-  color: #476D7B;
-}
-div.services h5 {
-  color: #6BA6BB;
-}
+/* Layout  */
+
 div.sidebar {
-  margin: 1em 3em;
+  margin: 1em 0 0 3%;
   width: 30%;
   float: left;
 }
-div.services .sidebar img {
+div.divider {
+  width: 7%;
+  height: 960px;
+  float: left;
+  margin: 2em 3em;
+}
+div.main {
+  margin: 1em 0;
+  width: 48%;
+  float: left;
+}
+/*  Services  */
+
+div#services {
+  clear: both;
+  width: 100%;
+  background: #fffcf1 url(/images/bg-blue2.png) repeat-x 0 0;
+  float: left;
+}
+div#services h1 {
+  color: #fffcf1; /* Off White */
+}
+div#services h2 {
+  color: #454545;/* Dark Grey*/
+}
+div#services h3 {
+  color: #6ba6bb;/*Brand Blue*/
+}
+div#services h4 {
+  color: #476D7B;
+}
+div#services h5 {
+  color: #6BA6BB;
+  padding: 0;
+}
+div#services .sidebar img {
   clear: left;
-  margin: 0 .8em 3em 0;
   border: 3px solid #6ba6bb;/*Brand Blue*/
   width: 270px;
-}
-div.services .sidebar p {
-  font-size: 1.4em;
   margin-bottom: 3em;
+}
+div#services .sidebar p {
+  font-size: 1.4em;
+  margin: .2em 0;
+}
+div#services .sidebar a {
+  background: ;
+}
+div#services .sidebar a:hover {
+}
+div#services .main {
+  padding-top: 65px;
 }
 h3#chrome1 {
   color:;
@@ -79,29 +101,16 @@ h3#chrome3 {
 h3#chrome4 {
   color: #343A3B;
 }
-div.divider {
-  background: transparent url(../images/splash/divider.png) no-repeat bottom left;
-  width: 68px;
-  height: 960px;
-  float: left;
-}
-div.div-green {
+
+div#div-green {
   background: transparent url(../images/splash/div-green.png) no-repeat 0 0;
-  width: 68px;
-  height: 960px;
-  float: left;
-}
-div.main {
-  margin: 1em 4em;
-  width: 45%;
-  float: left;
 }
 div.main img.icon {
   float: left;
   width: 48px;
   height: 48px;
 }
-div.services div.main h3 {
+div#services div.main h3 {
   padding: 24px 0 0 50px;
 }
 /*
@@ -119,28 +128,31 @@ div.main h3#desktop {
 }*/
 
 /* About */
-div.about {
+div#about {
   clear: both;
   float: left;
   background: #fffcf1 url(/images/bg-green2.gif) repeat-x 0 0;
   min-width: 960px;
   width: 100%;
 }
-div.about h1 {
+div#div-blue {
+  background: transparent url(../images/splash/divider.png) no-repeat bottom left;
+}
+div#about h1 {
   color: #fffcf1; /* Off White */
 }
-div.about h3 {
+div#about h3 {
   color: #6F8924;/*Bright Green*/
 }
-div.about h4 {
+div#about h4 {
   color: #60771f;/*Dark Green*/
   padding: 0;
 }
-div.about h5, div.about h5 a {
+div#about h5, div#about h5 a {
   color: #6F8924;/*Bright Green*/
   padding: 0;
 }
-div.about h6 {
+div#about h6 {
   
 }
 
@@ -170,7 +182,7 @@ div.people-links h3 {
   color: #2f2f2f;
 }
 div.people-linkbox h5 {
-  padding: 0 0 .3em .5em;
+  padding: 0 0 .3em 0;
 }
 div.people-linkbox {
   background: transparent url(/images/splash/green-box.gif) no-repeat 0 0;
@@ -196,45 +208,51 @@ div.content-photo {
   float: left;
   padding: 0 1em 1em 0;
 }
-div.about div.main h3 {
+div#about div.main h3 {
   padding: 24px 0 0 50px;
 }
 /* Portfolio */
 
-div.portfolio {
+div#portfolio {
   clear: both;
   float: left;
   background: #fffcf1 url(/images/bg-orange4.png) repeat-x 0 0;
   min-width: 960px;
   width: 100%;
-  
 }
-
-
-div.portfolio h1 {
+div#portfolio h1 {
 
 }
-div.portfolio h3 {
+div#portfolio h2 {
+  padding-left: 3%;
+}
+div#portfolio h3 {
   color: #EB9400;
+}
+div#portfolio a {
+  color: #eb9400;
 }
 div.piece {
   clear: both;
   float: left;
   width: 100%; 
-  margin: 4em 0; 
+  margin: 4% 0; 
 }
-div.portfolio div.piece h3 {
+div.piece#first-piece {
+  margin-top: 1em
+}
+div#portfolio div.piece h3 {
   padding-top: 1em;
 }
 div.description {
   float: left;
   width: 26%;
-  margin: 0 4% 0 0;
+  padding-left: 3%;
 }
-div.portfolio .feat-slides {
+div#portfolio .feat-slides {
   width: 63%;
   margin: 0 3%;
-  float: right;
+  float: left;
 }
 .feat-slides img{
   border: 3px solid #EB9400;
@@ -257,8 +275,9 @@ div#final {
 }
 ul.other-clients {
   float: left;
-  width: 100%;
+  width: 97%;
   margin: 1em 0;
+  padding-left: 3%;
 }
 ul.other-clients li { 
   float: left;
@@ -275,27 +294,31 @@ ul.other-clients h3 {
 
 /*  Process  */
 
-div.process {
+div#process {
   clear: both;
   float: left;
   min-width: 960px;
   background: #fffcf1 url(/images/bg-red2.gif) repeat-x 0 0;
   width: 100%;
 }
-div.process h1 {
+div#process h1 {
 }
-div.process h2 {
+div#process h2 {
   color: #454545;
 }
-div.process h3 {
+div#process h3 {
   color: #bf3000;/*Bright Red*/
 }
-div.process h4 {
+div#process h4 {
   color: #A12800;/*Deep Red*/
 }
-div.process h5 {
+div#process h5 {
   color: #bf3000;/*Bright Red*/
   padding-top: 0;
+}
+div#process a {
+  color: #A12800;/*Deep Red*/
+  
 }
 div.testimonial img {
   margin: 0 .8em 1em 0;
@@ -314,50 +337,76 @@ ul.bavolek {
   color:#3D3D3D;
   font-size: 1.4em;
 }
-div.div-red {
+div#div-red {
   background: transparent url(/images/splash/div-red.png) no-repeat 0 0;
-  width: 68px;
-  height: 960px;
-  float: left;
 }
-div.process div.main h3 {
+div#process div.main h3 {
   padding: 24px 0 0 50px;
 }
 
 /* Blog */
 
-div.blog {
+div#blog {
   clear: both;
   float: left;
   min-width: 960px;
   background: #fffcf1 url(/images/bg-purple2.gif) repeat-x 0 0;
   width: 100%;
 }
-div.blog h1 {
+div#blog h1 {
 }
-div.blog h2 {
+div#blog h2 {
   color: #454545;
 }
-div.blog h3 {
+div#blog h3 {
   color: #8d3db3;/*Bright Purple*/
 }
-div.blog h4 {
-  color: #6d2f8a;/*Deep Purple*/
+div#blog h4 {
+  color: #454545;
+  /*color: #6d2f8a;Deep Purple*/
 }
-div.blog h5 {
-  color: #8d3db3;/*Bright Purple*/
+div#blog h5 {
+  color: #6d2f8a;/*Bright Purple*/
   padding-top: 0;
 }
-div.blog a {
+div#blog .sidebar {
+  width: 58%;
+}
+div#blog .main {
+  width: 25%;
+}
+div#blog a {
   color: #6d2f8a;/*Deep Purple*/
-  
 }
-div.div-purple {
+div#blog #rss {
+  float:right;
+  display: relative; 
+}
+div#blog #rss img {
+  margin-bottom: 0px;
+}
+div#blog #rss span {
+  font-size: 150%;
+  color: #fff;
+}
+div#blog em  {
+  font-size: 170%;
+  background-color: #FFFECA;
+  padding: 0 0.2em;
+}
+div#blog em, dfn {
+  font-style:italic;
+}
+
+div#blog #stock {
+  padding: 5px;
+  margin-left: 115px;
+  border: 3px solid #6d2f8a;
+}
+div#div-purple {
   background: transparent url(/images/splash/div-purple.png) no-repeat 0 0;
-  width: 68px;
-  height: 960px;
-  float: left;
 }
+
 
 /*  Splash  */ 
 

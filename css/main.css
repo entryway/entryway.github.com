@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-size: 62.5%;
   font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
-  background-color: #fffcf1; /* Off White */
+  background: #fffcf1 url(/images/splash/texture.png) repeat-x 0 0; /* Off White */
   width: 100%;
   min-width: 960px;
 }
@@ -68,13 +68,13 @@ a:active {
 a:hover {
   text-decoration: underline;
 }
-ul{
+ul {
   margin: 0;
   padding: 0;
   font-size: 1.3em;
   line-height: 1.5em;
 }
-ol{
+ol {
   margin: 0;
   padding: 0;
   font-size: 1em;
@@ -88,6 +88,11 @@ input {
   padding: .5em;
   display: block;
 }
+
+input.hidden {
+  display:none;
+}
+
 input.button {
   padding: 2em;
   font-size: 1.4em;
@@ -104,12 +109,17 @@ hr {
 }
 
 /* Colors */
-  
+.white {
+  color: #fffcf1; /* Off White */
+}
 .blue {
   color: #6ba6bb;/*Brand Blue*/
 }
 .orange {
   color: #EB9400;/*Bright Orange*/
+}
+.yellow {
+  color: #fefb86;/*Bright Orange*/
 }
 .red {
   color: #bf3000;/*Bright Red*/
@@ -140,8 +150,9 @@ div#purple {
 }
 
 /*Header*/
+
 div#header {
-  background: #1d1c18 url(/images/splash/texture.png) repeat-x 0 0; /*Dark Brown*/
+  background: transparent url(/images/splash/watermark-dots.png) no-repeat 310px -15px;
   float: left;
   width: 100%;
   height: 10em;
@@ -154,8 +165,9 @@ div#wrap1 {
 }
 div#logo {
   float: left;
-  background: transparent url(/images/logo11.png) no-repeat 0 0;
+  background:  url(/images/logo11.png) no-repeat 0 0;
   width: 30%;
+  margin-left: 3%;
   height: 100px;
   text-indent:-9000px;
 }
@@ -167,47 +179,63 @@ div#nav-right {
   text-align: right;
   width: 65%;
   height: 100%;
-  background: transparent url(/images/splash/watermark-dots.png) no-repeat -104px 0;
 }
-div#top-nav {
-  background: transparent url(/images/watermark-dots.png) no-repeat 0 0;
-  padding: .8em 2.5em 0 0 ;
-  float: right;
+div#nav-right ul li {
+  display: inline;
+  float: left;
+  list-style-type: none;
 }
-div#top-nav a {
-  font-size: 1.2em;
-  padding: .2em 1.1em;
-  color: #fffcf1; /* Off White */
-}
-div#top-nav a:hover {
+div#nav-right ul li a:hover {
   text-decoration: underline;
 }
+div#nav-right ul {
+  font-size: 1em;
+  display: inline;
+  float: right;
+  list-style-type: none;
+  padding: 6px 3px 0 0;
+}
+div#nav-right ul li  {
+  font-size: 1.2em;
+  margin-right: 16px;
+  text-transform: uppercase;
+}
 div#main-nav {
-  margin: 7em 1em 0 0;
+  margin: 7em 0 0 0;
 }
 div#main-nav a {
   font-size: 1.7em;
   margin: 0 1.5em;
-  padding-top: .2em;
+  padding: .4em .1em 0 0;
 }
 div#main-nav a:hover {
-  border-top: 2px dotted #85806f;
-  color: #fffcf1; /* Off White */
   text-decoration: none;
 }
-div#main-nav a.active {
-  color: #fffcf1; /* Off White */
-  border-top: 2px dotted #85806f;
+div#main-nav a.green:hover, a.green.active {
+  background: transparent url(/images/splash/nav-dots-green.png) no-repeat scroll 0 0;
 }
-div#main-nav a:hover
+div#main-nav a.orange:hover, a.orange.active {
+  background: transparent url(/images/splash/nav-dots-orange.png) no-repeat scroll 0 0;
+}
+div#main-nav a.red:hover, a.red.active {
+  background: transparent url(/images/splash/nav-dots-red.png) no-repeat scroll 0 0;
+}
+div#main-nav a.blue:hover, a.blue.active {
+  background: transparent url(/images/splash/nav-dots-blue.png) no-repeat scroll 0 0;
+}
+div#main-nav a.purple:hover, a.purple.active {
+  background: transparent url(/images/splash/nav-dots-purple.png) no-repeat scroll 0 0;
+}
 
+/*div#main-nav a.active {
+  border-top: 3px dotted;
+}*/
 /*  Layout */
 
 div.content {
   clear: both;
-  padding: 0 3%;
   float: left;
-  width: 94%;
+  width: 100%;
 }
 div.content p{
   width: 100%;
@@ -215,13 +243,13 @@ div.content p{
 div.section-side {
   float: left;
   width: 25%;
-  margin: 0 2%;
+  margin: 0 2% 0 3%;
   padding: 0;
 }
 div.section-main {
   float: left;
   width: 64%;
-  margin: 0 3%;
+  margin-left: 2%;
   padding: 0;
 }
 div.link-bar {
@@ -261,26 +289,23 @@ div#branding div.content {
 div#branding h3 {
   color: #6ba6bb;
 }
-ul.products {
+ul#products {
   padding: 0;
   font-size: 1em;
 }
-ul.products li {
+ul#products li {
   margin: 0 0 1.8em 0;
-  width: 80%;
-}
-ul.products li a {
   display: block;
   padding: .5em .2em;
 }
-ul.products li a:hover {
+ul#products li a:hover {
   background-color: #6ba6bb;/*Brand Blue*/
   text-decoration: none;
 }
-ul.products li a:hover h3 {
+ul#products li a:hover h3 {
   color: #fffcf1; /* Off White */
 }
-ul.products h4 {
+ul#products h4 {
   font-size: 1.4em;
 }
 div#splash-img img {
@@ -290,12 +315,12 @@ div#splash-img img {
 
 /* Feature */
 
-div.feature {
+div#feature {
   clear:both;
   width: 100%;
   background:  url(/images/bg-orange3.gif) repeat-x 0 0;  
 }
-div.feature h3 {
+div#feature h3 {
   color: #EB9400;
 }
 div#feat-info p {
@@ -353,16 +378,19 @@ ul.slides-nav li.right-arrow a {
 ul.slides-nav li.right-arrow a:hover {
   background-position: -18px -18px;
 }
+
+div#feat-slides {
+  height: 350px;
+}
 div#feat-slides img {
   clear: left;
   display: block;
-  border: 3px solid #EB9400;
   margin-bottom: 1em;
 }
 
 /*  Agile Process   */ 
 
-div.agile-process {
+div#agile-process {
   clear: both;
   width: 100%;
   background:  url(/images/bg-red3.gif) repeat-x 0 0;  
@@ -377,7 +405,7 @@ div#agile h3 {
 
 /* Blog */
 
-div.blogger {
+div#blogger {
   clear: both;
   width: 100%;
   background:  url(/images/bg-purple3.gif) repeat-x 0 0;  
@@ -386,12 +414,16 @@ div#stock img {
   border: 3px solid #6d2f8a;/*Deep Purple*/
   margin: 2em 0 1em 0;
 }
-div.blogger h3 {
-  color: #6d2f8a;/*Deep Purple*/
+div#blogger a {
+  color: #6d2f8a;
 }
+div#purple a {
+  color: #fffcf1;
+}
+
 /*  Team  */
 
-div.team {
+div#team {
   background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;
   width: 100%;
   clear: both;
@@ -399,8 +431,11 @@ div.team {
 img.big {
   border: 3px solid #6F8924;/*Bright Green*/
 }
+div#pics {
+  min-height: 350px;
+}
 div#pics a {
-  margin: 1em 1em 0 0;
+  margin: 1em 1.5em 0 0;
   display: block;
   float: left;  
 }
@@ -408,7 +443,7 @@ div#pics a img {
   border: 3px solid #6F8924;/*Bright Green*/
 }
 div#pics a:hover {
-  
+  border-color: #91b32e;/*Brighter Green*/
 }
 div#info h2 {
   color: #454545;
@@ -422,35 +457,34 @@ div#info a {
 
 /*  Footer */
 
-div#footer-wrap {
-  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
-  float: left;
-  width: 100%;
-  padding-top: 3px;
-}
 div#footer {
   width: 100%;
   clear: both;
-  background: #1d1c18 url(/images/splash/texture.png) repeat 0 0; 
+  background: #1d1c18 url(/images/splash/texture.png) repeat 0 0;
   float: left;
-  font-size: .75em;
 }
-div#footer-dots {
-  background: transparent url(/images/splash/watermark-dots2.png) no-repeat bottom right;
+div#footer-wrap {
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat left bottom; 
   width: 100%;
+  padding-top: 3px;
   float: left;
+}
+div#footer-line {
+  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
+  width: 100%;
+  height: 3px;
+  float: left;
+}
+div.footer-col {
+  float: left;
+  width: 32%;
+  padding-bottom: 2em;
 }
 div#footer h3 {
   border-bottom: 2px dotted;
   width: 80%;
   margin-bottom: .5em;
-  color: #83cbe5;/*Bright Blue*/
-}
-div#footer li.testimonials h3 {
-  color: #eb9400;
-}
-div#footer li.testimonials h3#floyd {
-  color: #d63500;/*Bright Red*/
+  color: #eb9400;/*Bright Orange*/
 }
 div#footer h4 {
   color: #fffcf1; /* Off White */
@@ -460,22 +494,17 @@ div#footer a {
   color: #83cbe5;/*Bright Blue*/
   font-size: 110%;
 }
-div#footer li.twitter h3 {
+div#footer #twitter h3 {
   color: #8bac2d;/*Bright Green*/
-}
-div#footer ul {
-  float: left;
-  padding: 2em 0;
-}
-div#footer ul li {
-  float: left;
-  width: 33%;
 }
 div#footer p {
   color: #fffcf1; /* Off White */
   width: 80%;
   margin-bottom: 1em;
-  font-size: 140%;
+  font-size: 1.4em;
+}
+div#footer span {
+  color: #fffcf1; /* Off White */
   
 }
 a.button {
@@ -488,6 +517,21 @@ a.button {
 a.button:hover {
   background-position: 0 -40px;
 }
+div#footer #testimonials {
+  padding-left: 4%;
+}
+div#footer #testimonials h3 {
+  color: #d63500;/*Bright Red*/
+}
+div#footer h3#floyd {
+  color: #eb9400;/*Bright Orange*/
+}
+div#footer #testimonials p {
+  font-style: italic;
+}
+div#footer #testimonials p:last-child {
+  font-style: normal;
+}
 div#footer blockquote {
   color: #fffcf1; /* Off White */
   width: 80%;
@@ -495,21 +539,30 @@ div#footer blockquote {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-#twitter-widget-1 .twitter-avatar {
-  display:block;
+div.tweet {
+
+}
+ul.tweet-list {
+  width: 80%;
+  padding-left: 6em;
+}
+ul.tweet-list li {
+  
+}
+div#entryway-tweet ul {
+  background: transparent url(/images/splash/entryway-th.jpg) no-repeat 0 0;
+}
+div#gustin-tweet ul {
+  background: transparent url(/images/splash/gustin-th.jpg) no-repeat 0 0;
+}
+div#bobby-tweet ul {
+   background: transparent url(/images/splash/bobby-th.jpg) no-repeat 0 0;
+} 
+div#katie-tweet ul {
+  background: transparent url(/images/splash/katie-th.jpg) no-repeat 0 0;
+  
 }
 
-li.twitter img {
-  clear: left;
-  display:block;
-  float:left;
-  padding: 0 .7em 0 0;
-  display: block;
-}
-li.twitter p {
-  
-  
-}
 div#footer h3#blog {
   clear: left;
   padding: 1em 0 0 0 ;
@@ -518,14 +571,16 @@ div#footer h3#blog {
 li.contact {
   
 }
-li.contact img {
+div#contact img {
   float: left;
+}
+div#contact #twitter-icon {
+  float: none;
 }
 div.expandable {
   clear: left
 }
 span.read-more, span.re-collapse  {
-  font-size: 130%;
   text-align: right;
   width: 100%;
   display: inline;
@@ -539,3 +594,4 @@ span.read-more a, span.re-collapse a {
 span.re-collapse {
   
 }
+

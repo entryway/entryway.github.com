@@ -1,6 +1,5 @@
-.svwp { width: 50px; height: 20px; background: #fff } /*preloader stuff. do not modify!*/
-.svwp ul { position: relative; left: -999em; }/*preloader stuff. do not modify!*/
-
+.svwp { width: 50px; height: 20px; background: #fff; } /*preloader stuff. do not modify!*/
+.svwp ul { position: relative; left: -999em; } /*preloader stuff. do not modify!*/
 .slideViewer { 
   position: relative;
   overflow: hidden; 
@@ -8,7 +7,6 @@
   padding: 0;
   background: #fff;
 }
-
 .slideViewer ul {  /*your list of images*/
   position: relative;
   left: 0;
@@ -18,14 +16,13 @@
   margin: 0; 
   padding: 0;
 }
-
 .slideViewer ul li {
   float:left;
 }
 
 /*typographic info*/
 .slideViewer span.typo{ 
-  padding: 6px; /* do not modify padding */ 
+  padding: 6px; /* do not modify padding */
   background: #fff;
   color: #000;
   font: normal 10px Verdana;
@@ -66,6 +63,8 @@
 
 a.left, a.right { /*the left and right buttons (links)*/
   background: transparent; /* could be any color  */
+  color: #ff0000;
+  font: bold 16px Arial;
   overflow: hidden;
 }
 a.left span, a.right span{
@@ -74,7 +73,6 @@ a.left span, a.right span{
 a.left img, a.right img{
   border: 0;
 }
-
 a.l_dis, a.r_dis {
   background: transparent; /* ALWAYS leave transparent. this is the 'disabled' state of the link !  */
   cursor: default;
@@ -82,7 +80,69 @@ a.l_dis, a.r_dis {
 a.l_dis span, a.r_dis span {
   display: none;
 }
-a:focus {
+a:focus { 
   outline:none;
 }
+
+
+/* slider */
+
+.slider { 
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.slider ul {  /*your list of images*/
+  position: relative;
+  float:left;
+  left: 0;
+  top: 0;
+  width: 625px;
+  height: 331px;
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
+}
+
+.slider ul li {
+  position:absolute;
+  float:left;
+  width: 625px;
+}
+
+/*typographic info*/
+.slider span.typo{ 
+  padding: 6px; /* do not modify padding */ 
+  background: #fff;
+  color: #000;
+  font: normal 10px Verdana;
+}
+
+.slide-0 {
+  z-index: 1;
+}
+.slide-1 {
+  display:none; 
+  z-index: 2;
+}
+
+.slide-2 {
+  display:none; 
+  z-index: 3;
+}
+
+.slide-3{
+  display:none; 
+  z-index: 4;
+}
+
+.slide-4 {
+  display:none; 
+  z-index: 5;
+}
+
+
+
 
