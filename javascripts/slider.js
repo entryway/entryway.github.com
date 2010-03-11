@@ -38,9 +38,7 @@ var Slide = function(element, slideright, speed) {
 
 var bulletSlide = function(element) {
   var bullet_number = parseInt($(element).attr('class').substr(-1, 1));
-  alert (bullet_number);
   var current_image_number = parseInt($(element).closest('ul').prevAll('.active-image').val());
-  alert (current_image_number);
   var slide_right = (bullet_number > current_image_number);
   slide_amount = Math.abs(bullet_number - current_image_number);
   speed = slidespeed/slide_amount;
