@@ -77,6 +77,36 @@ div#services .sidebar img {
   width: 270px;
   margin-bottom: 3em;
 }
+div.imagery {
+  width: 270px;
+  height: 135px;
+  border: 3px solid #6ba6bb;/*Brand Blue*/
+  margin-bottom: 3em;
+}
+div#img1 {
+  background: transparent url(../images/splash/tailor.jpg) no-repeat 0 0;
+}
+div#img1:hover {
+  background: transparent url(../images/splash/tailor-hover.jpg) no-repeat 0 0;
+}
+div#img2 {
+  background: transparent url(../images/splash/fire-fighting.jpg) no-repeat 0 0;
+}
+div#img2:hover {
+  background: transparent url(../images/splash/fire-fighting-hover.jpg) no-repeat 0 0;
+}
+div#img3 {
+  background: transparent url(../images/splash/metamorphosis.jpg) no-repeat 0 0;
+}
+div#img3:hover {
+  background: transparent url(../images/splash/metamorphosis-hover.jpg) no-repeat 0 0;
+}
+div#img4 {
+  background: transparent url(../images/splash/solar.jpg) no-repeat 0 0;
+}
+div#img4:hover {
+  background: transparent url(../images/splash/solar-hover.jpg) no-repeat 0 0;
+}
 div#services .sidebar p {
   font-size: 1.4em;
   margin: .2em 0;
