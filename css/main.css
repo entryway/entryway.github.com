@@ -284,7 +284,7 @@ div#branding {
 }
 
 div#branding div.content {
-  background:  url(/images/bg-blue3.gif) repeat-x 0 0; 
+  /*background:  url(/images/bg-blue3.gif) repeat-x 0 0; */
 }
 div#branding h3 {
   color: #6ba6bb;
@@ -318,7 +318,7 @@ div#splash-img img {
 div#feature {
   clear:both;
   width: 100%;
-  background:  url(/images/bg-orange3.gif) repeat-x 0 0;  
+  /*background:  url(/images/bg-orange3.gif) repeat-x 0 0;  */
 }
 div#feature h3 {
   color: #EB9400;
@@ -393,7 +393,7 @@ div#feat-slides img {
 div#agile-process {
   clear: both;
   width: 100%;
-  background:  url(/images/bg-red3.gif) repeat-x 0 0;  
+  /*background:  url(/images/bg-red3.gif) repeat-x 0 0;  */
 }
 div#diagram img {
   border: 3px solid #A12800;/*Deep Red*/
@@ -408,7 +408,7 @@ div#agile h3 {
 div#blogger {
   clear: both;
   width: 100%;
-  background:  url(/images/bg-purple3.gif) repeat-x 0 0;  
+  /*background:  url(/images/bg-purple3.gif) repeat-x 0 0;  */
 }
 div#stock img {
   border: 3px solid #6d2f8a;/*Deep Purple*/
@@ -424,7 +424,7 @@ div#purple a {
 /*  Team  */
 
 div#team {
-  background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;
+  /*background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;*/
   width: 100%;
   clear: both;
 }

@@ -47,6 +47,9 @@ div.main {
   width: 48%;
   float: left;
 }
+div.main p {
+  padding-left: 3.5em;
+}
 /*  Services  */
 
 div#services {
@@ -371,7 +374,7 @@ div#div-red {
   background: transparent url(/images/splash/div-red.png) no-repeat 0 0;
 }
 div#process div.main h3 {
-  padding: 24px 0 0 50px;
+  padding: 16px 0 0 55px;
 }
 
 /* Blog */
