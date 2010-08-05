@@ -397,7 +397,7 @@ div#agile-process {
 }
 div#diagram img {
   border: 3px solid #A12800;/*Deep Red*/
-  margin: 2em 0 1em 0;
+  margin: 3em 0 1em 0;
 }
 div#agile h3 {
   color: #A12800;
@@ -412,7 +412,7 @@ div#blogger {
 }
 div#stock img {
   border: 3px solid #6d2f8a;/*Deep Purple*/
-  margin: 2em 0 1em 0;
+  margin: 3em 0 1em 0;
 }
 div#blogger a {
   color: #6d2f8a;
@@ -433,6 +433,7 @@ img.big {
 }
 div#pics {
   min-height: 350px;
+  padding: 20px 0 0 0;
 }
 div#pics a {
   margin: 1em 1.5em 0 0;
