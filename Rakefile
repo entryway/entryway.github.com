@@ -1,11 +1,11 @@
-desc 'deploy site to specified environment and branch, ie rake deploy[staging, experimental].' 
-task :deploy, :environment, :branch do |t, args| 
+desc 'deploy site to specified environment, ie rake deploy[staging] or rake deploy[production].'
+task :deploy, :environment do |t, args|
   require 'rubygems'
   require 'highline/import'
   require 'net/ssh'
- 
+
   subdomain = args[:environment] || 'staging'
-  branch = args[:branch] || 'master'
+  branch = args[:branch] || 'develop'
   if subdomain == 'production'
     subdomain = 'www'
     branch = 'master'
@@ -15,7 +15,7 @@ task :deploy, :environment, :branch do |t, args|
 
   username = ask('Username: ') { |q| q.echo = true }
   password = ask('Password: ') { |q| q.echo = "*" }
- 
+
   Net::SSH.start('another.entryway.net', username, :password => password) do |ssh|
     commands = <<EOF
 cd ~/#{site}/cached-copy

@@ -1,11 +1,10 @@
 # Deploying
 
-    rake deploy[:environment, :branch] 
-    
-:environment - can be staging or production, staging is the deafault
-:branch - the branch to deploy to, defaults to master
+    rake deploy[:environment]
 
-## Environment 
+:environment - can be staging or production, staging is the deafault
+
+## Environment
 #
 to deploy to staging:
     rake deploy
@@ -15,11 +14,9 @@ to deploy to production:
 
 ## Branch
 
-the master branch is deployed by default
+Git Flow should be followed to manage releases.
 
-deploying a different branch to staging for review
-    rake deploy[staging,experimental-branch]
+The develop branch is deployed to staging.
 
-Make sure you don't have a comma after the first parameter, that fails. 
+The master branch is deployed to production.
 
-**Note** Master is the only branch that can be deployed to production, if another branch is attempted it will revert to master. 
