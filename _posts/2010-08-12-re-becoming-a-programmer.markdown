@@ -7,6 +7,7 @@ published: true
 ---
 
 Pair programming
+================
 
 Today it's one month since I left my home in Slovakia to become a real programmer. I've never really worked in a team, or on projects that required more than a few months. My projects were always one or two men show.
 
