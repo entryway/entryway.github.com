@@ -18,7 +18,7 @@ task :deploy, :environment do |t, args|
 
   Net::SSH.start('another.entryway.net', username, :password => password) do |ssh|
     commands = <<EOF
-cd /var/www/#{site}/cached-copy
+cd ~/#{site}/cached-copy
 git checkout #{branch}
 git pull origin #{branch}
 git checkout -f
