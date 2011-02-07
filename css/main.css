@@ -14,7 +14,7 @@ h1 {
   color: #545146;/*Medium Brown*/
   font-weight: normal;
   padding: 0;
-  margin: .5em 0 .5px;
+  margin: .5em 0 5px 0;
 }
 h2 {
   font-style: italic;
@@ -116,13 +116,13 @@ hr {
   color: #6ba6bb;/*Brand Blue*/
 }
 .orange {
-  color: #EB9400;/*Bright Orange*/
+  color: #e1a72d;/*Bright Orange*/
 }
 .yellow {
-  color: #fefb86;/*Bright Orange*/
+  color: #e1a72d;/*Bright Orange*/
 }
 .red {
-  color: #bf3000;/*Bright Red*/
+  color: #bc5e1b;/*Bright Red*/
 }
 .green {
   color: #6F8924;/*Bright Green*/
@@ -131,7 +131,8 @@ hr {
   color: #8d3db3;/*Bright Purple*/
 }
 div#red {
-  background: #A12800;/*Deep Red*/
+  background: #a55218 url(/images/bg-red-btm.jpg) repeat-x 0 0;/*Deep Red*/
+  height: 48px;
 }
 div#orange {
   background: #EB9400 url(/images/bg-orange-btm.jpg) repeat-x 0 0;/*Brand Orange*/
@@ -142,11 +143,12 @@ div#orange a {
   color: #fff;
 }
 div#green {
-  background: #6F8924;/*Bright Green*/
+  background: #6F8924 url(/images/bg-green-btm.jpg) repeat-x 0 0;/*Bright Green*/
+  height: 98px;
 }
 div#blue {
   background: #6ba6bb url(/images/bg-blue-btm.jpg) repeat-x 0 0;/*Brand Blue*/
-  height: 100px;
+  height: 98px;
 }
 div#purple {
   background: #6d2f8a;/*Deep Purple*/
@@ -293,15 +295,27 @@ div#branding div.content {
 }
 div#branding h3 {
   color: #6ba6bb;
+  text-align: center;
 }
-ul#products {
+ul#offer {
   padding: 0;
   font-size: 1em;
 }
-ul#products li {
-  margin: 0 0 1.8em 0;
+ul#offer li {
+  float: left;
+  width: 221px;
+  margin: 0 12px;
+}
+ul#offer li.first {
+  margin-left: 0;
+}
+ul#offer li.last {
+  margin-right: 0;
+}
+ul#offer li img {
+  margin: 0 auto;
   display: block;
-  padding: .5em .2em;
+  padding: 0 0 10px 0;
 }
 ul#products li a:hover {
   background-color: #6ba6bb;/*Brand Blue*/
@@ -326,14 +340,14 @@ div#feature {
   background:  url(/images/bg-orange.jpg) repeat-x 0 0;  
 }
 div#feature h3 {
-  color: #EB9400;
+  color: #e1a72d;
 }
 div#feat-info p {
   width: 100%;
 }
 div#feat-info a {
   font-size: 1.5em;
-  color: #EB9400; /*Orange*/
+  color: #e1a72d; /*Orange*/
 }
 div#feature div#feat-slides {
 float: left;
@@ -406,14 +420,13 @@ div#feat-slides img {
 div#agile-process {
   clear: both;
   width: 100%;
-  /*background:  url(/images/bg-red3.gif) repeat-x 0 0;  */
+  background:  url(/images/bg-red.jpg) repeat-x 0 0;
 }
 div#diagram img {
-  border: 3px solid #A12800;/*Deep Red*/
   margin: 3em 0 1em 0;
 }
 div#agile h3 {
-  color: #A12800;
+  color: #a55218;
 }
 
 /* Blog */
@@ -437,7 +450,7 @@ div#purple a {
 /*  Team  */
 
 div#team {
-  /*background: #fffcf1 url(/images/bg-green3.gif) repeat-x 0 0;*/
+  background: transparent url(/images/bg-green.jpg) repeat-x 0 0;
   width: 100%;
   clear: both;
 }
@@ -477,10 +490,13 @@ div#footer {
   background: #1d1c18 url(/images/splash/texture.png) repeat 0 0;
   float: left;
 }
+div#footer h1 {
+  color: #666459;
+  text-align: right;
+}
 div#footer-wrap {
   background: transparent url(/images/splash/watermark-dots2.png) no-repeat left bottom; 
   width: 100%;
-  padding-top: 3px;
   float: left;
 }
 div#footer-line {
@@ -535,10 +551,10 @@ div#footer #testimonials {
   padding-left: 4%;
 }
 div#footer #testimonials h3 {
-  color: #d63500;/*Bright Red*/
+  color: #bc5e1b;/*Bright Red*/
 }
 div#footer h3#floyd {
-  color: #eb9400;/*Bright Orange*/
+  color: #e1a72d;/*Bright Orange*/
 }
 div#footer #testimonials p {
   font-style: italic;

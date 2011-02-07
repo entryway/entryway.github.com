@@ -155,7 +155,7 @@ div.main h3#desktop {
 div#about {
   clear: both;
   float: left;
-  background: #fffcf1 url(/images/bg-green2.gif) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-green.jpg) repeat-x 0 0;
   min-width: 960px;
   width: 100%;
 }
@@ -180,7 +180,7 @@ div#about h6 {
   
 }
 
-div.people img {
+div.people img.headshot {
   margin: 0 .8em 1em 0;
   border: 3px solid #6F8924;/*Bright Green*/
   float: left;
@@ -240,7 +240,7 @@ div#about div.main h3 {
 div#portfolio {
   clear: both;
   float: left;
-  background: #fffcf1 url(/images/bg-orange4.png) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-orange.jpg) repeat-x 0 0;
   min-width: 960px;
   width: 100%;
 }
@@ -322,7 +322,7 @@ div#process {
   clear: both;
   float: left;
   min-width: 960px;
-  background: #fffcf1 url(/images/bg-red2.gif) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-red.jpg) repeat-x 0 0;
   width: 100%;
 }
 div#process h1 {
@@ -331,22 +331,22 @@ div#process h2 {
   color: #454545;
 }
 div#process h3 {
-  color: #bf3000;/*Bright Red*/
+  color: #bc5e1b;/*Bright Red*/
 }
 div#process h4 {
-  color: #A12800;/*Deep Red*/
+  color: #aa5518;/*Deep Red*/
 }
 div#process h5 {
-  color: #bf3000;/*Bright Red*/
+  color: #bc5e1b;/*Bright Red*/
   padding-top: 0;
 }
 div#process a {
-  color: #A12800;/*Deep Red*/
+  color: #aa5518;/*Deep Red*/
   
 }
 div.testimonial img {
   margin: 0 .8em 1em 0;
-  border: 3px solid #A12800;/*Deep Red*/
+  border: 3px solid #aa5518;/*Deep Red*/
   float: left;
   width: 145px;
 }
@@ -355,7 +355,7 @@ div.testimonial p {
   line-height: 1.3em;
 }
 div.testimonial a {
-  color: #bf3000;/*Bright Red*/
+  color: #bc5e1b;/*Bright Red*/
 }
 ul.bavolek {
   color:#3D3D3D;
@@ -365,7 +365,7 @@ div#div-red {
   background: transparent url(/images/splash/div-red.png) no-repeat 0 0;
 }
 div#process div.main h3 {
-  padding: 16px 0 0 55px;
+  padding: 5px 0 0 55px;
 }
 
 /* Blog */

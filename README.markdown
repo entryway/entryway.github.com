@@ -20,3 +20,7 @@ The develop branch is deployed to staging.
 
 The master branch is deployed to production.
 
+## Server
+
+jekyll --server --auto
+
