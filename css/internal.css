@@ -2,7 +2,7 @@
 
 /* Intro */
 div.intro {
-  background: url(/images/lines-dots.png) no-repeat 700px -80px;
+  background: url(/images/lines-dots.png) no-repeat 500px -80px;
   margin: 7px 0 0 0;
   float: left;
   width: 100%;
@@ -89,17 +89,26 @@ div.imagery {
 div#img1 {
   background: transparent url(../images/splash/tailor.jpg) no-repeat 0 0;
 }
+div#img1:hover {
+  background: transparent url(../images/splash/tailor-hover.jpg) no-repeat 0 0;
+}
 div#img2 {
   background: transparent url(../images/splash/fire-fighting.jpg) no-repeat 0 0;
+}
+div#img2:hover {
+  background: transparent url(../images/splash/fire-fighting-hover.jpg) no-repeat 0 0;
 }
 div#img3 {
   background: transparent url(../images/splash/metamorphosis.jpg) no-repeat 0 0;
 }
+div#img3:hover {
+  background: transparent url(../images/splash/metamorphosis-hover.jpg) no-repeat 0 0;
+}
 div#img4 {
   background: transparent url(../images/splash/solar.jpg) no-repeat 0 0;
 }
-div#img1:hover, div#img2:hover, div#img3:hover, div#img4:hover {
-  background-position: 0 -135px;
+div#img4:hover {
+  background: transparent url(../images/splash/solar-hover.jpg) no-repeat 0 0;
 }
 div#services .sidebar p {
   font-size: 1.4em;
@@ -279,7 +288,7 @@ div#portfolio .feat-slides {
   float: left;
 }
 .feat-slides img{
-  border: 1px solid #d3d3d3;
+  border: 3px solid #EB9400;
 }
 div.more-slides {
   display: none;

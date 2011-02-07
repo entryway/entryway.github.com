@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-size: 62.5%;
   font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
-  background: #f3f4f5 url(/images/splash/texture.png) repeat-x 0 0; /* Off White */
+  background: #fffcf1 url(/images/splash/texture.png) repeat-x 0 0; /* Off White */
   width: 100%;
   min-width: 960px;
 }
@@ -135,9 +135,7 @@ div#red {
   height: 48px;
 }
 div#orange {
-  background: #EB9400 url(/images/bg-orange-btm.jpg) repeat-x 0 0;/*Brand Orange*/
-  height: 98px;
-  
+  background: #EB9400;/*Bright Orange*/
 }
 div#orange a {
   color: #fff;
@@ -149,6 +147,7 @@ div#green {
 div#blue {
   background: #6ba6bb url(/images/bg-blue-btm.jpg) repeat-x 0 0;/*Brand Blue*/
   height: 98px;
+
 }
 div#purple {
   background: #6d2f8a;/*Deep Purple*/
@@ -253,7 +252,7 @@ div.section-side {
 }
 div.section-main {
   float: left;
-  width: 644px;
+  width: 64%;
   margin-left: 2%;
   padding: 0;
 }
@@ -263,17 +262,15 @@ div.link-bar {
 div.link-bar a {
   display: block;
   text-align: right;
-  padding: 17px 17px 16px;
+  padding: 1em;
   background: url(/images/lines-dots.png) no-repeat -60px 5px;
-  color: #F3F4F5; /* Off White */
+  color: #fffcf1; /* Off White */
   font-size: 1.5em;
   height: 15px;
 }
 div.link-bar a:hover {
   background: url(/images/lines-dots.png) no-repeat -60px -73px;
   height: 15px;
-  color: #fff;
-  text-decoration: none;
 }
 div.shadow {
   background:  url(/images/splash/shadow2.png) repeat-x 0 0 ;
@@ -285,7 +282,7 @@ div.shadow {
 
 div#branding {
   clear: both;
-  background: #f3f4f5 url(/images/bg-blue2.gif) repeat-x 0 0;
+  background: #fffcf1 url(/images/bg-blue2.png) repeat-x 0 0;
   float: left;
   width: 100%;
 }
@@ -329,7 +326,7 @@ ul#products h4 {
 }
 div#splash-img img {
   margin: 3em 0 ;
-  border: 1px solid #d3d3d3;/*Grey*/
+  border: 3px solid #6ba6bb;/*Brand Blue*/
 }
 
 /* Feature */
@@ -337,7 +334,7 @@ div#splash-img img {
 div#feature {
   clear:both;
   width: 100%;
-  background:  url(/images/bg-orange.jpg) repeat-x 0 0;  
+  /*background:  url(/images/bg-orange3.gif) repeat-x 0 0;  */
 }
 div#feature h3 {
   color: #e1a72d;
@@ -348,14 +345,6 @@ div#feat-info p {
 div#feat-info a {
   font-size: 1.5em;
   color: #e1a72d; /*Orange*/
-}
-div#feature div#feat-slides {
-float: left;
-width: 630px;
-margin: 1em 0 0 0;
-padding: 34px 14px 0;
-height: 365px;
-background: url(/images/bg-portfolio.jpg)no-repeat 0 0;
 }
 ul.slides-nav {
   float: left;

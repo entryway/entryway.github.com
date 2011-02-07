@@ -2,8 +2,8 @@
 $(window).bind('load', function() { 
 
   $('div#home-slideshow').slideViewerPro({
-    galBorderWidth: 1,
-    galBorderColor: '#cbcbcb',
+    galBorderWidth: 3,
+    galBorderColor: '#EB9400',
     thumbsVis: false,
     autoslide: true,
     asTimer: 2500 

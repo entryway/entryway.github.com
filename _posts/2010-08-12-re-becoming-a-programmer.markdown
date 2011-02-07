@@ -3,7 +3,7 @@ layout: blog_post
 style: entryway
 author: Vojto Rinik
 tag: apprenticeship
-published: true
+published: false
 ---
 
 Pair programming
