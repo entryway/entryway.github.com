@@ -3,7 +3,7 @@ layout: blog_post
 style: entryway
 tag: craftsmanship
 author: Gustin Prudner
-published: false
+published: true
 ---
 
 To me, Craftsmanship is a set of principles, techniques, and beliefs focused on developing software of integrity. Properly crafted software follows a process that cares about, and strives toward high quality, intelligent, and sound computer code.
