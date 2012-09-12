@@ -5,24 +5,26 @@ body {
   padding: 0;
   font-size: 62.5%;
   font-family: "Myriad Pro", Arial, "MS Trebuchet", sans-serif;
-  background: #fffcf1 url(/images/splash/texture.png) repeat-x 0 0; /* Off White */
   width: 100%;
   min-width: 960px;
+  background-color: #fffcf1;
 }
 h1 {
   font-size: 3.5em;
   color: #545146;/*Medium Brown*/
+  text-shadow: 0px 1px 1.5px #555;
   font-weight: normal;
   padding: 0;
   margin: .5em 0 5px 0;
 }
 h2 {
   font-style: italic;
-  font-size: 2.8em; 
+  font-size: 2.8em;
   color: #454545;
+  text-shadow: 0px 1px 1px #555;
 }
 h3 {
-    font-size: 2em; 
+    font-size: 2em;
     color: #545146;
     margin: 0;
     padding: .1em 0;
@@ -63,7 +65,7 @@ a {
   color: #6ba6bb;/*Brand Blue*/
 }
 a:active {
-  
+
 }
 a:hover {
   text-decoration: underline;
@@ -97,12 +99,12 @@ input.button {
   padding: 2em;
   font-size: 1.4em;
   width: 90px;
-  
+
 }
 textarea {
 }
 submit {
-  
+
 }
 hr {
   color: #1d1c18;/*Dark Brown*/
@@ -160,7 +162,7 @@ div#header {
   float: left;
   width: 100%;
   height: 10em;
-  
+
 }
 div#wrap1 {
   width: 960px;
@@ -237,8 +239,9 @@ div#main-nav a.purple:hover, a.purple.active {
 /*  Layout */
 
 div.content {
-  clear: both;
-  float: left;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
   width: 100%;
 }
 div.content p{
@@ -367,7 +370,7 @@ ul.slides-nav li.left-arrow {
   padding-right: 220px;
 }
 ul.slides-nav li.left-arrow a {
-  background-position: 0 0;  
+  background-position: 0 0;
 }
 ul.slides-nav li.left-arrow a:hover {
   background-position: 0 -18px;
@@ -404,7 +407,7 @@ div#feat-slides img {
   margin-bottom: 1em;
 }
 
-/*  Agile Process   */ 
+/*  Agile Process   */
 
 div#agile-process {
   clear: both;
@@ -453,7 +456,7 @@ div#pics {
 div#pics a {
   margin: 1em 1.5em 0 0;
   display: block;
-  float: left;  
+  float: left;
 }
 div#pics a img {
   border: 3px solid #6F8924;/*Bright Green*/
@@ -484,12 +487,12 @@ div#footer h1 {
   text-align: right;
 }
 div#footer-wrap {
-  background: transparent url(/images/splash/watermark-dots2.png) no-repeat left bottom; 
+  background: transparent url(/images/splash/watermark-dots2.png) no-repeat left bottom;
   width: 100%;
   float: left;
 }
 div#footer-line {
-  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;  
+  background:  url(/images/bg-dkbrown.gif) repeat-x 0 0;
   width: 100%;
   height: 3px;
   float: left;
@@ -524,7 +527,7 @@ div#footer p {
 }
 div#footer span {
   color: #fffcf1; /* Off White */
-  
+
 }
 a.button {
   background: transparent url(/images/btn-send.png) no-repeat 0 0;
@@ -566,7 +569,7 @@ ul.tweet-list {
   padding-left: 6em;
 }
 ul.tweet-list li {
-  
+
 }
 div#entryway-tweet ul {
   background: transparent url(/images/splash/entryway-th.jpg) no-repeat 0 0;
@@ -576,10 +579,10 @@ div#gustin-tweet ul {
 }
 div#bobby-tweet ul {
    background: transparent url(/images/splash/bobby-th.jpg) no-repeat 0 0;
-} 
+}
 div#katie-tweet ul {
   background: transparent url(/images/splash/katie-th.jpg) no-repeat 0 0;
-  
+
 }
 
 div#footer h3#blog {
@@ -588,7 +591,7 @@ div#footer h3#blog {
   color: #70308e;
 }
 li.contact {
-  
+
 }
 div#contact img {
   float: left;
@@ -608,9 +611,9 @@ span.read-more, span.re-collapse  {
 }
 span.read-more a, span.re-collapse a {
   color: #6F8924;/*Bright Green*/
-  
+
 }
 span.re-collapse {
-  
+
 }
 
